@@ -29,3 +29,4 @@ PROMINENCE is a platform which allows users to exploit idle cloud resources for 
 
 ## Service deployment
 
+[Quick start](quick-start.html)
