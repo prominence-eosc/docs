@@ -27,6 +27,7 @@ A minimal starting point for a Dockerfile for a CentOS 7 container image for Ope
 ```
 FROM centos:7
 RUN yum -y install openssh-clients openmpi openmpi-devel
+
 ENV PATH            /usr/lib64/openmpi/bin:${PATH}
 ENV LD_LIBRARY_PATH /usr/lib64/openmpi/lib:${LD_LIBRARY_PATH}
 ```
@@ -34,6 +35,7 @@ and for MPICH:
 ```
 FROM centos:7
 RUN yum -y install openssh-clients mpich mpich-devel
+
 ENV PATH            /usr/lib64/mpich/bin:${PATH}
 ENV LD_LIBRARY_PATH /usr/lib64/mpich/lib:${LD_LIBRARY_PATH}
 ```
