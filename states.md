@@ -5,7 +5,7 @@ The state diagram below shows the possible job states.
 List of all possible job states:
 * __idle__: the job is not yet running and has not yet been considered for deployment.
 * __deployment__: the infrastructure to run the job is being deployed.
-* __ready__: the job is not yet runnng but the infrastructure has been deployed. This will usually be a short transient state.
+* __ready__: the job is not yet runnng because the infrastructure has been deployed but has not yet been fully contextualized.
 * __running__: the job is runing.
 * __deleted__: the job has been deleted by the user.
 * __killed__: the job has been forcefully terminated, for example it had been running for too long.
