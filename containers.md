@@ -23,7 +23,7 @@ Some additional requirements for MPI jobs:
 * "mpirun" should be in available inside the container and in the PATH
 * The "ssh" command should be installed inside the container
 
-A minimal starting point for a Dockerfile for a Cent OS 7 container image for OpenMPI is:
+A minimal starting point for a Dockerfile for a CentOS 7 container image for OpenMPI is:
 ```
 FROM centos:7
 RUN yum -y install openssh-clients openmpi openmpi-devel
