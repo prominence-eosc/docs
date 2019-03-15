@@ -22,6 +22,7 @@ Some important tips for creating containers to be used with PROMINENCE:
 Some additional requirements for MPI jobs:
 * "mpirun" should be in available inside the container and in the PATH
 * The "ssh" command should be installed inside the container
+
 A minimal starting point for a Dockerfile for a Cent OS 7 container image for OpenMPI is:
 ```
 FROM centos:7
