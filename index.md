@@ -27,8 +27,6 @@ PROMINENCE is a platform which allows users to exploit idle cloud resources for 
 
 [RESTful API](rest-api.html)
 
-[JSON examples](json-examples.html)
-
 ## Service deployment
 
 [Quick start](quick-start.html)
