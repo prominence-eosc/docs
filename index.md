@@ -23,8 +23,6 @@ PROMINENCE is a platform which allows users to exploit idle cloud resources for 
 
 [Python](python.html)
 
-[Jupyter notebooks](jupyter.html)
-
 [RESTful API](rest-api.html)
 
 ## Service deployment
