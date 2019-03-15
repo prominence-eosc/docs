@@ -19,7 +19,7 @@ Some important tips for creating containers to be used with PROMINENCE:
 * The environment variables HOME, TMP and TEMP will be set to a scratch directory visible inside the container when the container is executed. For the case of multi-node MPI jobs this scratch directory is accessible across all nodes running the job.
 
 ### MPI jobs
-Some additional requirements for MPI jobs:
+Some are some additional requirements on the container images for MPI jobs:
 * "mpirun" should be in available inside the container and in the PATH
 * The "ssh" command should be installed inside the container
 
