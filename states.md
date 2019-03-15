@@ -1,5 +1,5 @@
 # Job lifecycle
-The state diagram below shows the possible task states.
+The state diagram below shows the possible job states.
 ![Job lifecycle](job-states.png)
 
 List of all possible job states:
