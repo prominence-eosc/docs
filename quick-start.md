@@ -1,5 +1,5 @@
 # Quick start
-Here we demonstrate running all PROMINENCE components on a single node. Each service is run in a Docker container. To keep things simple we will use host networking so everything can communicate over localhost.
+Here we demonstrate running all PROMINENCE components on a single node. Each service is run in a Docker container. To keep things as simple as possible here we use host networking so everything can communicate over localhost.
 
 Copy the repository containing the required example config files:
 ```
