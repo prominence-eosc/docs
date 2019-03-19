@@ -4,6 +4,11 @@ Here we demonstrate running all PROMINENCE components on a single node. Each ser
 Copy the repository containing the required example config files:
 ```
 ```
+Generate an ssh key to be used by Ansible:
+```
+cd 
+ssh-keygen -t rsa -b 4096 -P '' -f id_rsa_ansible
+```
 Run Infrastructure Manager:
 ```
 docker run -d \
