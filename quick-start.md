@@ -1,1 +1,31 @@
 # Quick start
+Here we demonstrate running all PROMINENCE components on a single node. Each service is run in a Docker container. To keep things simple we will use host networking so everything can communicate over localhost.
+
+Copy the repository containing the required example config files:
+```
+```
+Run Infrastructure Manager:
+```
+docker run -d \
+           --name=prominence-im \
+           --net=host \
+           grycap/im:latest
+```
+Run Open Policy Agent:
+```
+docker run -d \
+           --name=prominence-opa \
+           --net=host \
+           -v ./prominence-quick-start/policies:/policies \
+           openpolicyagent/opa:latest run --server /policies
+```
+
+Run IMC:
+```
+docker run -d \
+           --name prominence-imc \
+           --net=host \
+           -e PROMINENCE_IMC_CONFIG_DIR=/etc/prominence \
+           -v ./prominence-quick-start/imc:/etc/prominence \
+           alahiff/prominence-imc:latest
+```           
