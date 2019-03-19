@@ -10,7 +10,7 @@ Generate a passwordless ssh key to be used by Ansible:
 cd 
 ssh-keygen -t rsa -b 4096 -P '' -f id_rsa_ansible
 ```
-Update the `ini.json` file to contain the details of a Google service account. It will look something like this:
+Update the `ini.json` file to contain the details of a Google service account. For this you will need a username, project name and private key. It will look something like this:
 ```
 {
   "ansible":{},
@@ -23,6 +23,7 @@ Update the `ini.json` file to contain the details of a Google service account. I
   }
 }
 ```
+Note that the private key needs to be converted into a single line with newlines replaced with literal "\n". This can be easily done using awk, e.g. `awk -v ORS='\\n' '1' <private key file>`.
 
 ## Start the services
 Infrastructure Manager:
