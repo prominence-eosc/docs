@@ -10,8 +10,19 @@ Generate a passwordless ssh key to be used by Ansible:
 cd 
 ssh-keygen -t rsa -b 4096 -P '' -f id_rsa_ansible
 ```
-Credentials
-id = gce; type = GCE; username = <username>@<project>.iam.gserviceaccount.com; password = <private key>; project = <project>
+Update the `ini.json` file to contain the details of a Google service account. It will look something like this:
+```
+{
+  "ansible":{},
+  "credentials":{},
+  "im":{
+    "auth":{
+      "im":"id = im; type = InfrastructureManager; username = user; password = pass",
+      "Google":"id = gce; type = GCE; username = <username>@<project>.iam.gserviceaccount.com; password = <private key>; project = <project>"
+    }
+  }
+}
+```
 
 ## Start the services
 Infrastructure Manager:
