@@ -1,7 +1,7 @@
 # Quick start
 Here we demonstrate running all PROMINENCE components on a single node. Each service is run in a container. To keep things as simple as possible here we use host networking so everything can communicate using localhost.
 
-## Setup
+## Setup and configuration
 Copy the repository containing the required example config files:
 ```
 ```
@@ -10,6 +10,8 @@ Generate a passwordless ssh key to be used by Ansible:
 cd 
 ssh-keygen -t rsa -b 4096 -P '' -f id_rsa_ansible
 ```
+Credentials
+id = gce; type = GCE; username = <username>@<project>.iam.gserviceaccount.com; password = <private key>; project = <project>
 
 ## Start the services
 Infrastructure Manager:
