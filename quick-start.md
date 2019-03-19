@@ -1,6 +1,8 @@
 # Quick start
 Here we demonstrate running all PROMINENCE components on a single node. Each service is run in a container. To keep things as simple as possible here we use host networking so everything can communicate using localhost.
 
+We will use Google Cloud Platform in this example.
+
 ## Setup and configuration
 Copy the repository containing the required example config files:
 ```
@@ -10,7 +12,7 @@ Generate a passwordless ssh key to be used by Ansible:
 cd 
 ssh-keygen -t rsa -b 4096 -P '' -f id_rsa_ansible
 ```
-Update the __ini.json__ file to contain the details of a Google service account. For this you will need a username, project name and private key. It will look something like this:
+Update the __ini.json__ file to contain the details of a Google service account (see https://cloud.google.com/compute/docs/access/service-accounts). For this you will need a username, project name and private key. It will look something like this:
 ```
 {
   "ansible":{},
