@@ -8,7 +8,7 @@ PROMINENCE is a platform which allows users to exploit idle cloud resources for 
 * Go beyond bursting onto a single external cloud with hierarchical cloud bursting. For example, burst onto national research clouds before bursting onto public clouds.
 * All infrastructure provisioning is handled completely automatically and is totally transparent to the user.
 * Clouds are selected automatically based on job requirements and preferences, and any failures are handled automatically.
-* Jobs can access data in B2SAFE or OneData via a POSIX-like filesystem.
+* Jobs can access data in [B2SAFE](https://onedata.org) or [OneData](https://onedata.org) via a POSIX-like filesystem.
 * Output data can be accessed from cloud-based object storage.
 
 
