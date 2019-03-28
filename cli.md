@@ -60,27 +60,29 @@ prominence --help
 > output
 
 ```
-usage: prominence [-h]
-                  {login,create,run,list,describe,delete,download,stdout,stderr}
-                  ...
+usage: prominence [-h] [--version]
+           {login,create,run,list,describe,delete,upload,download,stdout,stderr}
+           ...
 
 Prominence - run jobs in containers across clouds
 
 positional arguments:
-  {login,create,run,list,describe,delete,download,stdout,stderr}
+  {login,create,run,list,describe,delete,upload,download,stdout,stderr}
                         sub-command help
     login               Login
-    create              Create a job from a JSON file
+    create              Create a job or workflow from a JSON file
     run                 Run a job
-    list                List jobs
-    describe            Describe a job
-    delete              Delete a job
-    download            Download output files from a job
-    stdout              Get standard output from a completed job
-    stderr              Get standard error from a completed job
+    list                List jobs or workflows
+    describe            Describe a job or workflow
+    delete              Delete a job or workflow
+    upload              Upload a file to transient storage
+    download            Download output files from a completed job or workflow
+    stdout              Get standard output from a running or completed job
+    stderr              Get standard error from a running or completed job
 
 optional arguments:
   -h, --help            show this help message and exit
+  --version             show the version number and exit
 ```
 Help is also available for individual commands, e.g.
 ```
@@ -149,13 +151,10 @@ As alternatives to a Docker Hub image name, a URL pointing to a Singularity imag
 
 ### MPI jobs
 
-To run an MPI job, you just need to specify more than one node, for example:
+To run an MPI job, you need to specify either `--openmpi` for OpenMPI or `--mpich` for MPICH. For multi-node jobs the number of nodes required should also be specified. For example:
 ```
-prominence run --nodes 2 --mpi-version 1.10.7 alahiff/openmpi-osu-microbm:1 /usr/local/libexec/osu-micro-benchmarks/mpi/one-sided/osu_get_bw
+prominence run --openmpi --nodes 4 alahiff/openmpi-hello-world:latest /mpi_hello_world
 ```
-By default MPI version 2.2.1 is used, but other versions can be specified if necessary (1.10.7, 3.0.2 or 3.1.0). The reason for this is that the version of MPI inside the container must be the same as the version of MPI on the host.
-
-For a single-node MPI job, add the option `--mpi`.
 
 ### Resources
 By default a job will be run with 1 CPU and 1 GB memory but this can easily be changed using the `--cpus` and `--memory` options. A disk size can also be specified. Here is an example running an MPI job on 4 nodes where each node has 2 CPUs and 8 GB memory, there is a shared 20 GB disk accessible by all 4 nodes, and the maximum runtime is 1000 minutes:
