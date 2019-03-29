@@ -29,3 +29,6 @@ PROMINENCE is a platform which allows users to exploit idle cloud resources for 
 ## Service deployment
 
 [Quick start](quick-start.html)
+
+---
+PROMINENCE has been funded by EOSCpilot. The European Open Science Cloud for Research pilot project is funded by the European Commission, DG Research & Innovation under contract no. 739563.
