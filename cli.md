@@ -20,7 +20,7 @@ A CLI is provided which presents a simple batch-system style interface to PROMIN
     - [Environment variables](#environment-variables)
     - [Labels](#labels)
     - [Mounting filesystems](#mounting-filesystems)
-  - [Listing and checking the status of jobs](#listing-and-checking-the-status-of-jobs)
+  - [Checking the status of jobs](#checking-the-status-of-jobs)
   - [Deleting a job](#deleting-a-job)
   - [Viewing standard output and error](#viewing-standard-output-and-error)
 
@@ -287,7 +287,7 @@ Each key and value must be a string of less than 64 characters. Keys can only co
 ### Mounting filesystems
 A B2DROP folder or OneData space can be mounted as a POSIX-like filesystem accessible by jobs.
 
-## Listing and checking the status of jobs
+## Checking the status of jobs
 The `list` command will by default list any active jobs (i.e. jobs which are idle or running):
 ```
 prominence list
