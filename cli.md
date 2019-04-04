@@ -2,7 +2,7 @@
 
 A CLI is provided which presents a simple batch-system style interface to PROMINENCE. It is written in Python and works with both Python 2.x and 3.x.
 
-
+## Table of contents
   - [Deployment](#deployment)
     - [Using pip](#using-pip)
     - [Using Singularity](#using-singularity)
