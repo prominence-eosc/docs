@@ -22,9 +22,6 @@ A CLI is provided which presents a simple batch-system style interface to PROMIN
   - [Listing and checking the status of jobs](#listing-and-checking-the-status-of-jobs)
   - [Deleting a job](#deleting-a-job)
   - [Viewing standard output and error](#viewing-standard-output-and-error)
-  - [Examples](#examples)
-    - [Render an image using Blender](#render-an-image-using-blender)
-    - [TensorFlow: Classifying the MNIST dataset](#tensorflow-classifying-the-mnist-dataset)
 
 
 ## Deployment
@@ -382,31 +379,4 @@ prominence stdout 299
 
 ```
 Note that the standard output and error can be seen while jobs are running as well as once they have completed.
-
-## Examples
-
-### Render an image using Blender
-The following will render a single image from one of the Blender examples and store the output file:
-```
-prominence run --cpus 2 --memory 2 \
-               --artifact https://download.blender.org/demo/test/classroom.zip \
-               --output frame_001.png \
-               ikester/blender:latest \
-               "/usr/local/blender/blender -b classroom/classroom.blend -o frame_### -f 1"
-```
-Once the job has completed you can obtain the URL of the output file using `prominence list --completed`, as described previously.
-
-### TensorFlow: Classifying the MNIST dataset
-The Docker image used in this example is just the `tensorflow/tensorflow:1.11.0` image but with the Python requests module installed, as it is needed in this example.
-
-To train the model (using CPUs only), run the following:
-```
-prominence run --cpus 8 --memory 8 \
-               --artifact https://github.com/tensorflow/models/archive/v1.11.tar.gz \
-               --env PYTHONPATH="\$PYTHONPATH:models-1.11" \
-               --output "mnist_saved_model/*/saved_model.pb" \
-               alahiff/tensorflow:1.11.0 \
-               "python models-1.11/official/mnist/mnist.py --export_dir mnist_saved_model"
-```
-The output file containing the saved model (`saved_model.pb`) will be made available on cloud storage via a temporary URL.
 
