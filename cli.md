@@ -182,7 +182,7 @@ prominence run --openmpi --nodes 4 alahiff/openmpi-hello-world:latest /mpi_hello
 ### Resources
 By default a job will be run with 1 CPU and 1 GB memory but this can easily be changed using the `--cpus` and `--memory` options. A disk size can also be specified. Here is an example running an MPI job on 4 nodes where each node has 2 CPUs and 8 GB memory, there is a shared 20 GB disk accessible by all 4 nodes, and the maximum runtime is 1000 minutes:
 ```
-prominence run --nodes 4 --cpus 2 --memory 8 --disk 20 --runtime 1000 alahiff/geant4mpi:1.3a3
+prominence run --openmpi --nodes 4 --cpus 2 --memory 8 --disk 20 --runtime 1000 alahiff/geant4mpi:1.3a3
 ```
 By default a 10 GB disk is available to jobs, which is located on separate block storage, i.e. not on a VM’s OS disk. For MPI jobs the disk is available across all nodes running the job. The default maximum runtime is 720 minutes.
 
