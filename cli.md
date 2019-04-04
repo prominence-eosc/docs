@@ -19,6 +19,7 @@ A CLI is provided which presents a simple batch-system style interface to PROMIN
     - [Output files](#output-files)
     - [Environment variables](#environment-variables)
     - [Labels](#labels)
+    - [Mounting filesystems](#mounting-filesystems)
   - [Listing and checking the status of jobs](#listing-and-checking-the-status-of-jobs)
   - [Deleting a job](#deleting-a-job)
   - [Viewing standard output and error](#viewing-standard-output-and-error)
@@ -282,6 +283,9 @@ Arbitrary labels in the form of key-value pairs (separated by "=") can be set us
 prominence run --label experiment=MASTU --label env=dev test/container
 ```
 Each key and value must be a string of less than 64 characters. Keys can only contain alphanumeric characters (`[a-z0-9A-Z]`) while values can also contain dashes (`-`), underscores (`_`), dots (`.`) and forward slashes (`/`).
+
+### Mounting filesystems
+
 
 ## Listing and checking the status of jobs
 The `list` command will by default list any active jobs (i.e. jobs which are idle or running):
