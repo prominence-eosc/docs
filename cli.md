@@ -170,7 +170,7 @@ prominence run alahiff/testpi "/bin/sleep 100"
 ``` 
 The command of course should exist within the container. If arguments need to be specified you should put the command and any arguments inside a single set of double quotes, as in the example above.
 
-As alternatives to a Docker Hub image name, a URL pointing to a Singularity image can be specified.
+As alternatives to a Docker Hub image name, a URL pointing to a Singularity image or Docker tarball can be specified.
 
 ### MPI jobs
 
