@@ -60,7 +60,7 @@ curl https://raw.githubusercontent.com/indigo-dc/udocker/master/udocker.py > udo
 chmod u+rx ./udocker
 ./udocker install
 ```
-and move the file `udocker` to somewhere in your PATH. See https://github.com/indigo-dc/udocker/blob/master/doc/installation_manual.md for more information.
+and move the file `udocker` to somewhere in your PATH. See [here](https://github.com/indigo-dc/udocker/blob/master/doc/installation_manual.md) for more information.
 
 Once udocker is installed, pull the image and create a container:
 ```
