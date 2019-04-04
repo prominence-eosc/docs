@@ -285,7 +285,7 @@ prominence run --label experiment=MASTU --label env=dev test/container
 Each key and value must be a string of less than 64 characters. Keys can only contain alphanumeric characters (`[a-z0-9A-Z]`) while values can also contain dashes (`-`), underscores (`_`), dots (`.`) and forward slashes (`/`).
 
 ### Mounting filesystems
-
+A B2DROP folder or OneData space can be mounted as a POSIX-like filesystem accessible by jobs.
 
 ## Listing and checking the status of jobs
 The `list` command will by default list any active jobs (i.e. jobs which are idle or running):
