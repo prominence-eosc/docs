@@ -235,6 +235,6 @@ prominence stdout 299
           \____\______/
 
 ```
-**Note:** The standard output and error can be seen while jobs are running as well as once they have completed. This is not quite realtime, so there could be short delays in the standard output and error being updated.
+**Note:** The standard output and error can be seen while jobs are running as well as once they have completed, allowing users to check the status of long-running jobs. This is not quite realtime, so there can be short delays in the standard output and error being updated.
 {: .notice--warning}
 
