@@ -3,6 +3,10 @@ docs:
     children:
       - title: "Containers"
         url: /containers
+      - title: "Job lifecycle"
+        url: /job-lifecycle
+      - title: "REST API"
+        url: /rest-api
 
   - title: Command line interface
     children:

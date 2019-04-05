@@ -1,4 +1,10 @@
-# REST API
+---
+layout: single
+title: "REST API"
+permalink: /rest-api
+sidebar:
+  nav: "docs"
+---
 
 This is the specification of the PROMINENCE REST API. This is still considered a work in progress, so things could change or break with every update.
 
