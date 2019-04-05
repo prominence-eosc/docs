@@ -6,7 +6,6 @@ sidebar:
   nav: "docs"
 ---
 
-# Installation
 The PROMINENCE CLI can be installed from PyPI, or if preferred, it can be run using containers.
 
 ## Using pip

@@ -1,11 +1,10 @@
 ---
+layout: single
 title: "Containers"
 permalink: /containers
 sidebar:
   nav: "docs"
 ---
-
-# Containers in PROMINENCE
 
 In PROMINENCE all jobs are run in unprivileged containers using user-specified images. It is possible to use either the Singularity or udocker container runtimes.
 
@@ -18,14 +17,14 @@ Container registries other than Docker Hub should also work, provided authentica
 
 Note that if a Docker tarball (with a filename ending in ".tar") is specified udocker will automatically be selected as the container runtime, and if a Singularity image is specified (with a filename ending in ".simg") Singularity will automatically be selected.
 
-### Tips for creating containers
+## Tips for creating containers
 Some important tips for creating containers to be used with PROMINENCE:
 * Do not put any software or required files in /root, since containers are run as an unprivileged user
 * Do not put any software or required files in /home or /tmp, as these directories in the container image will be replaced when the container is executed
 * Do not specify USER in your Dockerfile when creating the container image
 * The environment variables HOME, TMP and TEMP will be set to a scratch directory visible inside the container when the container is executed. For the case of multi-node MPI jobs this scratch directory is accessible across all nodes running the job.
 
-#### MPI jobs
+### MPI jobs
 Some are some additional requirements on the container images for MPI jobs:
 * "mpirun" should be in available inside the container and in the PATH
 * The "ssh" command should be installed inside the container
