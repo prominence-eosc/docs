@@ -20,3 +20,8 @@ docs:
         url: /authentication
       - title: "Jobs"
         url: /jobs
+      - title: "Workflows"
+        url: /workflows
+
+  - title: Service deployment
+
