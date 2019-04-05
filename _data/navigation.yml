@@ -12,5 +12,9 @@ docs:
     children:
       - title: "Installation"
         url: /installation
+      - title: "Help"
+        url: /help
+      - title: "Setup"
+        url: /setup
       - title: "Jobs"
         url: /jobs
