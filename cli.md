@@ -2,29 +2,6 @@
 
 A CLI is provided which presents a simple batch-system style interface to PROMINENCE. It is written in Python and works with both Python 2.x and 3.x.
 
-## Table of contents
-  - [Deployment](#deployment)
-    - [Using pip](#using-pip)
-    - [Using Singularity](#using-singularity)
-    - [Using udocker](#using-udocker)
-  - [Help pages](#help-pages)
-  - [Prerequisites](#prerequisites)
-  - [Authentication](#authentication)
-  - [Running jobs](#running-jobs)
-    - [A basic single-node job](#a-basic-single-node-job)
-    - [MPI jobs](#mpi-jobs)
-    - [Resources](#resources)
-    - [Input files](#input-files)
-    - [Fetching files and archives](#fetching-files-and-archives)
-    - [Output files](#output-files)
-    - [Environment variables](#environment-variables)
-    - [Labels](#labels)
-    - [Mounting filesystems](#mounting-filesystems)
-  - [Checking the status of jobs](#checking-the-status-of-jobs)
-  - [Deleting a job](#deleting-a-job)
-  - [Viewing standard output and error](#viewing-standard-output-and-error)
-
-
 ## Deployment
 The PROMINENCE CLI can be installed from PyPI, or if preferred, it can be run using containers.
 
