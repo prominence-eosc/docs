@@ -24,4 +24,6 @@ docs:
         url: /workflows
 
   - title: Service deployment
-
+    children:
+      - title: "Quick start"
+        url: /quick-start
