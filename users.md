@@ -1,9 +1,8 @@
 ---
-title: "Quick-Start Guide"
-permalink: /docs/quick-start-guide/
+title: "Installation"
+permalink: /installation
 sidebar:
   nav: "docs"
-toc: true
 ---
 
 # Users

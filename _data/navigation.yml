@@ -1,6 +1,6 @@
 docs:
-  - title: Getting Started
+  - title: Command line interface
     children:
-      - title: "Quick-Start Guide"
-        url: /docs/quick-start-guide/
+      - title: "Installation"
+        url: /installation
 

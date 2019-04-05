@@ -2,21 +2,5 @@ name: PROMINENCE
 remote_theme: "mmistakes/minimal-mistakes@4.15.2"
 
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
   - jekyll-include-cache
-
-defaults:
-  - scope:
-      path: ""
-      type: docs
-    values:
-      layout: single
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
-      sidebar:
-        nav: "docs"
 
