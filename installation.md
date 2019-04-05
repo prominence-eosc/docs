@@ -36,7 +36,9 @@ where the full path to the container image should be specified.
 
 ## Using udocker
 
-Similarly to Singularity, another alternative is to use udocker. Because udocker can be installed as an unprivileged user, this method can be used to allow the PROMINENCE CLI to be used on a UI or login node which does not have Singularity installed. Firstly install udocker if necessary:
+Similarly to Singularity, another alternative is to use udocker. Because udocker can be installed as an unprivileged user, this method can be used to allow the PROMINENCE CLI to be used on a UI or login node which does not have Singularity installed.
+
+Firstly install udocker if necessary:
 ```
 curl https://raw.githubusercontent.com/indigo-dc/udocker/master/udocker.py > udocker
 chmod u+rx ./udocker
