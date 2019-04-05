@@ -1,3 +1,2 @@
-remote_theme: pmarsceill/just-the-docs
+remote_theme: allejo/jekyll-docs-theme
 title: PROMINENCE
-search_enabled: true
