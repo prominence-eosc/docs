@@ -1,3 +1,9 @@
+---
+title: "Quick-Start Guide"
+permalink: /docs/quick-start-guide/
+toc: true
+---
+
 # Users
 
 ## Containers in PROMINENCE
