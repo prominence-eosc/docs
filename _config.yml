@@ -1,7 +1,7 @@
 name: PROMINENCE
 remote_theme: "mmistakes/minimal-mistakes@4.15.2"
 url: "https://prominence-eosc.github.io"
-baseurl: ""
+baseurl: "/docs"
 
 plugins:
   - jekyll-include-cache
