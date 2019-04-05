@@ -1,4 +1,5 @@
 ---
+layout: single
 title: "Installation"
 permalink: /installation
 sidebar:
