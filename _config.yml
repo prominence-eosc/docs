@@ -1,4 +1,5 @@
 name: PROMINENCE
+title: PROMINENCE
 remote_theme: "mmistakes/minimal-mistakes@4.15.2"
 url: "https://prominence-eosc.github.io"
 baseurl: "/docs"
