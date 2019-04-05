@@ -1,6 +1,6 @@
 ---
-title: "Installation"
-permalink: /installation
+title: "Jobs"
+permalink: /jobs
 sidebar:
   nav: "docs"
 ---
