@@ -4,3 +4,4 @@ ui:
         color1: "#080331"
         color2: "#b45a00"
         trianglify: true
+markdown: kramdown
