@@ -1,2 +1,8 @@
 name: PROMINENCE
 remote_theme: "mmistakes/minimal-mistakes@4.15.2"
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-include-cache
