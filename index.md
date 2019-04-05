@@ -16,3 +16,5 @@ PROMINENCE is a platform which allows users to exploit idle cloud resources for 
 * Clouds are selected automatically based on job requirements and preferences, and any failures are handled automatically.
 * Jobs can access data from external storage like [B2DROP](https://b2drop.eudat.eu) or [OneData](https://onedata.org) via a POSIX-like filesystem.
 * Output data can be accessed from cloud-based object storage.
+
+PROMINENCE has been funded by EOSCpilot. The European Open Science Cloud for Research pilot project is funded by the European Commission, DG Research & Innovation under contract no. 739563.
