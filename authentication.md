@@ -1,5 +1,6 @@
 ---
 layout: single
+classes: wide
 title: "Authentication"
 permalink: /authentication
 sidebar:

@@ -1,5 +1,6 @@
 ---
 layout: single
+classes: wide
 title: "Containers"
 permalink: /containers
 sidebar:

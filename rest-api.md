@@ -1,5 +1,6 @@
 ---
 layout: single
+classes: wide
 title: "REST API"
 permalink: /rest-api
 sidebar:

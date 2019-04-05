@@ -1,5 +1,6 @@
 ---
 layout: single
+classes: wide
 title: "Job lifecycle"
 permalink: /job-lifecycle
 sidebar:
