@@ -7,7 +7,7 @@ sidebar:
   nav: "docs"
 ---
 
-The PROMINENCE CLI can be installed from PyPI, or if preferred, it can be run using containers.
+The PROMINENCE CLI can be installed from PyPI, or if preferred, it can be run using containers. It is possible for normal users to install the PROMINENCE CLI without having to request any assistance from their system administrators.
 
 ## Using pip
 
