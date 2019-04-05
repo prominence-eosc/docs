@@ -1,4 +1,4 @@
-# PROMINENCE
+# Overview
 
 PROMINENCE is a platform which allows users to exploit idle cloud resources for running scientific workloads with a simple batch system style interface.
 * Users are no longer tied to a login node: jobs can be submitted from anywhere using any OS and any language.
@@ -11,22 +11,4 @@ PROMINENCE is a platform which allows users to exploit idle cloud resources for 
 * Jobs can access data from external storage like [B2DROP](https://b2drop.eudat.eu) or [OneData](https://onedata.org) via a POSIX-like filesystem.
 * Output data can be accessed from cloud-based object storage.
 
-
-## User documentation
-
-[Command line interface](cli.html)
-
-[Containers](containers.html)
-
-[Job lifecycle](states.html)
-
-[Python](python.html)
-
-[RESTful API](rest-api.html)
-
-## Service deployment
-
-[Quick start](quick-start.html)
-
----
 PROMINENCE has been funded by EOSCpilot. The European Open Science Cloud for Research pilot project is funded by the European Commission, DG Research & Innovation under contract no. 739563.
