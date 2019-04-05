@@ -1,8 +1,3 @@
----
-layout: page
-homepage: false
----
-
 # Users
 
 ## Containers in PROMINENCE
