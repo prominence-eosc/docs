@@ -1,8 +1,8 @@
 ---
 layout: single
 classes: wide
-title: "Storage options"
-permalink: /storage-options
+title: "Accessing data"
+permalink: /accessing-data
 sidebar:
   nav: "docs"
 ---
