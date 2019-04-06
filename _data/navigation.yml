@@ -1,3 +1,9 @@
+main:
+  - title: "Users"
+    url: /
+  - title: "Admins"
+    url: /admins
+
 docs:
   - title: Overview
     children:
