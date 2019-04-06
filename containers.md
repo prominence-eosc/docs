@@ -29,8 +29,9 @@ Some important tips for creating containers to be used with PROMINENCE:
 Some are some additional requirements on the container images for MPI jobs:
 * "mpirun" should be in available inside the container and in the PATH
 * The "ssh" command should be installed inside the container
+* There is no reason to set an entrypoint as it will not be used
 
-A minimal starting point for a Dockerfile for a CentOS 7 container image for OpenMPI is:
+A simple minimal starting point for a Dockerfile for a CentOS 7 container image for OpenMPI is:
 ```
 FROM centos:7
 RUN yum -y install openssh-clients openmpi openmpi-devel
