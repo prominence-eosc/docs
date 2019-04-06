@@ -19,7 +19,7 @@ It is possible for jobs to access data in a POSIX-like way, i.e. like a filesyst
 {: .notice--warning}
 
 ### B2DROP
-In order to mount your B2DROP storage in jobs firstly an app username and password needs to be created. This can be done by going to https://b2drop.eudat.eu/settings/user/security clicking *Create new app password*.
+In order to mount your B2DROP storage in jobs firstly an app username and password needs to be created. This can be done by going to [https://b2drop.eudat.eu/settings/user/security](https://b2drop.eudat.eu/settings/user/security) and clicking *Create new app password*.
 
 ### OneData
 In order to mount your OneData storage in jobs firstly an access token needs to be created using the *Access tokens* menu in the OneData web interface.
