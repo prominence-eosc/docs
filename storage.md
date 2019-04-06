@@ -8,6 +8,7 @@ sidebar:
 ---
 
 ## Cloud storage
+There are currently several options to access data in PROMINENCE, and more are under development.
 
 ## POSIX-like access to data
 It is possible for jobs to access data in a POSIX-like way, i.e. like a filesystem. Users can specify the mountpoint to be used inside the container.
