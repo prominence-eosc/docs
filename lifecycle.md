@@ -8,6 +8,7 @@ sidebar:
 ---
 
 The state diagram below shows the possible job states.
+
 ![Job lifecycle](job-states.png)
 
 List of all possible job states:
@@ -20,5 +21,5 @@ List of all possible job states:
 * __completed__: the job has completed, however note that the exit status may or may not be 0.
 * __failed__: the job failed, for example the infrastructure could not be deployed successfully or the container image could not be pulled.
 
-Note that jobs can transiton from the deployment or ready states directly to the failed state in the event of problems.
+Note that jobs can transition from the *deploying* or *ready* states directly to the *failed* state in the event of problems.
 
