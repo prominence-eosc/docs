@@ -39,8 +39,8 @@ In order to mount your OneData storage in jobs firstly an access token needs to 
   "type":"onedata",
   "mountpoint":"/data",
   "onedata":{
-   "provider":"***",
-   "token":"***"
+    "provider":"***",
+    "token":"***"
   }
 }
 ```
