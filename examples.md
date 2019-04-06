@@ -10,7 +10,7 @@ sidebar:
 ## Single node jobs
 
 ### Blender
-Here we render one frame from the classroom demo (see [https://www.blender.org/download/demo-files/](here)). The required Blender files are downloaded automatically before the job starts, and the output file is saved to cloud storage.
+Here we render one frame from the classroom demo (see [here](https://www.blender.org/download/demo-files/)). The required Blender files are downloaded automatically before the job starts, and the output file is saved to cloud storage.
 ```
 prominence create --cpus 8 \
                   --memory 8 \
