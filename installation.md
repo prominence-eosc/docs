@@ -9,6 +9,9 @@ sidebar:
 
 The PROMINENCE CLI can be installed from PyPI, or if preferred, it can be run using containers. It is possible for normal users to install the PROMINENCE CLI without having to request any assistance from their system administrators.
 
+Current version: 0.1.2
+{: .notice--info}
+
 ## Using pip
 
 The PROMINENCE CLI can be installed on a host by typing the following:
