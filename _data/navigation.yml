@@ -20,6 +20,8 @@ docs:
         url: /authentication
       - title: "Jobs"
         url: /jobs
+      - title: "Storage options"
+        url: /storage-options
       - title: "Example jobs"
         url: /example-jobs
 
