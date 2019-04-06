@@ -2,7 +2,7 @@ main:
   - title: "Users"
     url: /
   - title: "Admins"
-    url: /admins
+    url: /quick-start
 
 docs:
   - title: Overview
@@ -31,6 +31,7 @@ docs:
       - title: "Example jobs"
         url: /example-jobs
 
+docsa:
   - title: Service deployment
     children:
       - title: "Quick start"
