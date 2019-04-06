@@ -35,7 +35,7 @@ where the app username and password should be set as appropriate. The mountpoint
 ### OneData
 In order to mount your OneData storage in jobs firstly an access token needs to be created using the *Access tokens* menu in the OneData web interface. The following JSON needs to be included in the job description:
 ```json
-storage":{
+"storage":{
   "type":"onedata",
   "mountpoint":"/data",
   "onedata":{
