@@ -36,6 +36,11 @@ The following JSON needs to be included in the job description if access to B2DR
 ```
 where the app username and password should be set as appropriate. The mountpoint `/data` here is just an example and can be replaced with something else.
 
+Using the PROMINENCE CLI to create jobs, the `--storage` option can be used to specify the name of a JSON file containing the above content. For example:
+```
+prominence create --storage my-b2drop.json ...
+```
+
 ### OneData
 In order to mount your OneData storage in jobs firstly an access token needs to be created using the *Access tokens* menu in the OneData web interface.
 
@@ -51,4 +56,9 @@ The following JSON needs to be included in the job description if access to OneD
 }
 ```
 where the provider hostname and access token should be set as appropriate. The mountpoint `/data` here is just an example and can be replaced with something else.
+
+Using the PROMINENCE CLI to create jobs, the `--storage` option can be used to specify the name of a JSON file containing the above content. For example:
+```
+prominence create --storage my-onedata.json ...
+```
 
