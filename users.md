@@ -107,7 +107,7 @@ prominence describe --completed 481
   }
 ]
 ```
-Currently the temporary URLs expire after 10 days, but the data itself is retained.
+The temporary URLs expire after 10 days, but the data itself is retained.
 
 The `download` command enables all output files from a specific completed job to be automatically downloaded to the current directory. For example:
 ```
