@@ -2,7 +2,7 @@
 layout: single
 classes: wide
 title: "PROMINENCE"
-permalink: /
+permalink: /tt
 sidebar:
   nav: "docs"
 ---
