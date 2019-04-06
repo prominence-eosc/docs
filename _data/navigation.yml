@@ -22,8 +22,8 @@ docs:
         url: /jobs
       - title: "Workflows"
         url: /workflows
-      - title: "Examples"
-        url: /examples
+      - title: "Example jobs"
+        url: /example-jobs
 
   - title: Service deployment
     children:
