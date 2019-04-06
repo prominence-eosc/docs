@@ -19,8 +19,30 @@ It is possible for jobs to access data in a POSIX-like way, i.e. like a filesyst
 {: .notice--warning}
 
 ### B2DROP
-In order to mount your B2DROP storage in jobs firstly an app username and password needs to be created. This can be done by going to [https://b2drop.eudat.eu/settings/user/security](https://b2drop.eudat.eu/settings/user/security) and clicking *Create new app password*.
+In order to mount your B2DROP storage in jobs firstly an app username and password needs to be created. This can be done by going to [https://b2drop.eudat.eu/settings/user/security](https://b2drop.eudat.eu/settings/user/security) and clicking *Create new app password*. The following JSON needs to be included in the job description:
+```json
+"storage":{
+  "type":"b2drop",
+  "mountpoint":"/data",
+  "b2drop":{
+    "app-username":"***",
+    "app-password":"***"
+  }
+}
+```
+where the app username and password should be set as appropriate. The mountpoint `/data` here is just an example and can be replaced with something else.
 
 ### OneData
-In order to mount your OneData storage in jobs firstly an access token needs to be created using the *Access tokens* menu in the OneData web interface.
+In order to mount your OneData storage in jobs firstly an access token needs to be created using the *Access tokens* menu in the OneData web interface. The following JSON needs to be included in the job description:
+```json
+storage":{
+  "type":"onedata",
+  "mountpoint":"/data",
+  "onedata":{
+   "provider":"***",
+   "token":"***"
+  }
+}
+```
+where the provider hostname and access token should be set as appropriate. The mountpoint `/data` here is just an example and can be replaced with something else.
 
