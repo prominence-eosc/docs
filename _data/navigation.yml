@@ -48,6 +48,11 @@ docs:
       - title: "Examples"
         url: /example-jobs
 
+  - title: Workflows
+    children:
+      - title: "Defining workflows"
+        url: /defining-workflows
+
 docsa:
   - title: Service deployment
     children:
