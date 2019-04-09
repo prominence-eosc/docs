@@ -24,11 +24,18 @@ docs:
         url: /setup
       - title: "Authentication"
         url: /authentication
-      - title: "Jobs"
-        url: /jobs
       - title: "Accessing data"
         url: /accessing-data
-      - title: "Example jobs"
+
+  - title: Jobs
+    children:
+      - title: "Running jobs"
+        url: /running-jobs
+      - title: "Checking job status"
+        url: /job-status
+      - title: "Deleting a job"
+        url: /deleting-jobs
+      - title: "Examples"
         url: /example-jobs
 
 docsa:
