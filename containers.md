@@ -11,8 +11,8 @@ In PROMINENCE all jobs are run in unprivileged containers using user-specified i
 
 The image can be specified in the following ways:
 * `<hub-user>/<repo-name>:<tag>` (Docker Hub)
-* URL for a tarball created by `docker save` (filename should end in ".tar")
-* URL for a Singularity image (filename should end in ".simg")
+* URL for a tarball created by `docker save`
+* URL for a Singularity image
 
 Container registries other than Docker Hub should also work, provided authentication is not required.
 
@@ -29,7 +29,7 @@ Some important tips for creating containers to be used with PROMINENCE:
 Some are some additional requirements on the container images for MPI jobs:
 * "mpirun" should be in available inside the container and in the PATH
 * The "ssh" command should be installed inside the container
-* There is no reason to set an entrypoint as it will not be used
+There is no reason to set an entrypoint as it will not be used. A command (and any required arguments) must be specified.
 
 A simple minimal starting point for a Dockerfile for a CentOS 7 container image for OpenMPI is:
 ```

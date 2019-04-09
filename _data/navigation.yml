@@ -31,6 +31,14 @@ docs:
     children:
       - title: "Running jobs"
         url: /running-jobs
+      - title: "Input files"
+        url: /input-files
+      - title: "Output files"
+        url: /output-files
+      - title: "Environment variables"
+        url: /environment-variables
+      - title: "Labels"
+        url: /labels
       - title: "Checking job status"
         url: /job-status
       - title: "Deleting a job"
