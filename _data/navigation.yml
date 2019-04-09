@@ -41,6 +41,8 @@ docs:
         url: /labels
       - title: "Checking job status"
         url: /job-status
+      - title: "Standard output and error"
+        url: /stdout-stderr
       - title: "Deleting a job"
         url: /deleting-jobs
       - title: "Examples"

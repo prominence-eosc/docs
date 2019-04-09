@@ -7,7 +7,7 @@ sidebar:
   nav: "docs"
 ---
 
-## Input files
+## Small input files
 Files can be uploaded and made available to jobs using the `--input` option. For example:
 ```
 prominence create --input /home/alahiff/README alahiff/testpi:latest "cat README"
