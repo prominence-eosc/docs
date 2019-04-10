@@ -2,7 +2,7 @@
 layout: single
 classes: wide
 title: "Workflows"
-permalink: /workflows
+permalink: /defining-workflows
 sidebar:
   nav: "docs"
 ---
