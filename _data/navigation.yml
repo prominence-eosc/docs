@@ -28,6 +28,8 @@ docs:
         url: /authentication
       - title: "Accessing data"
         url: /accessing-data
+      - title: "Jobs and workflows"
+        url: /jobs-and-workflows
 
   - title: Jobs
     children:
