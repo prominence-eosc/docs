@@ -7,7 +7,7 @@ sidebar:
   nav: "docs"
 ---
 
-In order to submit a workflow the first step is to write a JSON description of the workflow. This is just a list of the definitions of the individual jobs along with the dependencies between them. The basic structure is:
+In order to submit a workflow the first step is to write a JSON description of the workflow. This is just a list of the definitions of the individual jobs (which can be created easily using `prominence create --dry-run`, see [here](/generating-json)) along with the dependencies between them. The basic structure is:
 ```json
 {
   "name":"workflow",
@@ -21,3 +21,4 @@ In order to submit a workflow the first step is to write a JSON description of t
   ]
 }
 ```
+
