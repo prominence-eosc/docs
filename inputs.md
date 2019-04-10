@@ -8,7 +8,7 @@ sidebar:
 ---
 
 ## Small input files
-Files can be uploaded and made available to jobs using the `--input` option. For example:
+Files can be uploaded from the host running the CLI and made available to jobs using the `--input` option. For example:
 ```
 prominence create --input /home/alahiff/README alahiff/testpi:latest "cat README"
 ```
@@ -28,3 +28,29 @@ Archives with filenames ending in the following are automatically unpacked:
 * .bz2
 * .zip
 
+## Input files
+Users can upload data to the central Ceph-based storage which can be staged-in to jobs.
+
+### Uploading input files
+Users can upload input files (including container images) using the `upload` command. The path of the file to be uploaded needs to be specified in addition to a reference name for the file which will be used later in order to access the file.
+```
+prominence upload --name myfile --filename /data/myfile
+```
+It is entirely up to the user to ensure that the names do not clash, however different users can use the same names without problems. Note that the name is arbitrary and doesn't have to be the same as the actual filename.
+
+**Note:** There is a limit of 5 GB for a single file.
+{: .notice--warning}
+
+### Accessing input files
+For the case of input files, include an artifact using the name specified when the file was uploaded, e.g.
+```
+prominence upload --name input.txt --filename input.txt
+prominence create --artifact input.txt busybox "cat input.txt"
+```
+Any such input files will be automatically copied from Ceph storage before the job starts running.
+
+For the case of a container image, define the image name using the name specified when the image was uploaded, e.g.
+```
+prominence upload --name myimage.simg --filename myimage.simg
+prominence create myimage.simg
+```
