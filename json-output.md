@@ -1,7 +1,7 @@
 ---
 layout: single
 classes: wide
-title: "Generating JSON"
+title: "Generating a JSON job description"
 permalink: /generating-json
 sidebar:
   nav: "docs"
