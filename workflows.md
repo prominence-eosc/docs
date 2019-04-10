@@ -24,13 +24,13 @@ In order to submit a workflow the first step is to write a JSON description of t
 ```
 Each of the individual jobs must have defined names as these are used in order to define the dependencies.
 
-It is important to note that the resources requirements for the individual jobs can be (and should be!) specified.
+It is important to note that the resources requirements for the individual jobs can be (and should be!) specified. This will mean that each step in a workflow will only use the resources it requires.
 
 ## Examples
 It is worthwhile to look at some simple examples in order to understand how to define workflows.
 
 ### Multiple steps
-Here we consider a workflow consisting of multiple steps, e.g.
+Here we consider a simple workflow consisting of multiple steps, e.g.
 
 ![Multi-step workflow](multi-step-workflow.png)
 
@@ -105,3 +105,5 @@ In this example `job_A` will run first, followed by `job_B`, finally followed by
   ]
 }
 ```
+
+### Scatter-gather
