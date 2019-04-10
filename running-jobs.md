@@ -27,7 +27,6 @@ The command of course should exist within the container. If arguments need to be
 As alternatives to a Docker Hub image name, a URL pointing to a Singularity image or Docker tarball can be specified.
 
 ## MPI jobs
-
 To run an MPI job, you need to specify either `--openmpi` for OpenMPI or `--mpich` for MPICH. For multi-node jobs the number of nodes required should also be specified. For example:
 ```
 prominence create --openmpi --nodes 4 alahiff/openmpi-hello-world:latest /mpi_hello_world
@@ -40,3 +39,5 @@ prominence create --openmpi --nodes 4 --cpus 2 --memory 8 --disk 20 --runtime 10
 ```
 By default a 10 GB disk is available to jobs, which is located on separate block storage, i.e. not on a VM’s OS disk. For MPI jobs the disk is available across all nodes running the job. The default maximum runtime is 720 minutes.
 
+## Multiple tasks in a single job
+By default a job will run a single command inside a single container. However, it is possible to instead run multiple sequential tasks within a single job.
