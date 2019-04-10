@@ -58,3 +58,9 @@ An alias for the `prominence` command can be created by putting the following in
 alias prominence="udocker run --bindhome --hostenv prominence"
 ```
 
+## Checking what version is installed
+The version of the PROMINENCE CLI installed can be checked by running:
+```
+prominence --version
+```
+
