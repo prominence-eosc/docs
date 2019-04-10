@@ -24,7 +24,7 @@ In order to submit a workflow the first step is to write a JSON description of t
 ```
 Each of the individual jobs must have defined names as these are used in order to define the dependencies. Unlike [CWL](https://www.commonwl.org/) or [WDL](https://github.com/openwdl/wdl) dependencies need to be defined explicitly rather than being based on input and output files.
 
-It is important to note that the resources requirements for the individual jobs can be (and should be!) specified. This will mean that each step in a workflow will only use the resources it requires.
+It is important to note that the resources requirements for the individual jobs can be (and should be!) specified. This will mean that each step in a workflow will only use the resources it requires. Jobs within a single workflow can of course request very different resources, which makes it possible for workflows to have both HTC and HPC steps.
 
 ## Examples
 It is worthwhile to look at some simple examples in order to understand how to define workflows.
