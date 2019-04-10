@@ -41,7 +41,7 @@ It is entirely up to the user to ensure that the names do not clash, however dif
 **Note:** There is a limit of 5 GB for a single file.
 {: .notice--warning}
 
-### Accessing input files
+### Accessing data
 For the case of input files, include an artifact using the name specified when the file was uploaded, e.g.
 ```
 prominence upload --name input.txt --filename input.txt
