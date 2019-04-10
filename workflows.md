@@ -30,7 +30,7 @@ It is important to note that the resources requirements for the individual jobs 
 It is worthwhile to look at some simple examples in order to understand how to define workflows.
 
 ### Multiple steps
-Here we consider a simple workflow consisting of multiple steps, e.g.
+Here we consider a simple workflow consisting of multiple sequential steps, e.g.
 
 ![Multi-step workflow](multi-step-workflow.png)
 
@@ -107,3 +107,7 @@ In this example `job_A` will run first, followed by `job_B`, finally followed by
 ```
 
 ### Scatter-gather
+He we consider the common type of workflow where a number of jobs can run in parallel. Once these jobs have completed another job will run. Ttypically this final step will take output generated from all the previous jobs. For example:
+
+![Scatter-gather workflow](scatter-gather-workflow.png)
+
