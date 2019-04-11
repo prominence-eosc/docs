@@ -20,7 +20,7 @@ All jobs are run in containers to ensure they will can run reliably anywhere and
 Run multi-node Open MPI or MPICH jobs in addition to single-node HTC jobs.
 
 ### Multi-cloud native
-Go beyond a single cloud and leverage resources across many clouds.
+Go beyond a single cloud and leverage resources across many clouds. Jobs will run on the best available cloud meeting their requirements and any preferences.
 
 ### Invisible infrastructure
 All infrastructure provisioning is handled completely automatically and is totally transparent to the user.
