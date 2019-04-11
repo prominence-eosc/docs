@@ -6,6 +6,11 @@ header:
   overlay_image: prominence.png
 excerpt: >
   Enabling HTC & HPC applications opportunistically across private, academic and public clouds. 
+feature_row:
+  - image_path: prominence-job-submission.png
+    alt: "job submission"
+    title: "No login nodes"
+    excerpt: "Users are no longer tied to a login node: jobs can be submitted from anywhere using any OS and any language."
 ---
 
 PROMINENCE is a platform which allows users to exploit idle cloud resources for running scientific workloads with a simple batch system style interface.
