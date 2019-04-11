@@ -12,7 +12,7 @@ PROMINENCE is a platform which allows users to exploit idle cloud resources for 
 
 <img align="left" width="80" height="80" src="prominence-job-submission.png" hspace="20">
 ### Flexible submission
-Don't be tied to a login node. Submit jobs using a simple batch system style command line interface from your laptop. And your desktop. Or from anywhere else. Also submit jobs programmatically using a RESTful API.
+Submit jobs using a simple batch system style command line interface from your laptop. And your desktop. Or from anywhere else.
 <br/>
 <br/>
 
@@ -33,7 +33,7 @@ Run multi-node Open MPI or MPICH jobs in addition to single-node HTC jobs.
 
 <img align="left" width="80" height="80" src="prominence-burst.png" hspace="20">
 ### Multi-cloud native
-Go beyond a single cloud and leverage resources across many clouds. Jobs will run on the best available cloud meeting their requirements and any preferences.
+Go beyond a single cloud and leverage resources across many clouds.
 <br/>
 <br/>
 
@@ -46,5 +46,5 @@ All infrastructure provisioning is handled completely automatically and is total
 
 <img align="left" width="80" height="80" src="prominence-storage.png" hspace="20">
 ### Data access
-Jobs can access data from external storage like [B2DROP](https://b2drop.eudat.eu) or [OneData](https://onedata.org) via a POSIX-like filesystem. Alternatively output data can be accessed from cloud-based object storage.
+Jobs can access data from external storage like [B2DROP](https://b2drop.eudat.eu) or [OneData](https://onedata.org) via a POSIX-like filesystem.
 
