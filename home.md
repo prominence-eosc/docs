@@ -13,21 +13,25 @@ PROMINENCE is a platform which allows users to exploit idle cloud resources for 
 ### Flexible submission
 <img align="left" width="100" height="100" src="prominence-job-submission.png" hspace="20">
 Don't be tied to a login node. Submit jobs using a simple batch system style command line interface from your laptop. And your desktop. Or from anywhere else. Also submit jobs programmatically using a RESTful API.
+<br/>
 
 
 ### Reliabilily and reproduceability
 <img align="left" width="100" height="100" src="prominence-containers.png" hspace="20">
 All jobs are run in containers to ensure they will can run reliably anywhere and are reproducible.
+<br/>
 
 
 ### MPI ready
 <img align="left" width="100" height="100" src="prominence-multi-node.png" hspace="20">
 Run multi-node Open MPI or MPICH jobs in addition to single-node HTC jobs.
+<br/>
 
 
 ### Multi-cloud native
 <img align="left" width="100" height="100" src="prominence-burst.png" hspace="20">
 Go beyond a single cloud and leverage resources across many clouds. Jobs will run on the best available cloud meeting their requirements and any preferences.
+<br/>
 
 
 ### Invisible infrastructure
