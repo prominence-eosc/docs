@@ -12,7 +12,7 @@ PROMINENCE is a platform which allows users to exploit idle cloud resources for 
 
 <img width="60" height="60" src="prominence-job-submission.png" hspace="20">
 **Flexible submission**<br/>
-Submit jobs using a simple batch system style command line interface from your laptop. And your desktop. Or from anywhere else. Or interact programmatically using a RESTful API.
+Submit jobs using a simple batch system style command line interface from your laptop. And your desktop. Or from anywhere else. Alternatively, interact programmatically using JSON with a RESTful API.
 <br/>
 
 <img width="60" height="60" src="prominence-containers.png" hspace="20">
