@@ -41,3 +41,28 @@ By default a 10 GB disk is available to jobs, which is located on separate block
 
 ## Multiple tasks in a single job
 By default a job will run a single command inside a single container. However, it is possible to instead run multiple sequential tasks within a single job.
+
+Below a simple example is shown which runs a Cent OS container followed by a Ubuntu container:
+```json
+{
+  "resources": {
+    "nodes": 1,
+    "cpus": 1,
+    "memory": 1,
+    "disk": 10
+  },
+  "tasks": [
+    {
+      "image": "centos:7",
+      "cmd": "cat /etc/redhat-release",
+      "runtime": "singularity"
+    },
+    {
+      "image": "ubuntu:16.04",
+      "cmd": "cat /etc/debian_version",
+      "runtime": "singularity"
+    }
+  ],
+  "name": "multiple-tasks"
+}
+```
