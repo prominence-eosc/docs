@@ -44,7 +44,7 @@ By default a job will run a single command inside a single container. However, i
 
 To run multiple tasks in a single job requires the user to define a JSON job description which can then be submitted using the CLI. A simple way to do this is to start by using `prominence create --dry-run` (see [here](/docs/generating-json)) to create the JSON description for a job with a single task, and then modify this as necessary.
 
-Below a simple example is shown which runs a Cent OS container followed by a Ubuntu container:
+Below a simple example is shown which runs a CentOS container followed by a Ubuntu container:
 ```json
 {
   "resources": {
