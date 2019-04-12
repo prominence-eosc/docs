@@ -10,18 +10,13 @@ excerpt: >
 
 PROMINENCE is a platform which allows users to exploit idle cloud resources for running scientific workloads.
 
+<img width="80" height="80" src="prominence-job-submission.png">
 ### Flexible submission
-<img align="left" width="80" height="80" src="prominence-job-submission.png" hspace="20">
 Submit jobs using a simple batch system style command line interface from your laptop. And your desktop. Or from anywhere else.
-<br/>
-<br/>
 
-
+<img width="80" height="80" src="prominence-containers.png">
 ### Reliabilily and reproduceability
-<img align="left" width="80" height="80" src="prominence-containers.png" hspace="20">
 All jobs are run in containers to ensure they will can run reliably anywhere and are reproducible.
-<br/>
-<br/>
 
 
 ### MPI ready
