@@ -5,7 +5,7 @@ title: "About PROMINENCE"
 permalink: /about
 ---
 
-PROMINENCE has been funded by EOSCpilot. The European Open Science Cloud for Research pilot project is funded by the European Commission, DG Research & Innovation under contract no. 739563.
+PROMINENCE was a Science Demonstrator in [EOSCpilot](https://eoscpilot.eu/). The European Open Science Cloud for Research pilot project was funded by the European Commission, DG Research & Innovation under contract no. 739563.
 
 PROMINENCE is available on [GitHub](https://github.com/prominence-eosc).
 
