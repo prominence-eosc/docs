@@ -9,6 +9,8 @@ excerpt: >
 ---
 
 PROMINENCE is a platform which allows users to exploit idle cloud resources for running containerized workloads.
+<br/>
+<br/>
 
 <img width="60" height="60" src="prominence-job-submission.png" hspace="20">
 **Flexible submission**<br/>
