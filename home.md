@@ -39,6 +39,7 @@ Go beyond a single cloud and leverage resources across many clouds.
 
 
 ### Invisible infrastructure
+<img align="left" width="80" height="80" src="prominence-invisible.png" hspace="20">
 All infrastructure provisioning is handled completely automatically and is totally transparent to the user.
 <br/>
 <br/>
