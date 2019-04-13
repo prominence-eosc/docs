@@ -8,7 +8,7 @@ sidebar:
 ---
 
 ## Overview
-In order to submit a workflow the first step is to write a JSON description of the workflow. This is just a list of the definitions of the individual jobs (which can be created easily using `prominence create --dry-run`, see [here](/docs/generating-json)) along with the dependencies between them. The basic structure is:
+In order to submit a workflow the first step is to write a JSON description of the workflow. This is just a list of the definitions of the individual jobs (which can be created easily using `prominence create --dry-run`, see [here](/docs/generating-json)) along with the dependencies between them. Each dependency defines a parent and its children. The basic structure is:
 ```json
 {
   "name":"test-workflow-1",
@@ -16,10 +16,10 @@ In order to submit a workflow the first step is to write a JSON description of t
     {...},
     {...}
   ],
-  "dependencies":[
-    {"parents":[...], "children":[...]},
+  "dependencies":{
+    "parent_job":["child_job_1", ...],
     ...
-  ]
+  {
 }
 ```
 Each of the individual jobs must have defined names as these are used in order to define the dependencies. Unlike [CWL](https://www.commonwl.org/) or [WDL](https://github.com/openwdl/wdl) dependencies need to be defined explicitly rather than being based on input and output files.
@@ -49,7 +49,8 @@ In this example `job_A` will run first, followed by `job_B`, finally followed by
       "tasks": [
         {
           "image": "busybox",
-          "runtime": "singularity"
+          "runtime": "singularity",
+          "cmd": "date"
         }
       ],
       "name": "job_A"
@@ -64,7 +65,8 @@ In this example `job_A` will run first, followed by `job_B`, finally followed by
       "tasks": [
         {
           "image": "busybox",
-          "runtime": "singularity"
+          "runtime": "singularity",
+          "cmd": "date"
         }
       ],
       "name": "job_B"
@@ -79,30 +81,17 @@ In this example `job_A` will run first, followed by `job_B`, finally followed by
       "tasks": [
         {
           "image": "busybox",
-          "runtime": "singularity"
+          "runtime": "singularity",
+          "cmd": "date"
         }
       ],
       "name": "job_C"
     }
   ],
-  "dependencies": [
-    {
-      "parents": [
-        "job_A"
-      ],
-      "children": [
-        "job_B"
-      ]
-    },
-    {
-      "parents": [
-        "job_B"
-      ],
-      "children": [
-        "job_C"
-      ]
-    }
-  ]
+  "dependencies": {
+    "job_A": ["job_B"],
+    "job_B": ["job_C"]
+  }
 }
 ```
 
@@ -177,16 +166,10 @@ A basic JSON description is shown below:
       "name": "job_B"
     }
   ],
-  "dependencies": [
-    {
-      "parents": [
-        "job_A1",
-        "job_A2",
-        "job_A3"
-      ],
-      "children": [
-        "job_B"
-      ]
+  "dependencies": {
+    "job_A1": ["job_B"],
+    "job_A2": ["job_B"],
+    "job_A3": ["job_B"]
     }
   ]
 }
