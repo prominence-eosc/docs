@@ -170,7 +170,6 @@ A basic JSON description is shown below:
     "job_A1": ["job_B"],
     "job_A2": ["job_B"],
     "job_A3": ["job_B"]
-    }
-  ]
+  }
 }
 ```
