@@ -11,10 +11,14 @@ In PROMINENCE all jobs are run in unprivileged containers using user-specified i
 
 The image can be specified in the following ways:
 * `<hub-user>/<repo-name>:<tag>` (Docker Hub)
+* `<hostname>/<project-id>/<image>:<tag>` (Google Container Registry)
 * URL for a tarball created by `docker save`
 * URL for a Singularity image
 
-Container registries other than Docker Hub should also work, provided authentication is not required.
+Container registries other than Docker Hub may also work provided authentication is not required.
+
+**Note**: The udocker container runtime must be used for images from Google Container Registry.
+{: .notice--warning}
 
 Note that if a Docker tarball (with a filename ending in ".tar") is specified udocker will automatically be selected as the container runtime, and if a Singularity image is specified (with a filename ending in ".simg") Singularity will automatically be selected.
 
