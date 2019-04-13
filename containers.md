@@ -17,7 +17,7 @@ The image can be specified in the following ways:
 
 Container registries other than Docker Hub may also work provided authentication is not required.
 
-**Note**: The udocker container runtime must be used for images from Google Container Registry.
+**Note**: The udocker container runtime must be used for images from Google Container Registry due to [this](https://github.com/sylabs/singularity/issues/1158) Singularity issue.
 {: .notice--warning}
 
 Note that if a Docker tarball (with a filename ending in ".tar") is specified udocker will automatically be selected as the container runtime, and if a Singularity image is specified (with a filename ending in ".simg") Singularity will automatically be selected.
