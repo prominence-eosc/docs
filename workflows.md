@@ -19,7 +19,7 @@ In order to submit a workflow the first step is to write a JSON description of t
   "dependencies":{
     "parent_job":["child_job_1", ...],
     ...
-  {
+  }
 }
 ```
 Each of the individual jobs must have defined names as these are used in order to define the dependencies. Unlike [CWL](https://www.commonwl.org/) or [WDL](https://github.com/openwdl/wdl) dependencies need to be defined explicitly rather than being based on input and output files.
