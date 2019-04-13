@@ -115,7 +115,8 @@ A basic JSON description is shown below:
       "tasks": [
         {
           "image": "busybox",
-          "runtime": "singularity"
+          "runtime": "singularity",
+          "cmd": "date"
         }
       ],
       "name": "job_A1"
@@ -130,7 +131,8 @@ A basic JSON description is shown below:
       "tasks": [
         {
           "image": "busybox",
-          "runtime": "singularity"
+          "runtime": "singularity",
+          "cmd": "date"
         }
       ],
       "name": "job_A2"
@@ -145,7 +147,8 @@ A basic JSON description is shown below:
       "tasks": [
         {
           "image": "busybox",
-          "runtime": "singularity"
+          "runtime": "singularity",
+          "cmd": "date"
         }
       ],
       "name": "job_A3"
@@ -160,7 +163,8 @@ A basic JSON description is shown below:
       "tasks": [
         {
           "image": "busybox",
-          "runtime": "singularity"
+          "runtime": "singularity",
+          "cmd": "date"
         }
       ],
       "name": "job_B"
