@@ -27,7 +27,7 @@ The command of course should exist within the container. If arguments need to be
 As alternatives to a Docker Hub image name, a URL pointing to a Singularity image or Docker tarball can be specified.
 
 ## MPI jobs
-To run an MPI job, you need to specify either `--openmpi` for OpenMPI or `--mpich` for MPICH. For multi-node jobs the number of nodes required should also be specified. For example:
+To run an MPI job, you need to specify either `--openmpi` for Open MPI or `--mpich` for MPICH. For multi-node jobs the number of nodes required should also be specified. For example:
 ```
 prominence create --openmpi --nodes 4 alahiff/openmpi-hello-world:latest /mpi_hello_world
 ```
