@@ -15,6 +15,7 @@ A job in PROMINENCE consists of the following:
 * Output files
 * Storage details (e.g. mounting B2DROP or OneData)
 * One or more task definitions
+
 A task consists of the following:
 * Container image
 * Container runtime
