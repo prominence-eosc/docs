@@ -36,6 +36,8 @@ The number of processes to run per node is assumed to be the same as the number 
 **Note:** Currently `--procs-per-node` is only supported for Open MPI jobs.
 {: .notice--warning}
 
+Unlike single-node jobs, a command to run (and optionally any arguments) must be specified. If an entrypoint is defined in the container image it will be ignored.
+
 ## Hybrid MPI-OpenMP jobs
 
 ## Resources
