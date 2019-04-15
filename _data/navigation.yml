@@ -11,6 +11,8 @@ docs:
     children:
       - title: "Containers"
         url: /containers
+      - title: "Jobs"
+        url: /jobs
       - title: "Job lifecycle"
         url: /job-lifecycle
       - title: "REST API"
