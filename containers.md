@@ -13,15 +13,23 @@ The image can be specified in the following ways:
 * `<user>/<repo>:<tag>` (Docker Hub)
 * `<hostname>/<project-id>/<image>:<tag>` (Google Container Registry)
 * `shub://<user>/<repo>:<tag>` (Singularity Hub)
-* URL for a tarball created by `docker save`
-* URL for a Singularity image
+* URL of a tarball created by `docker save`
+* URL of a Singularity image
 
 Container registries other than Docker Hub may also work provided authentication is not required.
 
 **Note**: The udocker container runtime must be used for images from Google Container Registry due to [this](https://github.com/sylabs/singularity/issues/1158) Singularity issue.
 {: .notice--warning}
 
-If a Docker tarball (with a filename ending in ".tar") is specified udocker will automatically be selected as the container runtime, and if a Singularity image is specified (with a filename ending in ".simg") Singularity will automatically be selected. If a Singularity Hub image is specified (image name beginning with "shub://") Singularity will automatically be selected.
+Under some conditions a container runtime will be selected automatically. This will only happen if there is only one runtime which will work for the specified image. For other cases, e.g. a Docker Hub image, Singularity is used as the default but optionally udocker can be forced by the user.
+
+Images which will result in Singularity being selected:
+* Singularity Hub image (begins with "shub://")
+* URL for a Singularity image (filename ends in ".simg")
+
+Images which will result in udocker being selected:
+* URL for a Docker tarball (filename ends in ".tar")
+
 
 ## Tips for creating containers
 Some important tips for creating containers to be used with PROMINENCE:
