@@ -41,7 +41,15 @@ Unlike single-node jobs, a command to run (and optionally any arguments) must be
 ## Hybrid MPI-OpenMP jobs
 
 ## Resources
-By default a job will be run with 1 CPU and 1 GB memory but this can easily be changed using the `--cpus` and `--memory` options. A disk size can also be specified using `--disk`. Here is an example running an MPI job on 4 nodes where each node has 2 CPUs and 8 GB memory, there is a shared 20 GB disk accessible by all 4 nodes, and the maximum runtime is 1000 minutes:
+By default a job will be run with 1 CPU and 1 GB memory but this can easily be changed.
+The following resources can be specified:
+* CPU cores
+* Memory (in GB)
+* Disk (in GB)
+* Maximum runtime (in mins)
+CPU cores and memory can be specified using the `--cpus` and `--memory` options. A disk size can also be specified using `--disk`.
+
+Here is an example running an MPI job on 4 nodes where each node has 2 CPUs and 8 GB memory, there is a shared 20 GB disk accessible by all 4 nodes, and the maximum runtime is 1000 minutes:
 ```
 prominence create --openmpi --nodes 4 --cpus 2 --memory 8 --disk 20 --runtime 1000 alahiff/geant4mpi:1.3a3
 ```
