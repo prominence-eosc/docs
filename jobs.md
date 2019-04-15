@@ -1,8 +1,8 @@
 ---
 layout: single
 classes: wide
-title: "Jobs"
-permalink: /jobs
+title: "Jobs, tasks and workflows"
+permalink: /jobs-tasks-workflows
 sidebar:
   nav: "docs"
 ---
