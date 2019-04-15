@@ -16,10 +16,10 @@ A job in PROMINENCE consists of the following:
 * Storage details (e.g. mounting B2DROP or OneData)
 * One or more task definitions
 
-A task consists of the following:
+Tasks execute sequentially within a job, and consist of the following:
 * Container image
 * Container runtime
 * Command to run and optionally any arguments
 * Environment variables
 
-A workflow consists of one or more jobs and the dependencies between them.
+A workflow consists of one or more jobs and the dependencies between them. Jobs within a workflow can be executed sequentially, in parallel or combinations of both.
