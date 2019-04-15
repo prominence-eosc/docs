@@ -23,3 +23,6 @@ Tasks execute sequentially within a job, and consist of the following:
 * Environment variables
 
 A workflow consists of one or more jobs and the dependencies between them. Jobs within a workflow can be executed sequentially, in parallel or combinations of both.
+
+![Tasks and jobs within a workflow](prominence-tasks-jobs-workflows.png)
+
