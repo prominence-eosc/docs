@@ -10,8 +10,9 @@ sidebar:
 In PROMINENCE all jobs are run in unprivileged containers using user-specified images. It is possible to use either the Singularity or udocker container runtimes.
 
 The image can be specified in the following ways:
-* `<hub-user>/<repo-name>:<tag>` (Docker Hub)
+* `<user>/<repo>:<tag>` (Docker Hub)
 * `<hostname>/<project-id>/<image>:<tag>` (Google Container Registry)
+* `shub://<user>/<repo>:<tag>` (Singularity Hub)
 * URL for a tarball created by `docker save`
 * URL for a Singularity image
 
@@ -20,7 +21,7 @@ Container registries other than Docker Hub may also work provided authentication
 **Note**: The udocker container runtime must be used for images from Google Container Registry due to [this](https://github.com/sylabs/singularity/issues/1158) Singularity issue.
 {: .notice--warning}
 
-Note that if a Docker tarball (with a filename ending in ".tar") is specified udocker will automatically be selected as the container runtime, and if a Singularity image is specified (with a filename ending in ".simg") Singularity will automatically be selected.
+If a Docker tarball (with a filename ending in ".tar") is specified udocker will automatically be selected as the container runtime, and if a Singularity image is specified (with a filename ending in ".simg") Singularity will automatically be selected. If a Singularity Hub image is specified (image name beginning with "shub://") Singularity will automatically be selected.
 
 ## Tips for creating containers
 Some important tips for creating containers to be used with PROMINENCE:
