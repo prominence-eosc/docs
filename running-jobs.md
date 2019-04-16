@@ -20,11 +20,15 @@ Job created with id 3101
 ```
 When a job has been successfully submitted an (integer) ID will be returned. Alternatively, a command (and arguments) can be specified. For example:
 ``` 
-prominence create alahiff/testpi "/bin/sleep 100"
+prominence create centos:7 "/bin/sleep 100"
 ``` 
 The command of course should exist within the container. If arguments need to be specified you should put the command and any arguments inside a single set of double quotes, as in the example above.
 
-As alternatives to a Docker Hub image name, a URL pointing to a Singularity image or Docker tarball can be specified.
+To run multiple commands inside the same container, use `/bin/bash -c` with the commands enclosed in quotes and seperated  by semicolons, for example:
+```
+prominence create centos:7 "/bin/bash -c \"date; sleep 10; date\""
+```
+This is of course assuming `/bin/bash` exists inside the container image.
 
 ## OpenMP jobs
 
