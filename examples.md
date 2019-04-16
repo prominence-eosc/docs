@@ -20,6 +20,18 @@ prominence create --cpus 8 \
                   "/usr/local/blender/blender -b classroom/classroom.blend -o frame_### -f 1"
 ```
 
+### OpenFOAM
+Here we run a variation of the [windAroundBuildings tutorial from OpenFOAM v6](https://github.com/OpenFOAM/OpenFOAM-6/tree/master/tutorials/incompressible/simpleFoam/windAroundBuildings) from [here](https://github.com/CFDEngine/of-on-aws-tests):
+```
+prominence create --cpus 8 \
+                  --memory 8 \
+                  --artifact https://github.com/alahiff/of-on-aws-tests/archive/master.zip \
+                  --workdir of-on-aws-tests-master/windAroundBuildings_02 \
+                  --env OMPI_MCA_orte_tmpdir_base=/tmp openfoam/openfoam6-paraview56 \
+                  "/bin/bash -c \"source /opt/openfoam6/etc/bashrc; ./Allrun; cat log.simpleFoam\""
+```
+We use one of the official OpenFOAM Docker images and obtain the example code from GitHub. The main script executed ("Allrun") itself runs Open MPI within the container.
+
 ### Tensorflow (CPU)
 Here we train Tensorflow to classify the MNIST dataset. The output file containing the saved model (`saved_model.pb`) will be made available on cloud storage. This example demonstrates running an external code (in this case obtained from GitHub) using a generic container image.
 ```
