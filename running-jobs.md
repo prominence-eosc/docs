@@ -30,8 +30,6 @@ prominence create centos:7 "/bin/bash -c \"date; sleep 10; date\""
 ```
 This is of course assuming `/bin/bash` exists inside the container image.
 
-## OpenMP jobs
-
 ## MPI jobs
 To run an MPI job, you need to specify either `--openmpi` for Open MPI or `--mpich` for MPICH. For multi-node jobs the number of nodes required should also be specified. For example:
 ```
