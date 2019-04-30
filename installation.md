@@ -26,11 +26,11 @@ pip install prominence
 
 An alternative is to use Singularity, if available, and create an alias for the command `prominence`. Firstly pull the Docker image:
 ```
-singularity pull docker://alahiff/prominence
+singularity pull docker://eoscprominence/cli
 ```
-This will create a file `prominence.simg`.  An alias can be created by putting the following in your `~/.bashrc`: 
+This will create a file `cli.simg`.  An alias can be created by putting the following in your `~/.bashrc`: 
 ```
-alias prominence="singularity run <path>/prominence.simg"
+alias prominence="singularity run <path>/cli.simg"
 ```
 where the full path to the container image should be specified.
 
@@ -48,8 +48,8 @@ and move the file `udocker` to somewhere in your PATH. See [here](https://github
 
 Once udocker is installed, pull the image and create a container:
 ```
-udocker pull alahiff/prominence
-udocker create --name=prominence alahiff/prominence:latest
+udocker pull eoscprominence/cli
+udocker create --name=prominence eoscprominence/cli:latest
 ```
 An alias for the `prominence` command can be created by putting the following in your `~/.bashrc`: 
 ```
