@@ -11,6 +11,7 @@ PROMINENCE is available on [GitHub](https://github.com/prominence-eosc).
 
 PROMINENCE makes use of open-source technology including:
 * [Infrastructure Manager](https://www.grycap.upv.es/im/index.php)
+* [Ansible](https://www.ansible.com/)
 * [HTCondor](http://research.cs.wisc.edu/htcondor/)
 * [Open Policy Agent](https://www.openpolicyagent.org/)
 * [BeeGFS](https://www.beegfs.io)
