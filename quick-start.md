@@ -26,7 +26,7 @@ Register as an OIDC client:
 ```
 $ prominence register
 ```
-The text `Client registration successful` should appear.
+The text `Client registration successful` should appear. This step only needs to be done once.
 
 Now obtain a token in order to be able to authenticate with PROMINENCE:
 ```
