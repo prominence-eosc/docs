@@ -2,7 +2,7 @@ main:
   - title: "About"
     url: /about
   - title: "Users"
-    url: /containers
+    url: /quick-start
   - title: "Admins"
     url: /deployment-quick-start
 
