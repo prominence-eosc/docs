@@ -9,7 +9,7 @@ sidebar:
 Here we demonstrate a quick way start using PROMINENCE with the command line interface. We assume the user wants to run PROMINENCE on a host on which they do not have root access. For more installation options, see [here](/docs/installation).
 
 
-The PROMINENCE CLI can be installed in a new virtual environment by typing the following:
+Install the PROMINENCE CLI in a new virtual environment:
 ```
 $ virtualenv ~/.virtualenvs/prominence
 $ source ~/.virtualenvs/prominence/bin/activate
