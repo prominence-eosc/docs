@@ -41,13 +41,13 @@ $ prominence create docker/whalesay "cowsay boo"
 Job created with id 22071
 ```
 
-Now you can check the status of the job (replace the job ID as appropriate):
+You can check the status of the job using the `prominence list` command (replace the job ID as appropriate):
 ```
 $ prominence list
 ID      NAME   CREATED               STATUS      ELAPSED      IMAGE             CMD       
 22071          2019-05-23T12:13:59   deploying                docker/whalesay   cowsay boo
 ```
-Once the job has finished running you can look at the standard output:
+Once the job has finished running you can look at the job's standard output:
 ```
 $ prominence stdout 22071
  _____ 
