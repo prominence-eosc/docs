@@ -32,7 +32,8 @@ Now obtain a token in order to be able to authenticate with PROMINENCE:
 ```
 $ prominence login
 ```
-Here you will be asked to go to a web page provided by the OIDC server. After logging in you will need to enter the provided device code. One this is done `Authentication successful` will appear.
+Here you will be asked to go to a web page provided by the OIDC server. After logging in you will need to enter the provided device code. One this is done `Authentication successful` will appear. The tokens are short-lived: they currently after 1 hour.
+
 You are now ready to use PROMINENCE.
 
 For a very simple job you can just specify a container image and the command to execute (and any required arguments). For example, here we run a [container](https://hub.docker.com/r/docker/whalesay/) from the Docker demo tutorial:
