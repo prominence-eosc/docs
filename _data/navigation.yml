@@ -4,11 +4,13 @@ main:
   - title: "Users"
     url: /containers
   - title: "Admins"
-    url: /quick-start
+    url: /deployment-quick-start
 
 docs:
   - title: Overview
     children:
+      - title: "Quick start"
+        url: /quick-start
       - title: "Containers"
         url: /containers
       - title: "Jobs, tasks and workflows"
@@ -65,4 +67,4 @@ docsa:
   - title: Service deployment
     children:
       - title: "Quick start"
-        url: /quick-start
+        url: /deployment-quick-start
