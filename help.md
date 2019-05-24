@@ -22,9 +22,10 @@ usage: prominence [-h] [--version]
 Prominence - run jobs in containers across clouds
 
 positional arguments:
-  {login,create,run,list,describe,delete,upload,download,stdout,stderr}
+  {register,login,run,create,list,describe,delete,upload,download,stdout,stderr}
                         sub-command help
-    login               Login
+    register            Register as a client with the OIDC server
+    login               Get a token from the OIDC server
     create              Create a job or workflow from a JSON file
     run                 Run a job
     list                List jobs or workflows
