@@ -6,7 +6,7 @@ permalink: /quick-start
 sidebar:
   nav: "docs"
 ---
-Here we demonstrate a quick way start using PROMINENCE with the command line interface. We assume the user wants to run PROMINENCE on a host on which they do not have root access. For more installation options, see [here](/docs/installation).
+Here we demonstrate a quick way to start using PROMINENCE with the command line interface. We assume the user wants to run PROMINENCE on a host on which they do not have root access. For more installation options, see [here](/docs/installation).
 
 
 Install the PROMINENCE CLI in a new virtual environment:
@@ -16,7 +16,7 @@ $ source ~/.virtualenvs/prominence/bin/activate
 $ pip install prominence
 ```
 
-Two environment variables need to be set which define the URL of the PROMINENCE server and OpenID Connect (OIDC) server:
+Two environment variables need to be set which define the URLs of the PROMINENCE and OpenID Connect (OIDC) servers:
 ```
 $ export PROMINENCE_URL=https://...
 $ export PROMINENCE_OIDC_URL=https://...
@@ -32,7 +32,7 @@ Now obtain a token in order to be able to authenticate with PROMINENCE:
 ```
 $ prominence login
 ```
-Here you will be asked to go to a web page provided by the OIDC server. After logging in you will need to enter the provided device code. One this is done `Authentication successful` will appear. The tokens are short-lived: they currently after 1 hour.
+Here you will be asked to go to a web page provided by the OIDC server. After logging in you will need to enter the provided device code. One this is done `Authentication successful` will appear. The tokens are short-lived: they currently expire after 1 hour.
 
 You are now ready to use PROMINENCE.
 
@@ -48,7 +48,8 @@ $ prominence list
 ID      NAME   CREATED               STATUS      ELAPSED      IMAGE             CMD       
 22071          2019-05-23T12:13:59   deploying                docker/whalesay   cowsay boo
 ```
-The job will initially be in the idle state, then will progress through the deploying, ready, running and finally completed. If the job is no longer visible from `prominence list` it means that the job has completed.
+The job will initially be in the *idle* state then will progress through the *deploying*, *ready*, and *running* states, and finally end up in the *completed* state.
+If the job is no longer visible from `prominence list` it means that the job has completed. In this case the command `prominence list --completed` will enable the job status to be seen.
 
 Once the job has finished running you can look at the job's standard output:
 ```
