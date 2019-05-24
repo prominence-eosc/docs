@@ -10,7 +10,7 @@ sidebar:
 ## A basic single-node job
 In order to run an instance of a container, running the command defined in the image’s entrypoint, all you need to do is to specify the Docker Hub image name:
 ```
-prominence create alahiff/testpi
+prominence create eoscprominence/testpi
 ```
 
 > output
@@ -51,6 +51,7 @@ The following resources can be specified:
 * Memory (in GB)
 * Disk (in GB)
 * Maximum runtime (in mins)
+
 CPU cores and memory can be specified using the `--cpus` and `--memory` options. A disk size can also be specified using `--disk`.
 
 Here is an example running an MPI job on 4 nodes where each node has 2 CPUs and 8 GB memory, there is a shared 20 GB disk accessible by all 4 nodes, and the maximum runtime is 1000 minutes:
@@ -75,6 +76,7 @@ To run multiple tasks in a single job requires the user to define a JSON job des
 Below a simple example is shown which runs a CentOS container followed by a Ubuntu container:
 ```json
 {
+  "name": "multiple-tasks",
   "resources": {
     "nodes": 1,
     "cpus": 1,
@@ -92,8 +94,7 @@ Below a simple example is shown which runs a CentOS container followed by a Ubun
       "cmd": "cat /etc/debian_version",
       "runtime": "singularity"
     }
-  ],
-  "name": "multiple-tasks"
+  ]
 }
 ```
 Assuming the above is stored in a file called `single-job-multiple-tasks.json`, it can be submitted by running:
