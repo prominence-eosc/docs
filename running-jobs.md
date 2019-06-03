@@ -43,7 +43,9 @@ The number of processes to run per node is assumed to be the same as the number 
 Unlike single-node jobs, a command to run (and optionally any arguments) must be specified. If an entrypoint is defined in the container image it will be ignored.
 
 ## Hybrid MPI-OpenMP jobs
-In this situation the number of MPI processes to run per node must be specified using `--procs-per-node` and the environment variable OMP_NUM_THREADS should be set to the number of OpenMP threads per MPI process. In the following example we have 2 nodes with 4 CPUs each, and we run 2 MPI processes on each node, where each MPI process runs 2 OpenMP threads:
+In this situation the number of MPI processes to run per node must be specified using `--procs-per-node` and the environment variable OMP_NUM_THREADS should be set to the number of OpenMP threads per MPI process.
+
+In the following example we have 2 nodes with 4 CPUs each, and we run 2 MPI processes on each node, where each MPI process runs 2 OpenMP threads:
 ```
 prominence create --cpus 4 \
                   --memory 4 \
