@@ -46,6 +46,19 @@ prominence create --cpus 8 \
 ```
 The Docker image used in this example is just the tensorflow/tensorflow:1.11.0 image but with the Python requests module installed, as it is needed in this example.
 
+
+### LAMMPS
+Here we run one of the [LAMMPS](https://lammps.sandia.gov/) benchmark problems using Intel's Singularity image:
+```
+prominence create --cpus 2 \
+                  --memory 2 \
+                  --artifact https://lammps.sandia.gov/inputs/in.lj.txt \
+                  --runtime singularity \
+                  shub://intel/HPC-containers-from-Intel:lammps \
+                  "/lammps/lmp_intel_cpu_intelmpi -in in.lj.txt"
+```
+See [here](https://github.com/intel/HPC-containers-from-Intel/tree/master/containers/lammps) for more information about this container image.
+
 ## MPI jobs
 
 ### Open MPI hello world
