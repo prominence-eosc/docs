@@ -11,15 +11,24 @@ The PROMINENCE CLI can be installed from PyPI, or if preferred, it can be run us
 
 ## Using pip
 
+### With sudo or root access
 The PROMINENCE CLI can be installed on a host by typing the following:
 ```
 sudo pip install prominence
 ```
-It can also be installed in a new virtual environment, e.g.
+
+### As an unprivileged user
+The PROMINENCE CLI can be installed in a new virtual environment, e.g.
 ```
 virtualenv ~/.virtualenvs/prominence
 source ~/.virtualenvs/prominence/bin/activate
 pip install prominence
+```
+If `virtualenv` is not available it can be installed in the user's home directory by typing:
+```
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python3 get-pip.py --user
+pip install --user virtualenv
 ```
 
 ## Using Singularity
