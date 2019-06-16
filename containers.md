@@ -25,7 +25,7 @@ Under some conditions a container runtime will be selected automatically. This w
 
 Images which will result in Singularity being selected:
 * Singularity Hub image (begins with "shub://")
-* URL for a Singularity image (filename ends in ".simg")
+* URL for a Singularity image (filename ends in ".sif")
 
 Images which will result in udocker being selected:
 * URL for a Docker tarball (filename ends in ".tar")

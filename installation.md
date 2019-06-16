@@ -43,9 +43,9 @@ An alternative is to use Singularity, if available, and create an alias for the 
 ```
 singularity pull docker://eoscprominence/cli
 ```
-This will create a file `cli.simg`.  An alias can be created by putting the following in your `~/.bashrc`: 
+This will create a file `cli_latest.sif`.  An alias can be created by putting the following in your `~/.bashrc`: 
 ```
-alias prominence="singularity run <path>/cli.simg"
+alias prominence="singularity run <path>/cli_latest.sif"
 ```
 where the full path to the container image should be specified.
 

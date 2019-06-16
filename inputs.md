@@ -51,6 +51,6 @@ Any such input files will be automatically copied from Ceph storage before the j
 
 For the case of a container image, define the image name using the name specified when the image was uploaded, e.g.
 ```
-prominence upload --name myimage.simg --filename myimage.simg
-prominence create myimage.simg
+prominence upload --name myimage.sif --filename myimage.sif
+prominence create myimage.sif
 ```
