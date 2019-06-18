@@ -75,7 +75,9 @@ ID     STATUS      IMAGE                       CMD          ARGS
 Note that jobs which are completed or have been removed for some reason may be visible briefly without using the `--completed` option.
 
 ## Completed jobs
-The JSON descriptions of completed jobs contain additional information. For a successful job this includes:
+The JSON descriptions of completed jobs contain additional information. This may include:
+* __status__: current job status.
+* __statusReason__: for jobs in a terminal state other than the completed state this may give a reason for the current status.
 * __createTime__: date & time when the job was created by the user.
 * __startTime__: date & time when the job started running.
 * __endTime__: date & time when the job ended.
