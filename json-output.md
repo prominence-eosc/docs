@@ -9,7 +9,7 @@ sidebar:
 
 When `prominence create` is run with the `--dry-run` option, the job will not be submitted but the JSON description of the job will be printed to standard output. For example:
 ```
-prominence run --dry-run --name test1 --cpus 4 --memory 8 --disk 20 busybox
+prominence create --dry-run --name test1 --cpus 4 --memory 8 --disk 20 busybox
 ```
 
 > output
@@ -30,4 +30,9 @@ prominence run --dry-run --name test1 --cpus 4 --memory 8 --disk 20 busybox
   ],
   "name": "test1"
 }
+```
+
+If the JSON output is saved in a file it be submitted to PROMINENCE using the `prominence run` command, e.g.:
+```
+prominence run <filename.json>
 ```
