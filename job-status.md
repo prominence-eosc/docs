@@ -72,11 +72,11 @@ The JSON descriptions of completed jobs contain additional information. For a su
 * __createTime__: date & time when the job was created by the user.
 * __startTime__: date & time when the job started running.
 * __endTime__: date & time when the job ended.
+* __site__: the site where the job was executed.
 
 The following information is also provided for each task:
-* __site__: the site where the job was executed.
 * __exitCode__: the exit code returned by the user's job. This would usually would be 0 for success.
-* __imagePullTime__: time taken to pull the container image. If a cached image from a previous task is used this will be -1.
+* __imagePullTime__: time taken to pull the container image. If a cached image from a previous task was used this will be -1.
 * __wallTimeUsage__: wall time used by the task.
 * __cpuTimeUsage__: CPU time usage by the task. For a task using multiple CPUs this will be larger than the wall time.
 
