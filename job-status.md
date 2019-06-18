@@ -31,7 +31,7 @@ Here the `--all` option means that both active (i.e. idle or running) and comple
 ## Describing a job
 To get more information about an individual job, use the `describe` command, for example:
 ```
-prominence describe 139
+prominence describe 345
 ```
 
 > output
@@ -39,23 +39,30 @@ prominence describe 139
 ```json
 [
   {
-    "id": 139,
-    "status": "idle",
-    "image": "alahiff/testpi:latest",
-    "cpus": 1,
-    "memory": 1,
-    "nodes": 1,
-    "disk": 10,
-    "runtime": 720,
+    "id": 345,
+    "status": "created",
+    "resources": {
+      "cpus": 1,
+      "disk": 10,
+      "memory": 1,
+      "nodes": 1,
+      "walltime": 720
+    },
+    "tasks": [
+      {
+        "image": "alahiff/testpi",
+        "runtime": "singularity"
+      }
+    ],
     "events": {
-      "creation": "2018-08-29T15:40:08Z"
+      "createTime": "2019-06-18T10:16:36"
     }
   }
 ]
 ```
 To show information about completed jobs, both the `list` and `describe` commands accept a `--completed` option. For example, to list the last 2 completed jobs:
 ```
-prominence list --completed --num 2
+prominence list --completed --last 2
 ```
 
 > output
