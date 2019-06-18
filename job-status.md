@@ -67,3 +67,54 @@ ID     STATUS      IMAGE                       CMD          ARGS
 ```
 Note that jobs which are completed or have been removed for some reason may be visible briefly without using the `--completed` option.
 
+## Completed jobs
+The JSON descriptions of completed jobs contain additional information. For a successful job this includes:
+* __createTime__: date & time when the job was created by the user.
+* __startTime__: date & time when the job started running.
+* __endTime__: date & time when the job ended.
+The following information is also provided for each task:
+* __site__: the site where the job was executed.
+* __exitCode__: the exit code returned by the user's job. This would usually would be 0 for success.
+* __imagePullTime__: time taken to pull the container image. If a cached image from a previous task is used this will be -1.
+* __wallTimeUsage__: wall time used by the task.
+* __cpuTimeUsage__: CPU time usage by the task. For a task using multiple CPUs this will be larger than the wall time.
+
+
+For example:
+```json
+[
+  {
+    "id": 281,
+    "status": "completed",
+    "resources": {
+      "cpus": 1,
+      "disk": 10,
+      "memory": 1,
+      "nodes": 1,
+      "walltime": 720
+    },
+    "tasks": [
+      {
+        "image": "alahiff/testpi",
+        "runtime": "singularity"
+      }
+    ],
+    "events": {
+      "createTime": "2019-06-18T09:41:57",
+      "startTime": "2019-06-18T09:44:41",
+      "endTime": "2019-06-18T09:45:06"
+    },
+    "execution": {
+      "site": "OpenStack-STFC",
+      "tasks": [
+        {
+          "exitCode": 0,
+          "imagePullTime": 22.73,
+          "wallTimeUsage": 0.6311,
+          "cpuTimeUsage": 0.504
+        }
+      ]
+    }
+  }
+]
+```
