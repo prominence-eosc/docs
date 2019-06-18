@@ -72,6 +72,7 @@ The JSON descriptions of completed jobs contain additional information. For a su
 * __createTime__: date & time when the job was created by the user.
 * __startTime__: date & time when the job started running.
 * __endTime__: date & time when the job ended.
+
 The following information is also provided for each task:
 * __site__: the site where the job was executed.
 * __exitCode__: the exit code returned by the user's job. This would usually would be 0 for success.
