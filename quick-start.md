@@ -32,7 +32,7 @@ Now obtain a token in order to be able to authenticate with PROMINENCE:
 ```
 $ prominence login
 ```
-Here you will be asked to go to a web page provided by the OIDC server. After logging in you will need to enter the provided device code. One this is done `Authentication successful` will appear. The tokens are short-lived: they currently expire after 1 hour.
+Here you will be asked to go to a web page provided by the OIDC server. After logging in you will need to enter the provided device code. One this is done `Successfully retrieved token` will appear. The tokens are short-lived: they currently expire after 1 hour.
 
 You are now ready to use PROMINENCE.
 
