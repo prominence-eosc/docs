@@ -64,4 +64,4 @@ client = ProminenceClient()
 id = client.create_job(job)
 print('Job submitted with id', id)
 ```
-See https://github.com/prominence-eosc/examples/blob/master/ospray-streamlines-demo.ipynb for the complete notebook for this job, including displaying the output rendered image.
+See [here](https://github.com/prominence-eosc/examples/blob/master/ospray-streamlines-demo.ipynb) for the complete notebook for this job, including displaying the output rendered image.
