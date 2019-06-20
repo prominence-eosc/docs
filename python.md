@@ -28,7 +28,7 @@ resources = {'cpus':1,
 task = {'iamge':'busybox',
         'cmd':'echo Hello'}
 
-# Create a job
+# Define a job
 job = {'name':'Test Job',
        'resources':resources,
        'tasks':[task]}
