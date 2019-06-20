@@ -19,6 +19,8 @@ Set the two required environment variables:
 %env PROMINENCE_URL=https://prominence.local/prominence/v1
 %env PROMINENCE_OIDC_URL=https://prominence.local
 ```
+Here "prominence.local" should be replaced as appropriate.
+
 Import the required modules:
 ```python
 from prominence import auth
