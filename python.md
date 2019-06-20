@@ -38,3 +38,50 @@ client = ProminenceClient()
 id = client.create_job(job)
 print('Job submitted with id', id)
 ```
+
+## Listing jobs
+Here are some common examples:
+```python
+from __future__ import print_function
+from prominence import ProminenceClient
+
+client = ProminenceClient()
+
+# List currently active jobs
+print(client.list_jobs())
+
+# List last completed job
+print(client.list_jobs(completed=True))
+
+# List the last 4 completed jobs
+print(client.list_jobs(completed=True, num=4))
+
+# List all jobs with label app=hello
+print(client.list_jobs(all=True, constraint='app=hello'))
+```
+
+## Job descriptions
+Job descriptions can easily be obtained using `describe_job`, for example:
+```python
+from __future__ import print_function
+from prominence import ProminenceClient
+
+client = ProminenceClient()
+
+# Get a job description
+job = client.describe_job(387)
+print('Job status is', job['status'])
+```
+
+## Standard output and error
+The standard output and error from a job can be obtained using `stdout_job` and `stderr_job`, for example:
+```python
+from __future__ import print_function
+from prominence import ProminenceClient
+
+client = ProminenceClient()
+
+# Get the stdout from a job
+print(client.stdout_job(387))
+```
+
