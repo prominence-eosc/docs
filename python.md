@@ -25,7 +25,7 @@ resources = {'cpus':1,
              'nodes':1}
 
 # Define a task
-task = {'iamge':'busybox',
+task = {'image':'busybox',
         'cmd':'echo Hello'}
 
 # Define a job
