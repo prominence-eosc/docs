@@ -19,19 +19,25 @@ from prominence import ProminenceClient
 client = ProminenceClient()
 
 # Specify the required resources
-resources = {'cpus':1,
-             'memory':1,
-             'disk':10,
-             'nodes':1}
+resources = {
+    'cpus': 1,
+    'memory': 1,
+    'disk': 10,
+    'nodes': 1
+}
 
 # Define a task
-task = {'image':'busybox',
-        'cmd':'echo Hello'}
+task = {
+    'image': 'busybox',
+    'cmd': 'echo Hello'
+}
 
 # Define a job
-job = {'name':'Test Job',
-       'resources':resources,
-       'tasks':[task]}
+job = {
+    'name':'Test Job',
+    'resources': resources,
+    'tasks': [task]
+}
 
 # Submit the job
 client = ProminenceClient()
