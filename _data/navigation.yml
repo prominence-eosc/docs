@@ -59,6 +59,8 @@ docs:
         url: /example-jobs
       - title: "Python"
         url: /python
+      - title: "Notebooks"
+        url: /notebooks
 
   - title: Workflows
     children:
