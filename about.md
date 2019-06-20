@@ -15,7 +15,7 @@ PROMINENCE makes use of open-source technology including:
 * [HTCondor](http://research.cs.wisc.edu/htcondor/)
 * [Open Policy Agent](https://www.openpolicyagent.org/)
 * [BeeGFS](https://www.beegfs.io)
-* [SQLite](https://www.sqlite.org/index.html)
+* [PostgreSQL](https://www.postgresql.org/)
 * [Flask](http://flask.pocoo.org/)
 * [uWSGI](https://uwsgi-docs.readthedocs.io/en/latest/index.html)
 * [NGINX](https://nginx.org/)
