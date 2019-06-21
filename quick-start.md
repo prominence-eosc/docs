@@ -48,7 +48,7 @@ $ prominence list
 ID      NAME   CREATED               STATUS      ELAPSED      IMAGE             CMD       
 22071          2019-05-23T12:13:59   deploying                docker/whalesay   cowsay boo
 ```
-The job will initially be in the *idle* state then will progress through the *deploying*, *ready*, and *running* states, and finally end up in the *completed* state.
+The job will initially be in the *created* state then will progress through the *deploying*, *idle*, and *running* states, and finally end up in the *completed* state.
 If the job is no longer visible from `prominence list` it means that the job has completed. In this case the command `prominence list --completed` will enable the job status to be seen.
 
 Once the job has finished running you can look at the job's standard output:
