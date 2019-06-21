@@ -35,15 +35,19 @@ As usual, you will be asked to visit a web page in your browser to authenticate.
 Contruct the JSON job description. In this example we use OSPRay to render an image:
 ```python
 # Required resources
-resources = {'cpus':16,
-             'memory':16,
-             'disk':10,
-             'nodes':1}
+resources = {
+    'cpus': 16,
+    'memory': 16,
+    'disk': 10,
+    'nodes': 1
+}
 
 # Define a task
-task = {'image':'alahiff/ospray',
-        'runtime':'singularity',
-        'cmd':'/opt/ospray-1.7.1.x86_64.linux/bin/ospBenchmark --file NASA-B-field-sun.osx --renderer scivis -hd --filmic -sg:spp=8 -i NASA'}
+task = {
+    'image': 'alahiff/ospray',
+    'runtime': 'singularity',
+    'cmd': '/opt/ospray-1.7.1.x86_64.linux/bin/ospBenchmark --file NASA-B-field-sun.osx --renderer scivis -hd --filmic -sg:spp=8 -i NASA'
+}
 
 # Output files
 output_files = ['NASA.ppm']
@@ -52,11 +56,13 @@ output_files = ['NASA.ppm']
 artifact = {'url':'http://www.sdvis.org/ospray/download/demos/NASA-B-field-sun/NASA-B-field-sun.osx'}
 
 # Create a job
-job = {'name':'NASAstreamlines',
-       'resources':resources,
-       'outputFiles':output_files,
-       'artifacts':[artifact],
-       'tasks':[task]}
+job = {
+    'name': 'NASAstreamlines',
+    'resources': resources,
+    'outputFiles': output_files,
+    'artifacts': [artifact],
+    'tasks': [task]
+}
 ```
 Now submit the job:
 ```python
