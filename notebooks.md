@@ -32,7 +32,7 @@ client.authenticate_user()
 ```
 As usual, you will be asked to visit a web page in your browser to authenticate.
 
-Contruct the JSON job description. In this example we use OSPRay to render an image:
+Construct the JSON job description. In this example we use OSPRay to render an image:
 ```python
 # Required resources
 resources = {
