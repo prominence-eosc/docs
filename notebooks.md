@@ -17,9 +17,9 @@ Firstly install the PROMINENCE CLI:
 Set the two required environment variables:
 ```
 %env PROMINENCE_URL=https://<prominence-server>/prominence/v1
-%env PROMINENCE_OIDC_URL=https://<prominence-oidc>
+%env PROMINENCE_OIDC_URL=https://<prominence-oidc-server>
 ```
-Here `<prominence-server>` and `<prominence-oidc>` should be replaced as appropriate.
+Here `<prominence-server>` and `<prominence-oidc-server>` should be replaced as appropriate.
 
 Import the required module:
 ```python
