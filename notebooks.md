@@ -21,11 +21,11 @@ Set the two required environment variables:
 ```
 Here "prominence.local" should be replaced as appropriate.
 
-Import the required modules:
+Import the required module:
 ```python
 from prominence import ProminenceClient
 ```
-Obtain a token:
+Instantiate the PROMINENCE Client class, and obtain a token:
 ```python
 client = ProminenceClient()
 client.authenticate_user()
