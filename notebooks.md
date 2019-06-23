@@ -23,12 +23,12 @@ Here "prominence.local" should be replaced as appropriate.
 
 Import the required modules:
 ```python
-from prominence import auth
 from prominence import ProminenceClient
 ```
 Obtain a token:
 ```python
-auth.authenticate_user()
+client = ProminenceClient()
+client.authenticate_user()
 ```
 As usual, you will be asked to visit a web page in your browser to authenticate.
 
@@ -66,7 +66,6 @@ job = {
 ```
 Now submit the job:
 ```python
-client = ProminenceClient()
 id = client.create_job(job)
 print('Job submitted with id', id)
 ```
