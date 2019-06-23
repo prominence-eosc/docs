@@ -7,7 +7,7 @@ sidebar:
   nav: "docs"
 ---
 
-Since all interaction with PROMINENCE is via a REST API it is straightforward to use PROMINENCE from a Jupyter notebook. See [here](/docs/python) for more information on using PROMINENCE from Python.
+Since all interaction with PROMINENCE is via a REST API it is straightforward to use PROMINENCE from any Jupyter notebook. See [here](/docs/python) for more information on using PROMINENCE from Python.
 
 ## Simple example
 Firstly install the PROMINENCE CLI:
