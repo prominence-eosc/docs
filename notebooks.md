@@ -19,7 +19,7 @@ Set the two required environment variables:
 %env PROMINENCE_URL=https://<prominence-server>/prominence/v1
 %env PROMINENCE_OIDC_URL=https://<prominence-oidc>
 ```
-Here "<prominence-sever>" and "<prominence-oidc>" should be replaced as appropriate.
+Here `<prominence-sever>` and `<prominence-oidc>` should be replaced as appropriate.
 
 Import the required module:
 ```python
