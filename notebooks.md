@@ -7,7 +7,7 @@ sidebar:
   nav: "docs"
 ---
 
-Since all interaction with PROMINENCE is via a REST API it is straightforward to use PROMINENCE from a Jupyter notebook. See [here](/docs/python) for more information on using PROMINENCE from Python.
+Since all interaction with PROMINENCE is via a REST API it is straightforward to use PROMINENCE from any Jupyter notebook. See [here](/docs/python) for more information on using PROMINENCE from Python.
 
 ## Simple example
 Firstly install the PROMINENCE CLI:
@@ -16,23 +16,23 @@ Firstly install the PROMINENCE CLI:
 ```
 Set the two required environment variables:
 ```
-%env PROMINENCE_URL=https://prominence.local/prominence/v1
-%env PROMINENCE_OIDC_URL=https://prominence.local
+%env PROMINENCE_URL=https://<prominence-server>/prominence/v1
+%env PROMINENCE_OIDC_URL=https://<prominence-oidc-server>
 ```
-Here "prominence.local" should be replaced as appropriate.
+Here `<prominence-server>` and `<prominence-oidc-server>` should be replaced as appropriate.
 
-Import the required modules:
+Import the required module:
 ```python
-from prominence import auth
 from prominence import ProminenceClient
 ```
-Obtain a token:
+Instantiate the PROMINENCE Client class, and obtain a token:
 ```python
-auth.authenticate_user()
+client = ProminenceClient()
+client.authenticate_user()
 ```
-As usual, you will be asked to visit a web page in your browser to authenticate.
+As usual, you will be asked to visit a web page in your browser to authenticate. Note that the token retrieved is stored in memory and is not written to disk. If the token expires you will need to re-run `client.authenticate_user()`.
 
-Contruct the JSON job description. In this example we use OSPRay to render an image:
+Construct the JSON job description. In this example we use OSPRay to render an image:
 ```python
 # Required resources
 resources = {
@@ -66,7 +66,6 @@ job = {
 ```
 Now submit the job:
 ```python
-client = ProminenceClient()
 id = client.create_job(job)
 print('Job submitted with id', id)
 ```
