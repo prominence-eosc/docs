@@ -10,7 +10,7 @@ sidebar:
 There are currently several options to access data in PROMINENCE, and more are under development.
 
 ## Cloud storage
-Here we make use of central Ceph-based storage using the Swift API. Users can upload data which can be accessed by jobs (including container images), and output files from jobs can be copied to the storage. Note that data cannot be accessed as though it were in a normal filesystem: input data is staged-in before the job starts and output data is staged-out once the job has finished. PROMINENCE is able to provide temporary URLs to access the data.
+Here we make use of central Ceph-based storage using the S3 API. Users can upload data which can be accessed by jobs (including container images), and output files from jobs can be copied to the storage. Note that data cannot be accessed as though it were in a normal filesystem: input data is staged-in before the job starts and output data is staged-out once the job has finished. PROMINENCE is able to provide presigned URLs to access the data.
 
 ![Stage-in & stage-out of data](prominence-storage-cloud.png)
 
