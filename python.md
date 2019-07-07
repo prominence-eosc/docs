@@ -16,8 +16,6 @@ Here is a simple example submitting a single job:
 from __future__ import print_function
 from prominence import ProminenceClient
 
-client = ProminenceClient()
-
 # Specify the required resources
 resources = {
     'cpus': 1,
