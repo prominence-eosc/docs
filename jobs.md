@@ -29,3 +29,8 @@ An example workflow, including how it is made up of jobs and tasks, is shown bel
 
 ![Tasks and jobs within a workflow](prominence-tasks-jobs-workflows.png)
 
+## Environment variables available to jobs
+The following environment variables will be set by default:
+* PROMINENCE_CPUS: this specifies the number of CPUs available (which could be larger than what was requested)
+* PROMINENCE_MEMORY: this specifies the amount of memory in GB available (which could be larger than what was requested)
+
