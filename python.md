@@ -42,6 +42,7 @@ client = ProminenceClient(authenticated=True)
 id = client.create_job(job)
 print('Job submitted with id', id)
 ```
+Note that the `authenticated=True` means that it is assumed that retrieval of a token will be handled externally (e.g. by the CLI), and that the token should be obtained from a file.
 
 ## Listing jobs
 Here are some common examples:
