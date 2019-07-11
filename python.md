@@ -38,7 +38,7 @@ job = {
 }
 
 # Submit the job
-client = ProminenceClient()
+client = ProminenceClient(authenticated=True)
 id = client.create_job(job)
 print('Job submitted with id', id)
 ```
@@ -49,7 +49,7 @@ Here are some common examples:
 from __future__ import print_function
 from prominence import ProminenceClient
 
-client = ProminenceClient()
+client = ProminenceClient(authenticated=True)
 
 # List currently active jobs
 print(client.list_jobs())
@@ -70,7 +70,7 @@ Job descriptions can easily be obtained using `describe_job`, for example:
 from __future__ import print_function
 from prominence import ProminenceClient
 
-client = ProminenceClient()
+client = ProminenceClient(authenticated=True)
 
 # Get a job description
 job = client.describe_job(387)
@@ -83,7 +83,7 @@ The standard output and error from a job can be obtained using `stdout_job` and 
 from __future__ import print_function
 from prominence import ProminenceClient
 
-client = ProminenceClient()
+client = ProminenceClient(authenticated=True)
 
 # Get the stdout from a job
 print(client.stdout_job(387))
