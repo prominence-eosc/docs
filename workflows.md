@@ -11,16 +11,16 @@ sidebar:
 In order to submit a workflow the first step is to write a JSON description of the workflow. This is just a list of the definitions of the individual jobs (which can be created easily using `prominence create --dry-run`, see [here](/docs/generating-json)) along with the dependencies between them. Each dependency defines a parent and its children. The basic structure is:
 ```json
 {
-  "name":"test-workflow-1",
-  "jobs":[
+  "name": "test-workflow-1",
+  "jobs": [
     {...},
     {...}
   ],
-  "dependencies":{
-    "parent_job":["child_job_1", ...],
+  "dependencies": {
+    "parent_job": ["child_job_1", ...],
     ...
   }, 
-  "numberOfRetries":1
+  "numberOfRetries": 1
 }
 ```
 Each of the individual jobs must have defined names as these are used in order to define the dependencies. Unlike [CWL](https://www.commonwl.org/) or [WDL](https://github.com/openwdl/wdl) dependencies need to be defined explicitly rather than being based on input and output files.
