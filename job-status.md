@@ -84,6 +84,7 @@ The JSON descriptions of completed jobs contain additional information. This may
 * __site__: the site where the job was executed.
 
 The following information is also provided for each task:
+* __retries__: the number of retries attempted.
 * __exitCode__: the exit code returned by the user's job. This would usually would be 0 for success.
 * __imagePullTime__: time taken to pull the container image. If a cached image from a previous task was used this will be -1.
 * __wallTimeUsage__: wall time used by the task.
@@ -119,6 +120,7 @@ For example:
       "tasks": [
         {
           "exitCode": 0,
+          "retries": 0,
           "imagePullTime": 22.73,
           "wallTimeUsage": 0.6311,
           "cpuTimeUsage": 0.504
