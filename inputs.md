@@ -29,7 +29,7 @@ Archives with filenames ending in the following are automatically unpacked:
 * .zip
 
 ## Input files
-Users can upload data to the central Ceph-based storage which can be staged-in to jobs.
+Users can upload data to the object storage which can be staged-in to jobs.
 
 ### Uploading input files
 Users can upload input files (including container images) using the `upload` command. The path of the file to be uploaded needs to be specified in addition to a reference name for the file which will be used later in order to access the file.
@@ -47,10 +47,18 @@ For the case of input files, include an artifact using the name specified when t
 prominence upload --name input.txt --filename input.txt
 prominence create --artifact input.txt busybox "cat input.txt"
 ```
-Any such input files will be automatically copied from Ceph storage before the job starts running.
+Any such input files will be automatically copied from object storage before the job starts running.
 
 For the case of a container image, define the image name using the name specified when the image was uploaded, e.g.
 ```
 prominence upload --name myimage.sif --filename myimage.sif
 prominence create myimage.sif
 ```
+
+### Listing files which have been uploaded
+There is an `ls` command which enables files which have been uploaded to be listed:
+```
+prominence ls -l
+```
+The `-l` option results in object sizes and last modification dates being listed in addition to object names.
+
