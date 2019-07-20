@@ -55,6 +55,9 @@ prominence upload --name myimage.sif --filename myimage.sif
 prominence create myimage.sif
 ```
 
+**Note:** The existence of input files and container images on object storage is checked upon job submission. Job submission will fail and an error will be returned if an input file or container image does not exist.
+{: .notice--info}
+
 ### Listing files which have been uploaded
 There is an `ls` command which enables files which have been uploaded to be listed:
 ```
