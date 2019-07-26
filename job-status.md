@@ -82,6 +82,7 @@ The JSON descriptions of completed jobs contain additional information. This may
 * __startTime__: date & time when the job started running.
 * __endTime__: date & time when the job ended.
 * __site__: the site where the job was executed.
+* __maxMemoryUsageKB__: the maximum total memory usage of the job, summed over all processes (note this is not available for jobs running on remote HTC or HPC resources)
 
 The following information is also provided for each task:
 * __retries__: the number of retries attempted.
@@ -89,6 +90,7 @@ The following information is also provided for each task:
 * __imagePullTime__: time taken to pull the container image. If a cached image from a previous task was used this will be -1.
 * __wallTimeUsage__: wall time used by the task.
 * __cpuTimeUsage__: CPU time usage by the task. For a task using multiple CPUs this will be larger than the wall time.
+* __maxResidentSetSizeKB__: maximum resident size (in KB) of the largest process
 
 
 For example:
