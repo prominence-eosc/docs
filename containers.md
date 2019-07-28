@@ -38,6 +38,7 @@ Some important tips for creating containers to be used with PROMINENCE:
 * Do not specify USER in your Dockerfile when creating the container image
 * The environment variables HOME, TMP and TEMP will be set to a scratch directory visible inside the container when the container is executed. For the case of multi-node MPI jobs this scratch directory is accessible across all nodes running the job.
 * Do not expect to be able to write inside the container's filesystem. Write any files into the default current working directory, or into the directory specified by the environment variables HOME, TMP and TEMP.
+* The application should be able to be run from within any directory and access any required input or output files using relative paths.
 
 ### MPI jobs
 Some are some additional requirements on the container images for MPI jobs:
