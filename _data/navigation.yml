@@ -64,8 +64,10 @@ docs:
 
   - title: Workflows
     children:
-      - title: "Defining workflows"
-        url: /defining-workflows
+      - title: "Workflows"
+        url: /workflows
+      - title: "Directed acyclic graphs"
+        url: /dags
 
 docsa:
   - title: Service deployment
