@@ -10,7 +10,7 @@ sidebar:
 Currently there are the following types of job factories:
 * parameteric sweep: a set of jobs is created by substituting a range of values into a template
 
-Each will be describe below.
+Each will be described below.
 
 ## Parametric sweep
 A et of jobs is created by substituting a range of values into a template job. Substitutions can be made in the command to be executed or the values obtained using environment variables. Here's an example fragment which would need to be included in a workflow description:
