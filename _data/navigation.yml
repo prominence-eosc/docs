@@ -68,6 +68,8 @@ docs:
         url: /workflows
       - title: "Directed acyclic graphs"
         url: /dags
+      - title: "Job factories"
+        url: /job-factories
 
 docsa:
   - title: Service deployment
