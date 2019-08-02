@@ -10,7 +10,11 @@ sidebar:
 Currently there are the following types of job factories:
 * parameteric sweep: a set of jobs is created by substituting a range of values into a template
 
-Each will be described below.
+When a workflow using job factory is submitted to PROMINENCE individual jobs will automatically be created.
+**Note:** Not all jobs will be created immediately as there is a limit to the number of idle jobs that can exist for any individual workflow. The remaining jobs will be created as the idle jobs start running.
+{: .notice--info}
+
+When listing jobs, the job names will be of the form `<workflow name>/<job name>/<id>` where `<id>` is an integer.
 
 ## Parametric sweep
 A et of jobs is created by substituting a range of values into a template job. Substitutions can be made in the command to be executed or the values obtained using environment variables. Here's an example fragment which would need to be included in a workflow description:
@@ -69,6 +73,4 @@ Here is simple example of a parametric sweep.
   }
 }
 ```
-
-When listing jobs, the job names will be of the form `<workflow name>/<job name>/<id>` where `<id>` is an integer.
 
