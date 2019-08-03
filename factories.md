@@ -7,8 +7,8 @@ sidebar:
   nav: "docs"
 ---
 
-Currently there are the following types of job factories:
-* **parameteric sweep**: a set of jobs is created by substituting a range of values into a template
+Currently the following types of job factories are available:
+* **parametric sweep**: a set of jobs is created by substituting a range of values into a template
 
 When a workflow using job factory is submitted to PROMINENCE individual jobs will automatically be created. The job names will be of the form `<workflow name>/<job name>/<id>` where `<id>` is an integer.
 
@@ -31,10 +31,10 @@ A set of jobs is created by substituting a range of values into a template job. 
 }
 ```
 Here we specify the factory to be of type `parametericSweep`. The range of values used to create the jobs is defined in `parameterSets`.
-The name of the parameter is given by `name`. In this example the parameter `frame` is varied between the value `start` and `end` in increments of `step`.
+The name of the parameter is given by `name`. In this example the parameter `frame` is varied between the value `start` and at most `end` in increments of `step`.
 
 Jobs can obtain the value of the parameter through the use of substitutions or environment variables.
-If job's command was to include `$frame`, this would be substituted by the appropriate value. An environment variable `PROMINENCE_PARAMETER_frame`
+If job's command was to include `$frame` or `${frame}`, this would be substituted by the appropriate value. An environment variable `PROMINENCE_PARAMETER_frame`
 would also be available to the job containing this value.
 
 Here is simple example of a parametric sweep.
