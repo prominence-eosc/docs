@@ -8,7 +8,7 @@ sidebar:
 ---
 
 Currently there are the following types of job factories:
-* parameteric sweep: a set of jobs is created by substituting a range of values into a template
+* **parameteric sweep**: a set of jobs is created by substituting a range of values into a template
 
 When a workflow using job factory is submitted to PROMINENCE individual jobs will automatically be created. The job names will be of the form `<workflow name>/<job name>/<id>` where `<id>` is an integer.
 
