@@ -26,8 +26,6 @@ docs:
         url: /installation
       - title: "Help"
         url: /help
-      - title: "Setup"
-        url: /setup
       - title: "Authentication"
         url: /authentication
       - title: "Accessing data"
