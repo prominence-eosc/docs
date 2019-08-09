@@ -19,6 +19,10 @@ It is possible to specify a constraint when using the `list` command. For exampl
 ```
 prominence list --constraint experiment=MASTU
 ```
+To list all jobs, i.e. both active and completed jobs, with a specific label:
+```
+prominence list --constraint experiment=MASTU --all
+```
 
 It is also possible to download the output files from all jobs which satisfy a particular constraint, for example:
 ```
