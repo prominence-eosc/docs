@@ -66,6 +66,8 @@ docs:
     children:
       - title: "Workflows"
         url: /workflows
+      - title: "Groups of jobs"
+        url: /groups-of-jobs
       - title: "Directed acyclic graphs"
         url: /dags
       - title: "Job factories"
