@@ -10,11 +10,11 @@ sidebar:
 A job in PROMINENCE consists of the following:
 * Name
 * Labels
-* Input files and artifacts
-* Required resources (e.g. CPU cores, memory)
+* Input files
 * Output files
-* Storage details (e.g. mounting B2DROP or OneData)
+* Required resources (e.g. CPU cores, memory, disk)
 * One or more task definitions
+* Policies (e.g. how many times should failing tasks should be retried)
 
 Tasks execute sequentially within a job, and consist of the following:
 * Container image
@@ -23,7 +23,7 @@ Tasks execute sequentially within a job, and consist of the following:
 * Environment variables
 * Working directory
 
-A workflow consists of one or more jobs and the dependencies between them. Jobs within a workflow can be executed sequentially, in parallel or combinations of both.
+A workflow consists of one or more jobs and any dependencies between them. Jobs within a workflow can be executed sequentially, in parallel or combinations of both.
 
 An example workflow, including how it is made up of jobs and tasks, is shown below:
 
@@ -31,6 +31,6 @@ An example workflow, including how it is made up of jobs and tasks, is shown bel
 
 ## Environment variables available to jobs
 The following environment variables will be set by default:
-* PROMINENCE_CPUS: this specifies the number of CPUs available (which could be larger than what was requested)
-* PROMINENCE_MEMORY: this specifies the amount of memory in GB available (which could be larger than what was requested)
-
+* PROMINENCE_CPUS: the number of CPUs available (which could be larger than what was requested)
+* PROMINENCE_MEMORY: the amount of memory in GB available (which could be larger than what was requested)
+* PROMINENCE_CONTAINER_RUNTIME: the container runtime in use
