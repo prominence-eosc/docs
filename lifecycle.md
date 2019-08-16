@@ -12,6 +12,12 @@ The state diagram below shows the possible job states.
 ![Job lifecycle](job-states.png)
 
 List of all possible job states:
+`CREATED`<br/>
+the job is not yet running and has not yet been considered for deployment.
+
+`DEPLOYING`<br/>
+The infrastructure to run the job is being deployed.
+
 * __created__: the job is not yet running and has not yet been considered for deployment.
 * __deploying__: the infrastructure to run the job is being deployed.
 * __idle__: the job is not yet runnng because the infrastructure has been deployed but has not yet been fully contextualized.
