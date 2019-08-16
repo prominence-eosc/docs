@@ -6,6 +6,9 @@ permalink: /quick-start
 sidebar:
   nav: "docs"
 ---
+
+## First steps
+
 Here we demonstrate a quick way to start using PROMINENCE with the command line interface. We assume the user wants to run PROMINENCE on a host on which they do not have root access. For more installation options, see [here](/docs/installation).
 
 
@@ -70,3 +73,14 @@ $ prominence stdout 22071
           \____\______/   
 
 ```
+
+## Next steps
+
+### Running individual jobs
+
+### Running a group of jobs without dependencies
+
+### Running a group of jobs with dependencies
+
+### Performing a parameter sweep
+
