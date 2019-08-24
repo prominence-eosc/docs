@@ -27,8 +27,10 @@ Each of the individual jobs must have defined names as these are used in order t
 
 It is important to note that the resources requirements for the individual jobs can be (and should be!) specified. This will mean that each step in a workflow will only use the resources it requires. Jobs within a single workflow can of course request very different resources, which makes it possible for workflows to have both HTC and HPC steps.
 
-By default the number of retries is zero, which means that if a job fails the workflow will fail. If the number of retries is set to one
- or more, if an individual job fails (i.e. exit code is not 0) it will be retried up to the specified number of times.
+By default the number of retries is zero, which means that if a job fails the workflow will fail. Any jobs which depend on a failed
+job will not be attempted.
+If the number of retries is set to one
+or more, if an individual job fails (i.e. exit code is not 0) it will be retried up to the specified number of times.
 
 ## Examples
 It is worthwhile to look at some simple examples in order to understand how to define workflows.
