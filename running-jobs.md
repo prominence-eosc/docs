@@ -31,13 +31,14 @@ prominence create centos:7 "/bin/bash -c \"date; sleep 10; date\""
 This is of course assuming `/bin/bash` exists inside the container image.
 
 ## MPI jobs
-To run an MPI job, you need to specify either `--openmpi` for Open MPI or `--mpich` for MPICH. For multi-node jobs the number of nodes required should also be specified. For example:
+To run an MPI job, you need to specify either `--openmpi` for Open MPI, `--intelmpi` for Intel MPI and `--mpich` for MPICH. For multi-node jobs the number of nodes required should also be specified. For example:
 ```
 prominence create --openmpi --nodes 4 alahiff/openmpi-hello-world:latest /mpi_hello_world
 ```
-The number of processes to run per node is assumed to be the same as the number of cores requested per node. This behaviour can be changed by using `--procs-per-node` to define the number of processes per node to use.
+The number of processes to run per node is assumed to be the same as the number of cores available per node. If the number of cores available per node is more than the requested number of cores all cores will be used.
+This behaviour can be changed by using `--procs-per-node` to define the number of processes per node to use.
 
-**Note:** Currently `--procs-per-node` is only supported for Open MPI jobs.
+**Note:** Currently `--procs-per-node` is not supported for MPICH jobs.
 {: .notice--warning}
 
 Unlike single-node jobs, a command to run (and optionally any arguments) must be specified. If an entrypoint is defined in the container image it will be ignored.
