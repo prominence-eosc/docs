@@ -26,7 +26,7 @@ All jobs are run in containers to ensure they will can run reliably anywhere and
 
 <img width="60" height="60" src="prominence-multi-node.png" hspace="20">
 **MPI ready**<br/>
-Run multi-node Open MPI or MPICH jobs in addition to single-node HTC jobs.
+Run multi-node Open MPI, Intel MPI or MPICH jobs in addition to single-node HTC jobs.
 <br/>
 <br/>
 
