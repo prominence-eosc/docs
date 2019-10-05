@@ -17,9 +17,6 @@ Here we make use of central Ceph-based storage using the S3 API. Users can uploa
 ## POSIX-like access to data
 It is possible for jobs to access data in a POSIX-like way, i.e. like a filesystem. Users can specify the mountpoint to be used inside the container.
 
-**Note**: Currently this is only possible using the udocker container runtime.
-{: .notice--warning}
-
 ### B2DROP
 In order to mount your B2DROP storage in jobs firstly an app username and password needs to be created. This can be done by going to [https://b2drop.eudat.eu/settings/user/security](https://b2drop.eudat.eu/settings/user/security) and clicking *Create new app password*.
 
