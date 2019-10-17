@@ -37,7 +37,34 @@ Jobs can obtain the value of the parameter through the use of substitutions or e
 If job's command was to include `$frame` or `${frame}`, this would be substituted by the appropriate value. An environment variable `PROMINENCE_PARAMETER_frame`
 would also be available to the job containing this value.
 
-Here is simple example of a parametric sweep.
+Additional `parameterSets` can be included in order to carry out multi-dimensional parameter sweeps. For example:
+```json
+"factory": {
+  "type": "parametricSweep",
+  "parameterSets":[
+    {
+      "name": "x",
+      "start": 1,
+      "end": 4,
+      "step": 3
+    },
+    {
+      "name": "y",
+      "start": 2,
+      "end": 5,
+      "step": 4
+    },
+    {
+      "name": "z",
+      "start": 3,
+      "end": 6,
+      "step": 4
+    }
+ ]
+}
+```
+
+Here is simple complete example of a 1D parametric sweep job:
 ```
 {
   "name": "ps-workflow",
