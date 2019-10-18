@@ -63,6 +63,7 @@ Additional `parameterSets` can be included in order to carry out multi-dimension
  ]
 }
 ```
+For a multi-dimensional parameter sweep the name of each parameter set must be unique.
 
 Here is simple complete example of a 1D parametric sweep job:
 ```
