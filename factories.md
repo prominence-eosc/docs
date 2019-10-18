@@ -34,7 +34,7 @@ Here we specify the factory to be of type `parametericSweep`. The range of value
 The name of the parameter is given by `name`. In this example the parameter `frame` is varied between the value `start` and at most `end` in increments of `step`.
 
 Jobs can obtain the value of the parameter through the use of substitutions or environment variables.
-If job's command was to include `$frame` or `${frame}`, this would be substituted by the appropriate value. An environment variable `PROMINENCE_PARAMETER_frame`
+If a job's command was to include `$frame` or `${frame}`, this would be substituted by the appropriate value. An environment variable `PROMINENCE_PARAMETER_frame`
 would also be available to the job containing this value.
 
 Additional `parameterSets` can be included in order to carry out multi-dimensional parameter sweeps. For example:
