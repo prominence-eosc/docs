@@ -50,5 +50,5 @@ All infrastructure provisioning is handled completely automatically and is total
 
 <img width="60" height="60" src="prominence-storage.png" hspace="20">
 **Data access**<br/>
-Data can be staged-in and staged-out from S3 object storage. Alternatively, from Jobs can access data from external storage like [B2DROP](https://b2drop.eudat.eu) or [OneData](https://onedata.org) via a POSIX-like filesystem.
+Data can be staged-in and staged-out from S3 object storage. Alternatively, jobs can access data from external storage like [B2DROP](https://b2drop.eudat.eu) or [OneData](https://onedata.org) via a POSIX-like filesystem.
 
