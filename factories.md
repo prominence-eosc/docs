@@ -46,19 +46,19 @@ Additional `parameterSets` can be included in order to carry out multi-dimension
       "name": "x",
       "start": 1,
       "end": 4,
-      "step": 3
+      "step": 1
     },
     {
       "name": "y",
       "start": 2,
       "end": 5,
-      "step": 4
+      "step": 1
     },
     {
       "name": "z",
       "start": 3,
       "end": 6,
-      "step": 4
+      "step": 0.5
     }
  ]
 }
