@@ -25,4 +25,7 @@ The standard output and error from a job which is part of a workflow can be view
 ```
 prominence stdout <id> <job name>
 ```
-
+To list all the individual jobs from workflow `<id>`:
+```
+prominence list jobs <id>
+```
