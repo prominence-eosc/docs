@@ -8,8 +8,10 @@ sidebar:
 ---
 
 Currently the following types of job factories are available:
-* **parametric sweep**: a set of jobs is created by substituting a range of values into a parameter
+* **parametric sweep**: a set of jobs is created by substituting a range of values
 * **zip**: a set of jobs is created from multiple lists, where the i-th job contains the i-th element from each list
+
+A set of jobs is created by substituting a range of values into a template job. Substitutions can be made in the command to be executed or the values obtained using environment variables.
 
 When a workflow using job factory is submitted to PROMINENCE individual jobs will automatically be created. The job names will be of the form `<workflow name>/<job name>/<id>` where `<id>` is an integer.
 
@@ -17,7 +19,9 @@ When a workflow using job factory is submitted to PROMINENCE individual jobs wil
 {: .notice--info}
 
 ## Parametric sweep
-A set of jobs is created by substituting a range of values into a template job. Substitutions can be made in the command to be executed or the values obtained using environment variables. Here's an example fragment which would need to be included in a workflow description:
+In this case numeric values are generated from start and end points provided by the user.
+
+Here is an example fragment which would need to be included in a workflow description:
 ```json
 "factory": {
   "type": "parametricSweep",
