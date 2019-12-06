@@ -9,7 +9,7 @@ sidebar:
 
 There are several types of workflows available in PROMINENCE.
 
-## Bags of jobs
+## Groups of jobs
 A workflow can consist of a group of independent jobs. Unlike directed acyclic graphs (below), there are no dependencies between the jobs.
 
 ## Directed acyclic graphs
