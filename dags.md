@@ -19,8 +19,7 @@ In order to submit a workflow the first step is to write a JSON description of t
   "dependencies": {
     "parent_job": ["child_job_1", ...],
     ...
-  }, 
-  "numberOfRetries": 1
+  }
 }
 ```
 Each of the individual jobs must have defined names as these are used in order to define the dependencies. Unlike [CWL](https://www.commonwl.org/) or [WDL](https://github.com/openwdl/wdl) dependencies need to be defined explicitly rather than being based on input and output files.
@@ -31,6 +30,12 @@ By default the number of retries is zero, which means that if a job fails the wo
 job will not be attempted.
 If the number of retries is set to one
 or more, if an individual job fails (i.e. exit code is not 0) it will be retried up to the specified number of times.
+To set a maximum numbver of retries, include `maximumRetries` in the workflow definition, e.g.
+```json
+"policies": {
+  "maximumRetries": 2
+}
+```
 
 ## Examples
 It is worthwhile to look at some simple examples in order to understand how to define workflows.
