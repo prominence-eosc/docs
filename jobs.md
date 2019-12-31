@@ -39,4 +39,4 @@ An example workflow, including how it is made up of jobs and tasks, is shown bel
 The following environment variables will be set by default:
 * PROMINENCE_CPUS: the number of CPUs available (which could be larger than what was requested)
 * PROMINENCE_MEMORY: the amount of memory in GB available (which could be larger than what was requested)
-* PROMINENCE_CONTAINER_RUNTIME: the container runtime in use, either SINGULARITY or UDOCKER
+* PROMINENCE_CONTAINER_RUNTIME: the container runtime in use, either `singularity` or `udocker`
