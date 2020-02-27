@@ -12,7 +12,7 @@ sidebar:
 There are several types of workflows available in PROMINENCE.
 
 ### Groups of jobs
-A workflow can consist of a group of independent jobs. Unlike directed acyclic graphs (below), there are no dependencies between the jobs.
+A workflow can consist of a group of independent jobs. Unlike directed acyclic graphs (below), there are no dependencies between the jobs. Running a group of jobs in this way allows them to be more easily managed than submitting a group of jobs independently.
 
 ### Directed acyclic graphs
 A directed acyclic graph (DAG) is a collection of all the jobs you want to run organised in a way that reflects their dependencies.
