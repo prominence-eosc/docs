@@ -11,28 +11,3 @@ PROMINENCE was a Science Demonstrator in [EOSCpilot](https://eoscpilot.eu/). The
 
 PROMINENCE is available on [GitHub](https://github.com/prominence-eosc).
 
-PROMINENCE makes use of open-source technology including:
-* [Infrastructure Manager](https://www.grycap.upv.es/im/index.php)
-* [Ansible](https://www.ansible.com/)
-* [HTCondor](http://research.cs.wisc.edu/htcondor/)
-* [Open Policy Agent](https://www.openpolicyagent.org/)
-* [BeeGFS](https://www.beegfs.io)
-* [PostgreSQL](https://www.postgresql.org/)
-* [Flask](http://flask.pocoo.org/)
-* [uWSGI](https://uwsgi-docs.readthedocs.io/en/latest/index.html)
-* [NGINX](https://nginx.org/)
-
-Supported container runtimes:
-* [Singularity](https://www.sylabs.io/singularity/)
-* [udocker](https://github.com/indigo-dc/udocker)
-
-Supported storage systems:
-* [B2DROP](https://b2drop.eudat.eu/)
-* [OneData](https://onedata.org/)
-* [Ceph](https://ceph.com/) via the [Swift API](http://docs.ceph.com/docs/master/radosgw/swift/)
-
-Monitoring:
-* [Grafana](https://grafana.com/)
-* [InfluxDB](https://www.influxdata.com/time-series-platform/)
-* [Telegraf](https://www.influxdata.com/time-series-platform/telegraf/)
-
