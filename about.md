@@ -8,8 +8,8 @@ permalink: /about
 PROMINENCE was a Science Demonstrator in [EOSCpilot](https://eoscpilot.eu/). The European Open Science Cloud for Research pilot project was funded by the European Commission, DG Research & Innovation under contract no. 739563. This work is also co-funded by the EOSC-hub project (Horizon 2020) under Grant number 777536.  
 
 <img src="eu-logo.jpeg" width="150">
-<img src="eosc-hub-v-web.png" width="150">
-<img src="eosc-pilot.png" height="165">
+<img src="eosc-pilot.png" height="100">
+<img src="eosc-hub-v-web.png" height="100">
 
 PROMINENCE is available on [GitHub](https://github.com/prominence-eosc).
 
