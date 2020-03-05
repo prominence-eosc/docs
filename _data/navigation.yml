@@ -53,6 +53,8 @@ docs:
         url: /stdout-stderr
       - title: "Deleting a job"
         url: /deleting-jobs
+      - title: "Policies"
+        url: /job-policies
       - title: "Generating JSON"
         url: /generating-json
       - title: "Examples"
