@@ -16,25 +16,32 @@ prominence --help
 
 ```
 usage: prominence [-h] [--version]
-           {login,create,run,list,describe,delete,upload,download,stdout,stderr}
-           ...
+                  {register,login,run,rerun,create,list,describe,delete,exec,snapshot,upload,download,ls,rm,stdout,stderr,usage}
+                  ...
 
-Prominence - run jobs in containers across clouds
+PROMINENCE - run jobs in containers across clouds
 
 positional arguments:
-  {register,login,run,create,list,describe,delete,upload,download,stdout,stderr}
+  {register,login,run,rerun,create,list,describe,delete,exec,snapshot,upload,download,ls,rm,stdout,stderr,usage}
                         sub-command help
     register            Register as a client with the OIDC server
     login               Get a token from the OIDC server
-    create              Create a job or workflow from a JSON file
-    run                 Run a job
+    run                 Create a job or workflow from JSON in a file or URL
+    rerun               Re-run any failed jobs from a completed workflow
+    create              Create a job
     list                List jobs or workflows
     describe            Describe a job or workflow
     delete              Delete a job or workflow
+    exec                Execute a command inside a job
+    snapshot            Create and download a snapshot of a file or directory
+                        in a running job
     upload              Upload a file to transient storage
     download            Download output files from a completed job or workflow
+    ls                  List output files
+    rm                  Delete a file uploaded to object storage
     stdout              Get standard output from a running or completed job
     stderr              Get standard error from a running or completed job
+    usage               Return historical usage information
 
 optional arguments:
   -h, --help            show this help message and exit
