@@ -23,6 +23,9 @@ An image built using Docker can be saved in the Singularity Image Format easily,
 singularity build centos7.sif docker-daemon://centos:7
 ```
 
+**Note:** By default a job (submitted using the PROMINENCE CLI) using an image where the filename ends in `.sif` or `.simg` will be run using the Singularity runtime, and a job using an image where the filename ends in `.tar` will be run using the udocker runtime. The runtime can also be specified using the `--runtime` option to `prominence create`.
+{: .notice--info}
+
 ### Uploading the image
 Using the PROMINENCE CLI the container image can be uploaded to object storage. For example:
 ```
@@ -59,9 +62,9 @@ prominence create --name test \
                   --artifact cadmesh-jet-v1.1.tgz \ 
                   --output output1.nc \
                   --output output2.nc \
-                  centos7.sif "touch output.nc"
+                  centos7.sif "/bin/bash -c \"touch output1.nc ; touch output2.nc\""
 ```
-Alternatively, if job puts all output files into a single directory
+Alternatively, if the job puts all output files into a single directory
 ```
 prominence create --name test \
                   --artifact cadmesh-jet-v1.1.tgz \ 
