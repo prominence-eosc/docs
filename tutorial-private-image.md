@@ -61,6 +61,7 @@ you can submit this directly in one line without any additional preparations:
 ```
 prominence create --input data.txt --input test.py python:3 "python3 test.py"
 ```
+This simple example also demonstrates that input files are placed into the current working directory inside the container.
 
 It is of course possible for a job to use both small input files and larger files stored on object storage.
 
