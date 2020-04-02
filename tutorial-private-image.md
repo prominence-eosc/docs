@@ -46,6 +46,24 @@ prominence create --name test --artifact cadmesh-jet-v1.1.tgz centos7.sif "du -a
 ```
 Here that we have used the container image name specified about (`centos7.sif`) and the name given to the input data (`cadmesh-jet-v1.1.tgz`). In this case the input file is a gzip compressed tar archive. Before the user's command is executed this file will be decompressed and the files extracted, and made available in the current working directory of the job.
 
+### Small input data files or scripts
+For the case of small input data files or scripts (< 1 MB in size) it is not necessary to upload the files to object storage. Instead they can be directly specified when the job is submitted. For example, suppose you have a file `data.txt` containing:
+```
+0 1 2 A
+3 4 5 B
+```
+and a Python script `test.py` containing:
+```
+with open('data.txt', 'r') as input_file:
+    print(input_file.readlines())
+```
+you can submit this directly in one line without any additional preparations:
+```
+prominence create --input data.txt --input test.py python:3 "python3 test.py"
+```
+
+It is of course possible for a job to use both small input files and larger files stored on object storage.
+
 ### Output data
 If a job generates output data which is required by the user, either use the `--output` option to specify the name of an output file or use `--outputdir` to specify the name of an output directory. For the case of a directory, it will be automatically compressed into a tarball.
 
