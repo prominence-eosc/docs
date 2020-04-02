@@ -75,6 +75,11 @@ docs:
       - title: "Job factories"
         url: /job-factories
 
+  - title: Tutorials
+    children:
+      - title: "Jobs with private images"
+        url: /tutorial-jobs-private-images
+
 docsa:
   - title: Service deployment
     children:
