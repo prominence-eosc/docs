@@ -38,9 +38,6 @@ prominence create --openmpi --nodes 4 alahiff/openmpi-hello-world:latest /mpi_he
 The number of processes to run per node is assumed to be the same as the number of cores available per node. If the number of cores available per node is more than the requested number of cores all cores will be used.
 This behaviour can be changed by using `--procs-per-node` to define the number of processes per node to use.
 
-**Note:** Currently `--procs-per-node` is not supported for MPICH jobs.
-{: .notice--warning}
-
 Unlike single-node jobs, a command to run (and optionally any arguments) must be specified. If an entrypoint is defined in the container image it will be ignored.
 
 ## Hybrid MPI-OpenMP jobs
