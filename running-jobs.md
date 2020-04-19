@@ -40,6 +40,9 @@ This behaviour can be changed by using `--procs-per-node` to define the number o
 
 Unlike single-node jobs, a command to run (and optionally any arguments) must be specified. If an entrypoint is defined in the container image it will be ignored.
 
+**Note:** If the total number of CPUs required is small, e.g. 16 cores or less, for best performance use a single node rather than multiple nodes. This is especially important on resources which do not have low-latency network interconnects.
+{: .notice--info}
+
 ## Hybrid MPI-OpenMP jobs
 In this situation the number of MPI processes to run per node must be specified using `--procs-per-node` and the environment variable OMP_NUM_THREADS should be set to the required number of OpenMP threads per MPI process.
 
