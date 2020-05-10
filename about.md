@@ -10,4 +10,3 @@ PROMINENCE was a Science Demonstrator in [EOSCpilot](https://eoscpilot.eu/). The
 ![EC logo](eu-logo.jpeg) &nbsp; &nbsp; ![EOSCpilot logo](eosc-pilot.png) &nbsp; &nbsp; ![EOSC-hub logo](eosc-hub.png)
 
 PROMINENCE is available on [GitHub](https://github.com/prominence-eosc).
-
