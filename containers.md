@@ -11,7 +11,7 @@ In PROMINENCE all jobs are run in unprivileged containers using user-specified i
 
 The image can be specified in the following ways:
 * `<user>/<repo>:<tag>` (Docker Hub)
-* `<registry URL>/<namespace>/<project>/<image>:<tag>` (GitLab)
+* `<registry hostname>/<namespace>/<project>/<image>:<tag>` (GitLab)
 * `<hostname>/<project-id>/<image>:<tag>` (Google Container Registry)
 * `shub://<user>/<repo>:<tag>` (Singularity Hub)
 * URL of a tarball created by `docker save`
