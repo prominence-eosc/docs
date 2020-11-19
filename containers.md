@@ -16,6 +16,8 @@ The image can be specified in the following ways:
 * `shub://<user>/<repo>:<tag>` (Singularity Hub)
 * URL of a tarball created by `docker save`
 * URL of a Singularity image
+* Name of a tarball created by `docker save` uploaded to object storage using `prominence upload`
+* Name of a Singularity image uploaded to object storage using `prominence upload`
 
 If a registry requires authentication then `imagePullCredential` must be specified in the task, e.g.:
 ```
