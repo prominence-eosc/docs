@@ -17,7 +17,7 @@ The image can be specified in the following ways:
 * URL of a tarball created by `docker save`
 * URL of a Singularity image
 
-If a registry requires token-based authentication then `imagePullCredential` must be specified in the task, e.g.:
+If a registry requires authentication then `imagePullCredential` must be specified in the task, e.g.:
 ```
 {
   "resources": {
@@ -39,8 +39,8 @@ If a registry requires token-based authentication then `imagePullCredential` mus
   ]
 }
 ```
-The same method can be used for other private registries and Docker Hub.
-[Here](https://docs.gitlab.com/ee/user/packages/container_registry/index.html) is some information about accessing a GitLab container registry using tokens.
+The same method can be used for other private registries and Docker Hub. It is preferable that a token with read-only privileges is used rather than a password if at all possible.
+See [here](https://docs.gitlab.com/ee/user/packages/container_registry/index.html) for information about accessing a GitLab container registry using tokens, and similarly [here](https://docs.docker.com/docker-hub/access-tokens/) for Docker Hub.
 
 Under some conditions a container runtime will be selected automatically. This will only happen if there is only one runtime which will work for the specified image. For other cases, e.g. a Docker Hub image, Singularity is used as the default but optionally udocker can be forced by the user.
 
