@@ -12,11 +12,10 @@ Two environment variables need to be set which define the URLs of the PROMINENCE
 $ export PROMINENCE_URL=https://<prominence hostname>
 $ export PROMINENCE_OIDC_URL=https://<oidc hostname>
 ```
-The URLs above will need to be replaced as appropriate for the PROMINENCE server you are using.
 
 Register as an OIDC client:
 ```
 $ prominence register
 ```
-The text `Client registration successful` should appear. This step only needs to be done once per machine.
+The text `Client registration successful` should appear. This step only needs to be done once per machine. For example, if you want to run the CLI from both your desktop and a laptop this will need to be run once on each.
 
