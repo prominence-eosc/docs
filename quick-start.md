@@ -21,8 +21,8 @@ $ pip install prominence
 
 Two environment variables need to be set which define the URLs of the PROMINENCE and OpenID Connect (OIDC) servers:
 ```
-$ export PROMINENCE_URL=https://<prominence hostname>
-$ export PROMINENCE_OIDC_URL=https://<oidc hostname>
+$ export PROMINENCE_URL=https://host-130-246-215-158.nubes.stfc.ac.uk/prominence/v1
+$ export PROMINENCE_OIDC_URL=https://host-130-246-215-158.nubes.stfc.ac.uk
 ```
 The URLs above will need to be replaced as appropriate for the PROMINENCE server you are using.
 
