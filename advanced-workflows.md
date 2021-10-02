@@ -169,4 +169,4 @@ ID      NAME                             CREATED               STATUS    ELAPSED
 53251   factory-dag-workflow/process/1   2021-10-02 07:34:24   running   0+00:00:01   busybox   echo $id
 53252   factory-dag-workflow/process/2   2021-10-02 07:34:26   running   0+00:00:01   busybox   echo $id
 ```
-Once all these have completed any dependent jobs will start.
+Once all these have completed any dependent jobs will start, in this case the `merge` job.
