@@ -95,7 +95,11 @@ ID      NAME                               CREATED               STATUS   ELAPSE
 A single workflow can of course contain different types of job factories.
 
 ## Combining job factories and DAGs
-It is possible to define a workflow involving both job factories and dependencies between jobs. In the example below we use a job factory to
+It is possible to define a workflow involving both job factories and dependencies between jobs. 
+
+![Job factory in a DAG](jobfactorydag.png)
+
+In the example below we use a job factory to
 run 4 `process` jobs, then once these have completed a `merge` job is run.
 ```json
 {
