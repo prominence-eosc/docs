@@ -155,4 +155,13 @@ run 4 `process` jobs, then once these have completed a `merge` job is run.
 }
 ```
 In the `dependencies` section of the job description, for each parent job we list children. So in this case jobs with name `process` are run before
-the job with name `merge`.
+the job with name `merge`. As expected, we see that initially only the `process` jobs are created and start running:
+```
+$ prominence list
+ID      NAME                             CREATED               STATUS    ELAPSED      IMAGE     CMD     
+53250   factory-dag-workflow/process/0   2021-10-02 07:34:24   running   0+00:00:01   busybox   echo $id
+53251   factory-dag-workflow/process/1   2021-10-02 07:34:24   running   0+00:00:01   busybox   echo $id
+53252   factory-dag-workflow/process/2   2021-10-02 07:34:26   running   0+00:00:01   busybox   echo $id
+53253   factory-dag-workflow/process/3   2021-10-02 07:34:26   running   0+00:00:01   busybox   echo $id
+```
+Once all these have completed any dependent jobs will start.
