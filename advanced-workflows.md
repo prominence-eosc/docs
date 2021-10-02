@@ -95,12 +95,12 @@ ID      NAME                               CREATED               STATUS   ELAPSE
 A single workflow can of course contain different types of job factories.
 
 ## Combining job factories and DAGs
-It is possible to define a workflow involving both job factories and dependencies between jobs. 
+It is possible to define a workflow involving both job factories and dependencies between jobs, for example:
 
 ![Job factory in a DAG](jobfactorydag.png)
 
-In the example below we use a job factory to
-run 4 `process` jobs, then once these have completed a `merge` job is run.
+In the example job description below we use a job factory to
+run 3 `process` jobs, then once these have completed a `merge` job is run.
 ```json
 {
   "name": "factory-dag-workflow",
@@ -149,7 +149,7 @@ run 4 `process` jobs, then once these have completed a `merge` job is run.
         {
           "name": "id",
           "start": 1,
-          "end": 4,
+          "end": 3,
           "step": 1
         }
       ]
@@ -168,6 +168,5 @@ ID      NAME                             CREATED               STATUS    ELAPSED
 53250   factory-dag-workflow/process/0   2021-10-02 07:34:24   running   0+00:00:01   busybox   echo $id
 53251   factory-dag-workflow/process/1   2021-10-02 07:34:24   running   0+00:00:01   busybox   echo $id
 53252   factory-dag-workflow/process/2   2021-10-02 07:34:26   running   0+00:00:01   busybox   echo $id
-53253   factory-dag-workflow/process/3   2021-10-02 07:34:26   running   0+00:00:01   busybox   echo $id
 ```
 Once all these have completed any dependent jobs will start.
