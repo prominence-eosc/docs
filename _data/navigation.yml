@@ -74,6 +74,8 @@ docs:
         url: /dags
       - title: "Job factories"
         url: /job-factories
+      - title: "Advanced"
+        url: /advanced-workflows
 
   - title: Tutorials
     children:

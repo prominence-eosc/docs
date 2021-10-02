@@ -8,7 +8,7 @@ sidebar:
 ---
 
 The following types of job factories are available:
-* **parametric sweep**: a set of jobs is created by sweeping one or more parameters through a range of values
+* **parameter sweep**: a set of jobs is created by sweeping one or more parameters through a range of values
 * **zip**: a set of jobs is created from multiple lists, where the i-th job contains the i-th element from each list
 
 In all cases a set of jobs is created by substituting a range of values into a template job. Substitutions can be made in the command to be executed or the values obtained using environment variables.
@@ -18,25 +18,31 @@ When a workflow using job factory is submitted to PROMINENCE individual jobs wil
 **Note:** Not all jobs will be created immediately as there is a limit to the number of idle jobs that can exist for any individual workflow. The remaining jobs will be created as the idle jobs start running.
 {: .notice--info}
 
-## Parametric sweep
+## Parameter sweep
 In this case numeric values are generated from start and end points in addition to an increment provided by the user.
 
 Here is an example fragment which would need to be included in a workflow description:
 ```json
-"factory": {
-  "type": "parametricSweep",
-  "parameters":[
-    {
-      "name": "frame",
-      "start": 1,
-      "end": 4,
-      "step": 1
-    }
- ]
-}
+"factories": [
+  {
+    "type": "parameterSweep",
+    "name": "sweep",
+    "jobs": [
+      "<job-name>"
+    ],
+    "parameters": [
+      {
+        "name": "frame",
+        "start": 1,
+        "end": 4,
+        "step": 1
+      }
+    ]
+  }
+]
 ```
-Here we specify the factory to be of type `parametericSweep`. The range of values used to create the jobs is defined in `parameters`.
-The name of the parameter is given by `name`. In this example the parameter `frame` is varied between the value `start` and at most `end` in increments of `step`.
+Here we specify the factory to be of type `parameterSweep`. The range of values used to create the jobs is defined in `parameters`.
+The name of the parameter is given by `name`. In this example the parameter `frame` is varied between the value `start` and at most `end` in increments of `step`. In the list `jobs` the name of the jobs to apply the factory to are listed.
 
 Jobs can obtain the value of the parameter through the use of substitutions or environment variables.
 If a job's command was to include `$frame` or `${frame}`, this would be substituted by the appropriate value. An environment variable `PROMINENCE_PARAMETER_frame`
@@ -44,29 +50,35 @@ would also be available to the job containing this value.
 
 Additional `parameters` can be included in order to carry out multi-dimensional parameter sweeps. For example:
 ```json
-"factory": {
-  "type": "parametricSweep",
-  "parameters":[
-    {
-      "name": "x",
-      "start": 1,
-      "end": 4,
-      "step": 1
-    },
-    {
-      "name": "y",
-      "start": 2,
-      "end": 5,
-      "step": 1
-    },
-    {
-      "name": "z",
-      "start": 3,
-      "end": 6,
-      "step": 0.5
-    }
- ]
-}
+"factories": [
+  {
+    "type": "parameterSweep",
+    "name": "sweep",
+    "jobs": [
+      "<job-name>"
+    ],
+    "parameters":[
+      {
+        "name": "x",
+        "start": 1,
+        "end": 4,
+        "step": 1
+      },
+      {
+        "name": "y",
+        "start": 2,
+        "end": 5,
+        "step": 1
+      },
+      {
+        "name": "z",
+        "start": 3,
+        "end": 6,
+        "step": 0.5
+      }
+   ]
+  }
+]
 ```
 For a multi-dimensional parameter sweep the name of each parameter set must be unique.
 
@@ -92,17 +104,23 @@ Here is simple complete example of a 1D parametric sweep job:
       "name": "render"
     }
   ],
-  "factory": {
-    "type": "parametricSweep",
-    "parameters":[
-      {
-        "name": "frame",
-        "start": 1,
-        "end": 4,
-        "step": 1
-      }
-   ]
-  }
+  "factories": [
+    {
+      "name": "render-frames",
+      "type": "parameterSweep",
+      "jobs": [
+        "render"
+      ],
+      "parameters":[
+        {
+          "name": "frame",
+          "start": 1,
+          "end": 4,
+          "step": 1
+        }
+     ]
+    }
+  ]
 }
 ```
 
@@ -121,23 +139,29 @@ A set of jobs is created by substituting a range of values into a template job. 
 
 Here's an example fragment which would need to be included in a workflow description:
 ```json
-"factory": {
-  "type": "zip",
-  "parameters":[
-    {
-      "name": "start_value",
-      "values": [
-        0, 1, 2, 3
-      ]
-    },
-    {
-      "name": "end_value",
-      "values": [
-        8, 9, 10, 11
-      ]
-    }
- ]
-}
+"factories": [
+  {
+    "name": "example",
+    "jobs: [
+      "<job-name>"
+    ],
+    "type": "zip",
+    "parameters":[
+      {
+        "name": "start_value",
+        "values": [
+          0, 1, 2, 3
+        ]
+      },
+      {
+        "name": "end_value",
+        "values": [
+          8, 9, 10, 11
+        ]
+      }
+   ]
+  }
+]
 ```
 Here we specify the factory to be of type `zip`. The range of values used to create the jobs is defined in `parameters`.
 The name of each parameter is given by `name` and a list of values for each parameter is provided. In this example 4 jobs would be created, with:
