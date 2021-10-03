@@ -28,11 +28,11 @@ Archives with filenames ending in the following are automatically unpacked:
 * .bz2
 * .zip
 
-## Input files
+## Input artifacts
 Users can upload data to the object storage which can be staged-in to jobs.
 
-### Uploading input files
-Users can upload input files (including container images) using the `upload` command. The path of the file to be uploaded needs to be specified in addition to a reference name for the file which will be used later in order to access the file.
+### Uploading artifacts
+Users can upload artifacts (including container images) using the `upload` command. The path of the file to be uploaded needs to be specified in addition to a reference name for the file which will be used later in order to access the file.
 ```
 prominence upload --name myfile --filename /data/myfile
 ```
