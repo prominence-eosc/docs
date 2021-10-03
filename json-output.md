@@ -38,6 +38,7 @@ If the JSON output is saved in a file it be submitted to PROMINENCE using the `p
 ```
 prominence run <filename.json>
 ```
+A workflow can similarly be submitted in the same way using `prominence run`.
 
 ## Tips
 
@@ -67,3 +68,9 @@ For example:
 }
 ```
 Absolute or relative paths can be specified.
+
+### Submission using JSON from URLs
+Instead of specifying a local file, `prominence run` also works with URLs. For example:
+```
+prominence run https://raw.githubusercontent.com/prominence-eosc/examples/master/lammps-bench-single.json
+```
