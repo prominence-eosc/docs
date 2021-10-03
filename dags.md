@@ -31,7 +31,7 @@ By default the number of retries is zero, which means that if a job fails the wo
 job will not be attempted.
 If the number of retries is set to one
 or more, if an individual job fails (i.e. exit code is not 0) it will be retried up to the specified number of times.
-To set a maximum numbver of retries, include `maximumRetries` in the workflow definition, e.g.
+To set a maximum number of retries, include `maximumRetries` in the workflow definition, e.g.
 ```json
 "policies": {
   "maximumRetries": 2
