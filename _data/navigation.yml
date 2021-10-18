@@ -55,8 +55,8 @@ docs:
         url: /deleting-jobs
       - title: "Policies"
         url: /job-policies
-      - title: "Generating JSON"
-        url: /generating-json
+      - title: "Job description files"
+        url: /job-description-files
       - title: "Examples"
         url: /example-jobs
       - title: "Python"
