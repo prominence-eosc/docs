@@ -42,7 +42,7 @@ prominence run <filename.json>
 A workflow can similarly be submitted in the same way using `prominence run`.
 
 ## YAML job descriptions
-Even though the PROMINENCE REST API only access JSON job descriptions, the CLI also accepts YAML job descritions. This can be useful
+Even though the PROMINENCE REST API only accepts JSON job descriptions, the CLI also accepts YAML job descritions. This can be useful
 when you want to specify complex or multiple commands in tasks.
 
 As a simple example, here is the above test job expressed in YAML:
