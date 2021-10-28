@@ -25,7 +25,7 @@ In order to submit a workflow the first step is to write a JSON description of t
 Each of the individual jobs must have defined names as these are used in order to define the dependencies. 
 Unlike [CWL](https://www.commonwl.org/) or [WDL](https://github.com/openwdl/wdl) dependencies need to be defined in terms of job names rather than being based on job inputs and outputs. Parent jobs are run before children.
 
-It is important to note that the resources requirements for the individual jobs can be (and should be!) specified. This will mean that each step in a workflow will only use the resources it requires. Jobs within a single workflow can of course request very different resources, which makes it possible for workflows to have both HTC and HPC steps.
+It is important to note that the resources requirements for the individual jobs can be (and must be!) specified. This will mean that each step in a workflow will only use the resources it requires. Jobs within a single workflow can of course request very different resources, which makes it possible for workflows to have both HTC and HPC steps.
 
 By default the number of retries is zero, which means that if a job fails the workflow will fail. Any jobs which depend on a failed
 job will not be attempted.
