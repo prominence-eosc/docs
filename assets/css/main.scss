@@ -12,3 +12,15 @@ $sans-serif-narrow  : "Roboto", -apple-system, BlinkMacSystemFont, "Roboto", "Se
 
 $global-font-family : $serif;
 $header-font-family : $sans-serif-narrow;
+
+  @include breakpoint($medium) {
+    font-size: 13px;
+  }
+
+  @include breakpoint($large) {
+    font-size: 15px;
+  }
+
+  @include breakpoint($x-large) {
+    font-size: 18px;
+  }
