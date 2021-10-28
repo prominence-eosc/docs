@@ -13,12 +13,6 @@ $header-font-family : "Varela Round", "Roboto", -apple-system, BlinkMacSystemFon
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-$serif              : "Roboto", Georgia, Times, serif;
-$sans-serif-narrow  : "Varela Round", "Roboto", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
-
-$global-font-family : $serif;
-$header-font-family : "Varela Round", "Roboto", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
-
 html {
   font-size: 12px; // change to whatever
 
