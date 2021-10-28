@@ -12,7 +12,7 @@ PROMINENCE is a platform which allows users to exploit idle cloud resources for 
 <br/>
 <br/>
 <img width="60" height="60" src="prominence-job-submission.png" hspace="20">
-<h3>Flexible submission</h3>
+<h3>Run jobs from anywhere</h3>
 Submit jobs using a simple batch system style command line interface from your laptop. And your desktop. Or from anywhere else. Alternatively, interact programmatically using a RESTful API.
 <br/>
 <br/>
@@ -49,5 +49,4 @@ All infrastructure provisioning is handled completely automatically and is total
 
 <img width="60" height="60" src="prominence-storage.png" hspace="20">
 <h3>Data access</h3>
-Data can be staged-in and staged-out from S3 object storage or OneData. Alternatively, jobs can access data from external storage like [B2DROP](https://b2drop.eudat.eu) or [OneData](https://onedata.org) via a POSIX-like filesystem.
-
+Jobs can access data transparently from [OneData](https://onedata.org), WebDAV (including [B2DROP](https://b2drop.eudat.eu)) or object storage.
