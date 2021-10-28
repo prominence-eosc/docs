@@ -14,17 +14,11 @@ Here we demonstrate a quick way to start using PROMINENCE with the command line 
 
 Install the PROMINENCE CLI in a new virtual environment:
 ```
-$ virtualenv ~/.virtualenvs/prominence
+$ mkdir -p ~/.virtualenvs
+$ python3 -m venv ~/.virtualenvs/prominence
 $ source ~/.virtualenvs/prominence/bin/activate
 $ pip install prominence
 ```
-
-Two environment variables need to be set which define the URLs of the PROMINENCE and OpenID Connect (OIDC) servers:
-```
-$ export PROMINENCE_URL=https://host-130-246-215-158.nubes.stfc.ac.uk/prominence/v1
-$ export PROMINENCE_OIDC_URL=https://host-130-246-215-158.nubes.stfc.ac.uk
-```
-The URLs above will need to be replaced as appropriate for the PROMINENCE server you are using.
 
 Register as an OIDC client:
 ```
