@@ -8,6 +8,7 @@ sidebar:
 ---
 
 The `policies` section of a job's JSON description enables users to have more control of how jobs are managed and influence where they will be executed. The available options are:
+* `maximumRetries`: maximum number of times a task will be retried in the event of failures. By default there will be no retries.
 * `maximumTimeInQueue`: maximum time in minutes the job will remain in the queue. If a job cannot be run immediately it will wait in the queue (up to the specified time limit) until resources become available. The value `-1` means that the job will remain in the queue until it starts running. The default value `0` means that the job will remain in the queue until it starts running or there is a failure.
 * `placement`: allows users to specify requirements and preferences to influence where jobs will run.
 * `ignoreTaskTailures`: normally if a task fails (i.e. exit code non-zero) no further tasks will be executed in a job. If `ignoreTaskTailures` is set to `True`, all
