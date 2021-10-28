@@ -13,6 +13,7 @@ The `policies` section of a job's JSON description enables users to have more co
 * `placement`: allows users to specify requirements and preferences to influence where jobs will run.
 * `ignoreTaskTailures`: normally if a task fails (i.e. exit code non-zero) no further tasks will be executed in a job. If `ignoreTaskTailures` is set to `True`, all
 tasks in a job will be run irrespective of any failures. The default value is `False`.
+* `autoScalingType`: if set to `null` or the explicit string value `none` only existing resources will be considered to run the job and no additional resources will be provisioned.
 
 For example:
 ```
