@@ -7,6 +7,7 @@ $sans-serif-narrow  : "Roboto", -apple-system, BlinkMacSystemFont, "Roboto", "Se
 
 $global-font-family : $serif;
 $header-font-family : "Varela Round", "Roboto", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$monospace          : "Roboto Mono", Monaco, "Lucida Console", monospace;
 
 @charset "utf-8";
 
@@ -14,7 +15,7 @@ $header-font-family : "Varela Round", "Roboto", -apple-system, BlinkMacSystemFon
 @import "minimal-mistakes"; // main partials
 
 html {
-  font-size: 12px; // change to whatever
+  font-size: 14px; // change to whatever
 
   @include breakpoint($medium) {
     font-size: 14px; // change to whatever
