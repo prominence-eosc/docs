@@ -53,12 +53,12 @@ docs:
         url: /stdout-stderr
       - title: "Deleting a job"
         url: /deleting-jobs
+      - title: "Job description files"
+        url: /job-description-files
       - title: "Policies"
         url: /job-policies
       - title: "Notifications"
         url: /job-notifications
-      - title: "Job description files"
-        url: /job-description-files
       - title: "Examples"
         url: /example-jobs
       - title: "Python"
