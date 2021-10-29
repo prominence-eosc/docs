@@ -14,7 +14,8 @@ A job in PROMINENCE consists of the following:
 * Output files
 * Required resources (e.g. CPU cores, memory, disk)
 * One or more task definitions
-* Policies (e.g. how many times should failing tasks should be retried)
+* Policies (e.g. how many times should failing tasks should be retried or where to run the job)
+* Notifications (e.g. to specify email notification upon job completion)
 
 Tasks execute sequentially within a job, and consist of the following:
 * Container image
@@ -27,7 +28,8 @@ A workflow consists of:
 * Name
 * Labels
 * One or more job definitions
-* Any dependencies between jobs or a factory to generate multiple jobs based on a template
+* Any dependencies between jobs
+* Factories to generate multiple jobs based on job templates
 
 Jobs within a workflow can be executed sequentially, in parallel or combinations of both. Tasks within a job share the same scratch directory, whereas different jobs within a workflow do not.
 
@@ -43,4 +45,5 @@ The following environment variables will be set by default:
 * PROMINENCE_JOB_ID: the id of the job
 * PROMINENCE_WORKFLOW_ID: the id of the associated workflow, if applicable
 * PROMINENCE_URL: URL of the PROMINENCE REST API
-* PROMINENCE_TOKEN: token which can be used to authenticate against the PROMINENCE REST API
+* PROMINENCE_TOKEN: token which can be used to authenticate against the PROMINENCE REST API (a unique token is generated per job, and is valid
+for the lifetime of the job)
