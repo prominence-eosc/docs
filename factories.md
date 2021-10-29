@@ -180,7 +180,7 @@ A set of identical jobs is created. The parameter `number` specifies the number 
     "jobs": [
       "<job-name>"
     ],
-    "type": "repeat,
+    "type": "repeat",
     "number": 10
   }
 ]
