@@ -10,6 +10,7 @@ sidebar:
 The following types of job factories are available:
 * **parameter sweep**: a set of jobs is created by varying one or more parameters through a range of values
 * **zip**: a set of jobs is created from multiple lists, where the i-th job contains the i-th element from each list
+* **repeat**: runs the same job multiple times
 
 In all cases a set of jobs is created by substituting a range of values into a template job. Substitutions can be made in the command to be executed or the values obtained using environment variables. If you want to carry out a parameter study using parameters generated externally, **zip** is the most appropriate factory type.
 
@@ -170,3 +171,18 @@ The name of each parameter is given by `name` and a list of values for each para
 * start_value = 2, end_value = 10
 * start_value = 3, end_value = 11
 
+## Repeat
+A set of identical jobs is created. The parameter `number` specifies the number of jobs to create from the template. Example:
+```json
+"factories": [
+  {
+    "name": "example",
+    "jobs": [
+      "<job-name>"
+    ],
+    "type": "repeat,
+    "number": 10
+  }
+]
+```
+Here 10 instances of the job with name `example` will be created.
