@@ -44,7 +44,6 @@ prominence describe --completed 481
     ],
     "events": {
       "creationTime": "2018-08-15T13:23:42Z",    
-      "containerCreationStart": "2018-08-15T13:35:43Z",
       "executionStart": "2018-08-15T13:35:49Z",
       "completionTime": "2018-08-15T13:36:20Z"
     }
@@ -53,8 +52,16 @@ prominence describe --completed 481
 ```
 The temporary URLs expire after 10 days, but the data itself is retained.
 
-## Downloading output files
-The `download` command enables all output files from a specific completed job to be automatically downloaded to the current directory. For example:
+**Note:** Even if a task fails, i.e. the exit code of the process is non-zero, stage-out of output files (or directories) will still
+be attempted.
+{: .notice--info}
+
+## Specifying output directories
+The option `--outputdir` can be used to specify the name of an output directory. In this case, a tarball of the directory is created and
+uploaded to object storage.
+
+## Downloading output files or directories
+The `download` command enables all output files and/or directories from a specific completed job to be automatically downloaded to the current directory. For example:
 ```
 prominence download 193
 ```
@@ -71,3 +78,4 @@ prominence download --constraint name=run5
 ```
 will download the output files from all completed jobs which have a label __name=run5__. Unless for `--force` option is specified, output files will not be downloaded if there is an existing file with the same name.
 
+For output directories tarballs (`.tgz`) are downloaded.
