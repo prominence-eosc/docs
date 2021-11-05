@@ -20,6 +20,11 @@ It is possible for jobs to access data in a POSIX-like way, i.e. like a filesyst
 **Note:** When using the Singularity container runtime it is best to always use an existing directory in the container image as the mount point, for example `/mnt`.
 {: .notice--warning}
 
+Using the PROMINENCE CLI to create jobs, the `--storage` option can be used to specify the name of a JSON file containing the required content. For example:
+```
+prominence create --storage my-onedata.json ...
+```
+
 ### B2DROP
 In order to mount your B2DROP storage in jobs firstly an app username and password needs to be created. This can be done by going to [https://b2drop.eudat.eu/settings/user/security](https://b2drop.eudat.eu/settings/user/security) and clicking *Create new app password*.
 
@@ -57,8 +62,15 @@ The following JSON needs to be included in the job description if access to OneD
 ```
 where the provider hostname and access token should be set as appropriate. The mountpoint `/data` here is just an example and can be replaced with something else.
 
-Using the PROMINENCE CLI to create jobs, the `--storage` option can be used to specify the name of a JSON file containing the above content. For example:
+There is an optional `options` which can be included for OneData. This content is provided as an argument to Oneclient. For example:
+```json
+"storage":{
+  "type":"onedata",
+  "mountpoint":"/data",
+  "onedata":{
+    "provider":"***",
+    "token":"***",
+    "options": "--force-direct-io"
+  }
+}
 ```
-prominence create --storage my-onedata.json ...
-```
-
