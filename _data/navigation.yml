@@ -76,6 +76,8 @@ docs:
         url: /dags
       - title: "Job factories"
         url: /job-factories
+      - title: "Output files in workflows"
+        url: /workflow-outputs
       - title: "Policies"
         url: /workflow-policies
       - title: "Notifications"
