@@ -73,3 +73,6 @@ In order to download all output from these jobs once the workflow has completed,
 ```
 prominence download workflow <workflow id>
 ```
+For the simple example above this would create three files: `point_000.tgz`, `point_001.tgz`, and `point_002.tgz` containing the contents
+of the directory from each of the jobs.
+
