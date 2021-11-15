@@ -12,7 +12,12 @@ The following types of job factories are available:
 * **zip**: a set of jobs is created from multiple lists, where the i-th job contains the i-th element from each list
 * **repeat**: runs the same job multiple times
 
-In all cases a set of jobs is created by substituting a range of values into a template job. Substitutions can be made in the command to be executed or the values obtained using environment variables. If you want to carry out a parameter study using parameters generated externally, **zip** is the most appropriate factory type.
+In all cases a set of jobs is created by substituting a range of values into a template job. Substitutions can be made in:
+* The command to be executed
+* Environment variables
+* Output filenames or directories
+
+If you want to carry out a parameter study using parameters generated externally, **zip** is the most appropriate factory type.
 
 When a workflow using job factory is submitted to PROMINENCE individual jobs will automatically be created. The job names will be of the form `<workflow name>/<job name>/<id>` where `<id>` is an integer.
 
