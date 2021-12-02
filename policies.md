@@ -11,7 +11,7 @@ The `policies` section of a job's JSON description enables users to have more co
 * `maximumRetries`: maximum number of times a task will be retried in the event of failures. By default there will be no retries.
 * `maximumTimeInQueue`: maximum time in minutes the job will remain in the queue. If a job cannot be run immediately it will wait in the queue (up to the specified time limit) until resources become available. The value `-1` means that the job will remain in the queue until it starts running. The default value `0` means that the job will remain in the queue until it starts running or there is a failure.
 * `placement`: allows users to specify requirements and preferences to influence where jobs will run.
-* `ignoreTaskTailures`: normally if a task fails (i.e. exit code non-zero) no further tasks will be executed in a job. If `ignoreTaskTailures` is set to `True`, all
+* `ignoreTaskTailures`: normally if a task fails (i.e. exit code non-zero) no further tasks will be executed in a job. If set to `True`, all
 tasks in a job will be run irrespective of any failures. The default value is `False`.
 * `autoScalingType`: if set to `null` or the explicit string value `none` only existing resources will be considered to run the job and no additional resources will be provisioned.
 
@@ -65,4 +65,23 @@ To force a job to run at any site in a particular region (`Alpha` in this exampl
   }
 }
 ```
-
+It's also possible to specify preferences. In the example below we specify that we want the job to run on any of the
+sites `OpenStack-Alpha`, `OpenStack-Beta` or `OpenStack-Delta`, and furthermore we want `OpenStack-Alpha` to be used in 
+preference (if possible), followed by `OpenStack-Beta` and finally followed by `OpenStack-Delta`.
+```
+"policies": {
+  "placement": {
+    "requirements": {
+      "sites": [
+        "OpenStack-Alpha", "OpenStack-Beta", "OpenStack-Delta"
+      ]
+    },
+    "preferences": {
+      "sites": [
+        "OpenStack-Alpha", "OpenStack-Beta", "OpenStack-Delta"
+      ]
+    }
+  }
+}
+```
+Preferences can also be specified for regions.
