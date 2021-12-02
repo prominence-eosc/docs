@@ -28,5 +28,5 @@ The `rerun` command can be used to re-run any failed jobs in a workflow, for exa
 prominence rerun 37300
 ```
 This will retry jobs which had previously failed, and execute any dependencies which were not run previously due to the failed jobs. This command can be used multiple times if necessary. Failing jobs include:
-* Jobs which exited with an exit code of anything other than zero,
+* Jobs which exited with an exit code of anything other than zero (except for jobs which have the policy `reportJobSuccessOnTaskFailure` set to `True`),
 * Jobs which failed due to infrastructure or network problems.
