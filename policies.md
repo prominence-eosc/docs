@@ -13,7 +13,8 @@ The `policies` section of a job's JSON description enables users to have more co
 * `placement`: allows users to specify requirements and preferences to influence where jobs will run.
 * `ignoreTaskTailures`: normally if a task fails (i.e. exit code non-zero) no further tasks will be executed in a job. If set to `True`, all
 * `reportJobSuccessOnTaskFailure`: When the job is run as part of a workflow, if the exit code of any tasks are non-zero the job will be reported as running successfully. This means
-that if retries are enabled within a workflow or a workflow is re-run, only jobs which failed because of infrastructure problems will be retried.
+that if retries are enabled within a workflow or a workflow is re-run, only jobs which failed because of infrastructure problems will be retried (e.g. problems pulling
+the container image or staging files in or out).
 The default value is `False`.
 tasks in a job will be run irrespective of any failures. The default value is `False`.
 * `autoScalingType`: if set to `null` or the explicit string value `none` only existing resources will be considered to run the job and no additional resources will be provisioned.
