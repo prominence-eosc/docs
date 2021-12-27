@@ -32,6 +32,7 @@ prominence stdout 299
 
 ```
 
-**Note:** The standard output and error can be seen while jobs are running as well as once they have completed, allowing users to check the status of long-running jobs. This is not quite realtime, so there can be short delays in the standard output and error being updated.
+**Note:** The standard output and error can be seen while jobs are running as well as once they have completed, allowing users to check the status of long-running jobs. This is not quite realtime, so there can be short delays in the standard output and error being updated. It is recommended not to pipe standard output into a file, as this will make it more difficult to understand what the job is doing while running. Use `tee` if necessary to
+pipe standard output into a file.
 {: .notice--warning}
 
