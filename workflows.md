@@ -30,3 +30,16 @@ prominence rerun 37300
 This will retry jobs which had previously failed, and execute any dependencies which were not run previously due to the failed jobs. This command can be used multiple times if necessary. Failing jobs include:
 * Jobs which exited with an exit code of anything other than zero (except for jobs which have the policy `reportJobSuccessOnTaskFailure` set to `True`),
 * Jobs which failed due to infrastructure or network problems.
+
+Note that when a workflow is re-run a new workflow id is created, for example:
+```
+prominence rerun 72444 
+```
+
+> output
+
+```
+Workflow created with id 72582
+```
+After re-running a workflow the new workflow id should be used for checking the status. The original workflow id will only report the original number
+of succesful jobs.
