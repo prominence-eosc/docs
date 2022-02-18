@@ -18,6 +18,8 @@ the container image or staging files in or out).
 The default value is `False`.
 tasks in a job will be run irrespective of any failures. The default value is `False`.
 * `autoScalingType`: if set to `null` or the explicit string value `none` only existing resources will be considered to run the job and no additional resources will be provisioned.
+* `runSerialTasksOnAllNodes`: by default serial tasks are only run on one node for the case of multi-node jobs. Setting this to `True` results in serial tasks
+being run on all nodes.
 
 For example:
 ```
