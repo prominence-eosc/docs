@@ -35,6 +35,8 @@ To run an MPI job, you need to specify either `--openmpi` for Open MPI, `--intel
 ```
 prominence create --openmpi --nodes 4 alahiff/openmpi-hello-world:latest /mpi_hello_world
 ```
+For MPI jobs `cpus` and `memory` refer to the number of CPU cores per node and memory per node, not the totals summed across all nodes.
+
 The number of processes to run per node is assumed to be the same as the number of cores available per node. If the number of cores available per node is more than the requested number of cores all cores will be used.
 This behaviour can be changed by using `--procs-per-node` to define the number of processes per node to use.
 
