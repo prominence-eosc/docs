@@ -13,7 +13,6 @@ Here we will assume that the PROMINENCE CLI has been installed and `prominence l
 To submit a job a standard JSON job description is constructed and `create_job` can be used to submit it to PROMINENCE.
 Here is a simple example submitting a single job:
 ```python
-from __future__ import print_function
 from prominence import ProminenceClient
 
 # Specify the required resources
@@ -47,7 +46,6 @@ Note that the `authenticated=True` means that it is assumed that retrieval of a 
 ## Listing jobs
 Here are some common examples:
 ```python
-from __future__ import print_function
 from prominence import ProminenceClient
 
 client = ProminenceClient(authenticated=True)
@@ -68,7 +66,6 @@ print(client.list_jobs(all=True, constraint='app=hello'))
 ## Job descriptions
 Job descriptions can easily be obtained using `describe_job`, for example:
 ```python
-from __future__ import print_function
 from prominence import ProminenceClient
 
 client = ProminenceClient(authenticated=True)
@@ -81,7 +78,6 @@ print('Job status is', job['status'])
 ## Standard output and error
 The standard output and error from a job can be obtained using `stdout_job` and `stderr_job`, for example:
 ```python
-from __future__ import print_function
 from prominence import ProminenceClient
 
 client = ProminenceClient(authenticated=True)
