@@ -22,6 +22,7 @@ tasks in a job will be run irrespective of any failures. The default value is `F
 * `autoScalingType`: if set to `null` or the explicit string value `none` only existing resources will be considered to run the job and no additional resources will be provisioned.
 * `runSerialTasksOnAllNodes`: by default serial tasks are only run on one node for the case of multi-node jobs. Setting this to `True` results in serial tasks
 being run on all nodes.
+* `priority`: integer enabling users to sort their jobs to determine which will be run first. Large values denote better priority.
 
 For example:
 ```
