@@ -83,11 +83,15 @@ The JSON descriptions of completed jobs contain additional information. This may
 * __endTime__: date & time when the job ended.
 * __site__: the site where the job was executed.
 * __maxMemoryUsageKB__: the maximum total memory usage of the job, summed over all processes (note this is not available for jobs running on remote HTC or HPC resources)
+* __provisionedResources__: the number of CPU cores, memory (in GB), disk (in GB) and number of nodes provisioned for the job.
+* __cpu__: details of the CPU used to run the job (`clock`, `model`, and `vendor`).
 
 The following information is also provided for each task:
 * __retries__: the number of retries attempted.
 * __exitCode__: the exit code returned by the user's job. This would usually would be 0 for success.
 * __imagePullTime__: time taken to pull the container image. If a cached image from a previous task was used this will be -1.
+* __imagePullStatus__: image pull status, e.g. `completed`.
+* __imageSha256__: SHA256 sum of the container image.
 * __wallTimeUsage__: wall time used by the task.
 * __cpuTimeUsage__: CPU time usage by the task. For a task using multiple CPUs this will be larger than the wall time.
 * __maxResidentSetSizeKB__: maximum resident size (in KB) of the largest process
