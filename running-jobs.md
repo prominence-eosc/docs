@@ -74,7 +74,13 @@ CPU cores and memory can be specified using the `--cpus` and `--memory` options.
 
 Here is an example running an MPI job on 4 nodes where each node has 2 CPUs and 8 GB memory, there is a shared 20 GB disk accessible by all 4 nodes, and the maximum runtime is 1000 minutes:
 ```
-prominence create --openmpi --nodes 4 --cpus 2 --memory 8 --disk 20 --runtime 1000 alahiff/geant4mpi:1.3a3
+prominence create --openmpi \
+                  --nodes 4 \
+                  --cpus 2 \
+                  --memory 8 \
+                  --disk 20 \
+                  --runtime 1000 \
+                  alahiff/geant4mpi:1.3a3
 ```
 By default a 10 GB disk is available to jobs, which is located on separate block storage. For MPI jobs the disk is available across all nodes running the job. The default maximum runtime is 720 minutes.
 
