@@ -78,6 +78,29 @@ prominence create --openmpi --nodes 4 --cpus 2 --memory 8 --disk 20 --runtime 10
 ```
 By default a 10 GB disk is available to jobs, which is located on separate block storage. For MPI jobs the disk is available across all nodes running the job. The default maximum runtime is 720 minutes.
 
+In some situations it can be useful to specify a range of CPU cores rather than specifying a single number. For example, you may prefer to
+have 32 cores but if 32 cores are not currently available you would be happy to have anywhere between 16 and 32 cores. In this case instead
+of specifying `--cpus` use `--cpus-range`, for example `--cpus-range 16,32`. Alternatively `--cpus-options` can be used to specify two
+possible numbers of CPU cores. For example, with `--cpus-options 16,32` the job will use 32 cores if available, but otherwise 16 cores will
+be used. Both of these options can help to ensure jobs will start running as quickly as possible but with reduced performance due to the
+reduction in numbers of CPUs available.
+
+When either of `--cpus-range` or `--cpus-options` are used it can be benificial to specify memory in terms of memory per core rather than
+total memory of the node. In this case use `--memory-per-cpu` rather than `--memory`.
+
+For multi-node MPI jobs, instead of specifying a fixed number of nodes, a range of total number of CPU cores can be specified instead using
+`--cpus-total-range`. For example:
+```
+prominence create --openmpi \
+                  --cpus-total-range 16,32 \
+                  --cpus-range 4,8 \
+                  --memory-per-cpu 2 \
+                  alahiff/geant4mpi:1.3a3
+```
+In this case, if possible, the job will run with the maximum number of CPUs specified (32) and the maximum number of CPUs per node (8),
+ensuring that the number of nodes is minimised. If these resources are not available then the number of nodes may be increased to
+meet the maximum number of total CPUs and/or the total number of CPUs may be reduced.
+
 ## Working directory
 By default the current working directory is scratch space made available inside the container. The path to this directory is also specified by the environment variables HOME, TEMP and TMP.
 
