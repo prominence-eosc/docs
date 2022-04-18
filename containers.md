@@ -68,8 +68,7 @@ Some important tips for creating containers to be used with PROMINENCE:
 * The application should be able to be run from within any directory and access any required input or output files using relative paths
 
 ### MPI jobs
-Some are some additional requirements on the container images for MPI jobs:
-* "mpirun" should be in available inside the container and in the PATH
+Some is an additional requirement on the container image for MPI jobs: `mpirun` should be in available inside the container and in the `PATH`.
 
 There is no reason to set an entrypoint as it will not be used. A command (and any required arguments) must be specified.
 
