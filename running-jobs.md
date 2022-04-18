@@ -154,9 +154,10 @@ prominence run single-job-multiple-tasks.json
 {: .notice--info}
 
 ### Task failures and retries
-If multiple tasks are defined and a task fails (i.e. the exit code is not 0), no more tasks will be executed. 
+If multiple tasks are defined and a task fails (i.e. the exit code is not 0), no more tasks will be executed unless `ignoreTaskFailures`
+in `policies` is specified (see [here](/docs/job-policies)).
 
-It is possible to failing tasks to be retried but by default this will not happen.
+It is possible for failing tasks to be retried but by default this will not happen.
 A maximum number of retries can be specified by including `maximumRetries` in the job definition, e.g.
 ```json
 "policies": {
