@@ -82,7 +82,7 @@ prominence create --openmpi \
                   --runtime 1000 \
                   alahiff/geant4mpi:1.3a3
 ```
-By default a 10 GB disk is available to jobs, which is located on separate block storage. For MPI jobs the disk is available across all nodes running the job. The default maximum runtime is 720 minutes.
+By default a 10 GB disk is available to jobs. The default maximum runtime is 720 minutes.
 
 In some situations it can be useful to specify a range of CPU cores rather than specifying a single number. For example, you may prefer to
 have 32 cores but if 32 cores are not currently available you would be happy to have anywhere between 16 and 32 cores. In this case instead
