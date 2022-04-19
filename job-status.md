@@ -94,7 +94,9 @@ The following information is also provided for each task:
 * __imageSha256__: SHA256 sum of the container image.
 * __wallTimeUsage__: wall time used by the task.
 * __cpuTimeUsage__: CPU time usage by the task. For a task using multiple CPUs this will be larger than the wall time.
-* __maxResidentSetSizeKB__: maximum resident size (in KB) of the largest process
+* __maxResidentSetSizeKB__: maximum resident size (in KB) of the largest process.
+* __stageInTime__: time to stage-in any files.
+* __stageOutTime__: time to stage-out any files.
 
 
 For example:
