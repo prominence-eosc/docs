@@ -59,6 +59,8 @@ docs:
         url: /job-policies
       - title: "Notifications"
         url: /job-notifications
+      - title: "Sidecar tasks"
+        url: /sidecar-tasks
       - title: "Examples"
         url: /example-jobs
       - title: "Python"
