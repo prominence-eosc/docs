@@ -153,7 +153,7 @@ The following fields are used in the request body for creating a job:
 | `priority` | `integer` | No | Job priority. |
 | `placement` | `placement` | No |
 
-`notification`:
+`notifications` is a list where each `notification` is of the form:
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
