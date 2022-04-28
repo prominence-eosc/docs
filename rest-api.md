@@ -153,10 +153,12 @@ The following fields are used in the request body for creating a job:
 | `priority` | `integer` | No | Job priority. |
 | `placement` | `placement` | No |
 
-`notifications`:
+`notification`:
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
+| `event` | `string` | Yes | When to send the notification, currently the only option is `jobFinished` |
+| `type` | `string` | Yes | Type of notification, currently the only option is `email` |
 
 #### Status Codes
 
