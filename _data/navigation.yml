@@ -86,13 +86,13 @@ docs:
         url: /workflow-notifications
       - title: "Advanced"
         url: /advanced-workflows
-      - title: "Workflows as code"
-        url: /workflows-as-code
 
   - title: Tutorials
     children:
       - title: "Jobs with private images"
         url: /tutorial-jobs-private-images
+      - title: "Workflows as code"
+        url: /workflows-as-code
 
 docsa:
   - title: Service deployment
