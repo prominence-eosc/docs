@@ -86,6 +86,8 @@ docs:
         url: /workflow-notifications
       - title: "Advanced"
         url: /advanced-workflows
+      - title: "Workflows as code"
+        url: /workflows-as-code
 
   - title: Tutorials
     children:
