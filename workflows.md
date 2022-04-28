@@ -44,9 +44,11 @@ Workflow created with id 72582
 After re-running a workflow the new workflow id should be used for checking the status. The original workflow id will only report the original number
 of succesful jobs.
 
+## Cloning workflows
+
 If a workflow fails it's also possible to re-run the original workflow using `prominence clone`. This creates a copy of an existing workflow, for
 example, to clone a workflow with id 51243:
 ```
 prominence clone workflow 51243
 ```
-The cloned workflow is assinged a new id.
+The cloned workflow is assinged a new id. `prominence clone` can be used for a workflow in any state.
