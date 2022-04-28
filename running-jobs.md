@@ -172,4 +172,4 @@ example, to clone a job with id 51239:
 ```
 prominence clone job 51239
 ```
-The clone job is assinged a new id.
+The cloned job is assinged a new id.
