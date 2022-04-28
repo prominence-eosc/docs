@@ -112,7 +112,7 @@ The following fields are used in the request body for creating a job:
 | `labels` | `array[string]` | No | List of arbitrary labels in the form of name-value pairs, e.g. `name=value`. |
 | `tasks` | `array[task]` | Yes | List of tasks |
 | `policies` |  | No | Job policies. |
-| `notifications` |  | No | Job notifications. |
+| `notifications` | `array[notification]` | No | Job notifications. |
 
 `resources`:
 
