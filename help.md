@@ -16,31 +16,31 @@ prominence --help
 
 ```
 usage: prominence [-h] [--version]
-                  {register,login,run,rerun,create,list,describe,delete,exec,snapshot,upload,download,ls,rm,stdout,stderr,usage}
-                  ...
+                  {register,login,run,rerun,clone,create,list,describe,delete,remove,stdout,stderr,exec,snapshot,upload,download,ls,rm,usage} ...
 
 PROMINENCE - run jobs in containers across clouds
 
 positional arguments:
-  {register,login,run,rerun,create,list,describe,delete,exec,snapshot,upload,download,ls,rm,stdout,stderr,usage}
+  {register,login,run,rerun,clone,create,list,describe,delete,remove,stdout,stderr,exec,snapshot,upload,download,ls,rm,usage}
                         sub-command help
     register            Register as a client with the OIDC server
     login               Get a token from the OIDC server
     run                 Create a job or workflow from JSON in a file or URL
-    rerun               Re-run any failed jobs from a completed workflow
+    rerun               Re-run all failed jobs from a completed workflow
+    clone               Create a new job or workflow identical to a previously-submitted one
     create              Create a job
     list                List jobs or workflows
     describe            Describe a job or workflow
     delete              Delete a job or workflow
+    remove              Remove a job or workflow from the queue
+    stdout              Get standard output from a running or completed job
+    stderr              Get standard error from a running or completed job
     exec                Execute a command inside a job
-    snapshot            Create and download a snapshot of a file or directory
-                        in a running job
+    snapshot            Create and download a snapshot of a file or directory in a running job
     upload              Upload a file to transient storage
     download            Download output files from a completed job or workflow
     ls                  List output files
     rm                  Delete a file uploaded to object storage
-    stdout              Get standard output from a running or completed job
-    stderr              Get standard error from a running or completed job
     usage               Return historical usage information
 
 optional arguments:
