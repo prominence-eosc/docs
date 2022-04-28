@@ -167,3 +167,9 @@ A maximum number of retries can be specified by including `maximumRetries` in th
 }
 ```
 
+If a job fails it's also possible to re-run the original job using `prominence clone`. This creates a copy of an existing job, for
+example, to clone a job with id 51239:
+```
+prominence clone job 51239
+```
+The clone job is assinged a new id.
