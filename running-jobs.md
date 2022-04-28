@@ -86,7 +86,9 @@ By default a 10 GB disk is available to jobs. The default maximum runtime is 720
 
 In some situations it can be useful to specify a range of CPU cores rather than specifying a single number. For example, you may prefer to
 have 32 cores but if 32 cores are not currently available you would be happy to have anywhere between 16 and 32 cores. In this case instead
-of specifying `--cpus` use `--cpus-range`, for example `--cpus-range 16,32`. Alternatively `--cpus-options` can be used to specify two
+of specifying `--cpus` use `--cpus-range`, for example `--cpus-range 16,32`.
+
+Alternatively `--cpus-options` can be used to specify two
 possible numbers of CPU cores. For example, with `--cpus-options 16,32` the job will use 32 cores if available, but otherwise 16 cores will
 be used. Both of these options can help to ensure jobs will start running as quickly as possible but with reduced performance due to the
 reduction in numbers of CPUs available.
