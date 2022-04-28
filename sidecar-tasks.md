@@ -38,3 +38,5 @@ In order to define a task to be run as a sidecar set the `type` as `sidecar`. Fo
    ]
 }
 ```
+**Note:** Unlike standard tasks, if multiple sidecar tasks are defined they are all run in parallel rather than sequentially.
+{: .notice--info}
