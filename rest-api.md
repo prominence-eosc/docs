@@ -115,6 +115,7 @@ The following fields are used in the request body for creating a job:
 | `notifications` |  | No | Job notifications. |
 
 `resources`:
+
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
 | `nodes` | `integer` | No | Number of nodes required. |
@@ -127,6 +128,7 @@ The following fields are used in the request body for creating a job:
 | `disk` | `integer` | No | Disk space required in GB. |§
 
 `task`:
+
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
 | `image` | `string` | Yes | Container image name. |
@@ -138,6 +140,7 @@ The following fields are used in the request body for creating a job:
 | `type` | `string` | No | Type of task, one of `basic`, `sidecar`, `openmpi`, `mpich`, or `intelmpi`. |
 
 `policies`:
+
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
 | `maximumRetries` | `integer` | No | Maximum number of times a task will be retried in the event of failures. By default there will be no retries. |
@@ -151,6 +154,7 @@ The following fields are used in the request body for creating a job:
 | `placement` | `placement` | No |
 
 `notifications`:
+
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
 
