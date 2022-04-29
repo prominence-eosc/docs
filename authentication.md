@@ -21,5 +21,5 @@ The instructions here should be followed, i.e. open the specified page in a web 
 ```
 Authentication successful
 ```
-The token is stored in a JSON file `$HOME/.prominence` readable by the current user only.
+The token is stored in a JSON file in the directory `$HOME/.prominence` readable by the current user only.
 
