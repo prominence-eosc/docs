@@ -1,8 +1,8 @@
 ---
 layout: single
 classes: wide
-title: "Sidecar tasks"
-permalink: /sidecar-tasks
+title: "Sidecars"
+permalink: /sidecars
 sidebar:
   nav: "docs"
 ---
