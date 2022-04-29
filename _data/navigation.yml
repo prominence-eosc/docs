@@ -91,8 +91,6 @@ docs:
     children:
       - title: "Jobs with private images"
         url: /tutorial-jobs-private-images
-      - title: "Workflows as code"
-        url: /workflows-as-code
 
 docsa:
   - title: Service deployment
