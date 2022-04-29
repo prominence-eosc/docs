@@ -31,7 +31,8 @@ Run multi-node Open MPI, Intel MPI or MPICH jobs in addition to single-node HTC 
 
 <img width="60" height="60" src="prominence-workflow.png" hspace="20">
 <h3>Workflows</h3>
-Construct complex workflows by specifying the dependencies between different jobs.
+Construct complex workflows by specifying the dependencies between different jobs, or run large numbers
+of similar jobs, for example for parameter scans, based on templates.
 <br/>
 <br/>
 
