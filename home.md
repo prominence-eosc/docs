@@ -5,10 +5,10 @@ header:
   overlay_color: "#5e616c"
   overlay_image: prominence.png
 excerpt: >
-  Enabling HTC & HPC applications opportunistically across private, academic and public clouds. 
+  Enabling HTC & HPC applications across private, academic and public clouds. 
 ---
 
-PROMINENCE is a platform which allows users to exploit idle cloud resources for running containerized workloads.
+PROMINENCE is a platform which allows users to exploit cloud resources for running containerized workloads.
 <br/>
 <br/>
 <img width="60" height="60" src="prominence-job-submission.png" hspace="20">
