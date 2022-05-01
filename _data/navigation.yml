@@ -94,6 +94,11 @@ docs:
       - title: "Usage"
         url: /kv
 
+  - title: Time-series database
+    children:
+      - title: "Usage"
+        url: /time-series
+
   - title: Tutorials
     children:
       - title: "Jobs with private images"
