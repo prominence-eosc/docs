@@ -20,7 +20,7 @@ Example uses:
 * Storing the output from a job if it's a single number or small file
 * Enabling jobs to pass information to other jobs
 
-Note that all keys are private to each user.
+Note that all keys are private to each user. Values can be in any ASCII or binary format (internally stored base64-encoded).
 
 ## Access from within jobs
 Use the provided access token (available from the `PROMINENCE_TOKEN` environment variable to authenticate against the key-value
