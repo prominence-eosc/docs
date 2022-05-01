@@ -7,13 +7,24 @@ sidebar:
   nav: "kv"
 ---
 
-A key-value store is available through the REST API using the same credentials (i.e. token) used for managing jobs and workflows.
+A key-value store is available through the REST API using the same credentials (i.e. access token).
 This allows users to
 store an arbitrary number of key-value pairs. Currently values are limited to 16 KB each. Jobs can access the key-value store (both read and write access)
 and it can also be accessed externally. The following operations are available:
 * Creating a key
 * Getting the value of a key
 * Deleting a key or group of keys
+
+Data can be stored in hierarchically organized directories, e.g.
+```
+/input
+  /param1
+  /param2
+  /param3
+/output
+  /value1
+  /value2
+```
 
 Example uses:
 * Storing input data or input parameters for jobs
