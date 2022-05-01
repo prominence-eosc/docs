@@ -67,6 +67,8 @@ docs:
         url: /python
       - title: "Notebooks"
         url: /notebooks
+      - title: "FAQ"
+        url: /faq-jobs
 
   - title: Workflows
     children:
