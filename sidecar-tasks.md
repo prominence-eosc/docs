@@ -11,7 +11,7 @@ Sidecar tasks are tasks within a job which run in parallel to the standard tasks
 optional sidecar tasks which will run until they complete or until the standard tasks complete,
 at which point the sidecar tasks will be killed. Sidecar tasks are run in a different container to the main
 task(s) but have access to the same filesystem.
-A typical use case is to monitor the main task(s).
+A typical use case is to monitor the main task(s), making use of a time-series database (see [here](/docs/time-series)).
 
 In order to define a task to be run as a sidecar set the `type` as `sidecar`. For example:
 ```json
