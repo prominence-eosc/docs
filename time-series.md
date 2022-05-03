@@ -15,7 +15,7 @@ time-series data which can be retrieved from the REST API. Metrics are added by 
 consisting of:
 * measurement name
 * one or more fields (values are integers or floating point)
-* optional tags (key-value pairs)
+* optional tags (key-value pairs, with both keys and values strings)
 * optional unix epoch (if not specified the server will set the timestamp as the current time)
 
 This can be combined with sidecar tasks (see [here](/docs/sidecars)) for monitoring jobs, for example metrics could be
@@ -37,8 +37,18 @@ Example JSON for writing a measurement `status` with two fields (`value1`, `valu
   "time": 1651564809
 }
 ```
+With the above stored in a file `metrics.json` these metrics can be sent to the time series database like this:
+```
+curl -X POST \
+     -H "Authorization: Bearer $TOKEN" \
+     -H "Content-Type: application/json" \
+     -d@metrics.json \
+     https://eosc.prominence.cloud/api/v1/ts
+```
+No job id needs to be specified as this is done automatically. Data can only be added to the time-series database
+using an access token provided to jobs.
 
-Time-series data can be retrieved from the `$PROMINENCE_URL/ts/<job id>`, for example for the data above:
+Time-series data can be retrieved from the endpoint `$PROMINENCE_URL/ts/<job id>`, for example for data in the above form:
 ```json
 [
   {
