@@ -4,7 +4,7 @@ classes: wide
 title: "Time-series data"
 permalink: /time-series
 sidebar:
-  nav: "time-series"
+  nav: "docs"
 ---
 
 A time-series database is available through the REST API using the standard credential, i.e. access token. Jobs are able to write

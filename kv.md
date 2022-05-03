@@ -4,7 +4,7 @@ classes: wide
 title: "Key-value store"
 permalink: /kv
 sidebar:
-  nav: "kv"
+  nav: "docs"
 ---
 
 A key-value store is available through the REST API using the standard credential, i.e. access token.
