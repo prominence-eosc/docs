@@ -7,6 +7,9 @@ sidebar:
   nav: "docs"
 ---
 
+**Note:** This is an experimental feature.
+{: .notice--warning}
+
 A time-series database is available through the REST API using the standard credential, i.e. access token. Jobs are able to write
 time-series data which can be retrieved from the REST API. Metrics are added by writing JSON to the endpoint `$PROMINENCE_URL/ts`
 consisting of:
@@ -14,6 +17,10 @@ consisting of:
 * one or more fields (values are integers or floating point)
 * optional tags (key-value pairs)
 * optional unix epoch (if not specified the server will set the timestamp as the current time)
+
+This can be combined with sidecar tasks (see [here](/docs/sidecars)) for monitoring jobs, for example metrics could be
+collected about the progress
+or convergence of a running simulation.
 
 Example JSON for writing a measurement `status` with two fields (`value1`, `value2`), two tags (`tag1`, `tag2`) and the time specified:
 ```json
