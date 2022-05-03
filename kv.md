@@ -33,11 +33,11 @@ Example uses:
 Note that all keys are private to each user. Values can be in any ASCII or binary format (they are internally stored base64-encoded).
 
 ## Using the command line interface
-`prominence kv` allows users to interact with the key-value store. To list keys all keys:
+`prominence kv` allows users to interact with the key-value store. To list all keys:
 ```
 prominence kv list
 ```
-or list all keys with a specific prefix:
+or to list all keys with a specific prefix:
 ```
 prominence kv list /inputs
 ```
