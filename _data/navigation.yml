@@ -91,9 +91,9 @@ docs:
 
   - title: Data
     children:
-      - title: "Key-value"
+      - title: "Key value"
         url: /kv
-      - title: "Time-series"
+      - title: "Time series"
         url: /time-series
 
   - title: Tutorials
