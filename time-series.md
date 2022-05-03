@@ -92,7 +92,7 @@ Time-series data can be retrieved from the `$PROMINENCE_URL/ts/<job id>`, for ex
 ]
 ```
 Time-series data can easily be retrieved and plotted using Python, for example:
-```json
+```
 import matplotlib.pyplot as plt
 import datetime
 import numpy as np
