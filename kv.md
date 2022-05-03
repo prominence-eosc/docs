@@ -17,13 +17,11 @@ and it can also be accessed externally. The following operations are available:
 * Delete a key or group of keys
 
 Data can be stored in hierarchically organized directories, for example:
-```
-/input/param1
-/input/param2
-/input/param3
-/output/value1
-/output/value2
-```
+* /input/param1
+* /input/param2
+* /input/param3
+* /output/value1
+* /output/value2
 
 Example uses:
 * Storing input data or input parameters for jobs
