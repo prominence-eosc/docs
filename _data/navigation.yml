@@ -89,14 +89,11 @@ docs:
       - title: "Advanced"
         url: /advanced-workflows
 
-  - title: Key-value store
+  - title: Data
     children:
-      - title: "Usage"
+      - title: "Key-value"
         url: /kv
-
-  - title: Time-series database
-    children:
-      - title: "Usage"
+      - title: "Time-series"
         url: /time-series
 
   - title: Tutorials
