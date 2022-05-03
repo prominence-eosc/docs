@@ -84,3 +84,35 @@ Time-series data can be retrieved from the `$PROMINENCE_URL/ts/<job id>`, for ex
   }
 ]
 ```
+Time-series data can easily be retrieved and plotted using Python, for example:
+```json
+import matplotlib.pyplot as plt
+import datetime
+import numpy as np
+import pandas as pd
+import requests
+import os
+import sys
+
+token = os.environ['PROMINENCE_TOKEN']
+url = os.environ['PROMINENCE_URL']
+job_id = int(sys.argv[1])
+
+response = requests.get('%s/ts/%d' % (url, job_id), headers={'Authorization': 'Bearer %s' % token})
+data = response.json()
+
+figure, axis = plt.subplots(len(data), 1)
+
+count = 0
+for table in data:
+    df = pd.DataFrame({'date': [datetime.datetime.strptime(date, "%Y-%m-%d %H:%M:%S") for date in table['times']],
+                       'data': table['values']})
+    axis[count].plot(df.date, df.data, label='%s/%s' % (table['measurement'], table['field']), linewidth=3)
+    axis[count].legend()
+    count += 1
+
+plt.suptitle('Job: %d' % job_id)
+plt.show()
+```
+where we have assumed that an access token and PROMINENCE URL are defined in environment variables `PROMINENCE_TOKEN` and `PROMINENCE_URL`.
+The above script requires the job id to be specified as an argument.
