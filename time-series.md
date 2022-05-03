@@ -1,7 +1,7 @@
 ---
 layout: single
 classes: wide
-title: "Time-series data"
+title: "Time-series database"
 permalink: /time-series
 sidebar:
   nav: "docs"
