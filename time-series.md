@@ -40,7 +40,7 @@ Example JSON for writing a measurement `status` with two fields (`value1`, `valu
 With the above stored in a file `metrics.json` these metrics can be sent to the time series database like this:
 ```
 curl -X POST \
-     -H "Authorization: Bearer $TOKEN" \
+     -H "Authorization: Bearer $PROMINENCE_TOKEN" \
      -H "Content-Type: application/json" \
      -d@metrics.json \
      https://eosc.prominence.cloud/api/v1/ts
