@@ -46,7 +46,7 @@ curl -X POST \
      https://eosc.prominence.cloud/api/v1/ts
 ```
 No job id needs to be specified as this is done automatically. Data can only be added to the time-series database
-using an access token provided to jobs.
+using the access token provided to jobs.
 
 Time-series data can be retrieved from the endpoint `$PROMINENCE_URL/ts/<job id>`, for example for data in the above form:
 ```json
