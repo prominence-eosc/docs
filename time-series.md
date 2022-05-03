@@ -45,7 +45,7 @@ curl -X POST \
      -H "Authorization: Bearer $PROMINENCE_TOKEN" \
      -H "Content-Type: application/json" \
      -d@metrics.json \
-     https://$PROMINENCE_URL/ts
+     $PROMINENCE_URL/ts
 ```
 No job id needs to be specified as this is done automatically. Data can only be added to the time-series database
 using the access token provided to jobs.
