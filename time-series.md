@@ -18,7 +18,7 @@ consisting of:
 * optional tags (key-value pairs, with both keys and values strings)
 * optional unix epoch (if not specified the server will set the timestamp as the current time)
 
-There is a retention period of 30 days, i.e. all data points are automatically deleted after 30 days.
+There is a retention period of 30 days, i.e. each data point is automatically deleted after 30 days.
 
 The time-series database can be combined with sidecar tasks (see [here](/docs/sidecars)) for monitoring jobs, for example metrics could be
 collected about the progress
