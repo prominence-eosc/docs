@@ -93,7 +93,7 @@ possible numbers of CPU cores. For example, with `--cpus-options 16,32` the job 
 be used. Both of these options can help to ensure jobs will start running as quickly as possible but with reduced performance due to the
 reduction in numbers of CPUs available.
 
-When either of `--cpus-range` or `--cpus-options` are used it can be benificial to specify memory in terms of memory per core rather than
+When either of `--cpus-range` or `--cpus-options` are used it can be beneficial to specify memory in terms of memory per core rather than
 total memory of the node. In this case use `--memory-per-cpu` rather than `--memory`.
 
 For multi-node MPI jobs, instead of specifying a fixed number of nodes, a range of total number of CPU cores can be specified instead using
