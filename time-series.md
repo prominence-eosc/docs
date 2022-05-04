@@ -48,7 +48,8 @@ curl -X POST \
      $PROMINENCE_URL/ts
 ```
 No job id needs to be specified as this is done automatically. Data can only be added to the time-series database
-using the access token provided to jobs.
+using the access token provided to jobs, but data can be read using any access token. Users can only read the 
+time-series data associated with their own jobs.
 
 Time-series data can be retrieved from the endpoint `$PROMINENCE_URL/ts/<job id>`, for example for data in the above form:
 ```json
@@ -133,5 +134,5 @@ for table in data:
 plt.suptitle('Job: %d' % job_id)
 plt.show()
 ```
-where we have assumed that an access token and PROMINENCE URL are defined in environment variables `PROMINENCE_TOKEN` and `PROMINENCE_URL`.
+where we have assumed that an access token and server URL are defined in environment variables `PROMINENCE_TOKEN` and `PROMINENCE_URL`.
 The above script requires the job id to be specified as an argument.
