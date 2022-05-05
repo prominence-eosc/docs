@@ -4,7 +4,7 @@ classes: wide
 title: "Frequently asked questions (jobs)"
 permalink: /faq-jobs
 sidebar:
-  nav: "faq-jobs"
+  nav: "docs"
 ---
 
 ## Nested containers
