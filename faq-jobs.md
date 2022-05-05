@@ -11,6 +11,7 @@ sidebar:
 The simplest way to have a containerised job execute containers itself is to define a PROMINENCE task using
 the Singularity runtime and
 make use of udocker inside the Singularity container.
+
 Below is a trivial example with a job which installs and runs a udocker container inside a Singularity container:
 ```
 name: udocker-in-singularity
@@ -29,4 +30,4 @@ tasks:
       export PATH=`pwd`/udocker:$PATH
       udocker -q run eoscprominence/testpi
 ```
-
+Of course, for real use cases a container image can be built with udocker pre-installed.
