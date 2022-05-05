@@ -96,11 +96,6 @@ docs:
       - title: "Time series"
         url: /time-series
 
-  - title: FAQ
-    children:
-      - title: "Jobs"
-        url: /faq-jobs
-
   - title: Tutorials
     children:
       - title: "Jobs with private images"
