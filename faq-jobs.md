@@ -8,9 +8,10 @@ sidebar:
 ---
 
 ## Nested containers
-The simplest way to have a containerised job execute containers itself is to use the Singularity runtime and
+The simplest way to have a containerised job execute containers itself is to define a PROMINENCE task using
+the Singularity runtime and
 make use of udocker inside the Singularity container.
-Below is a trivial example demonstrating installing and running a udocker container inside a Singularity container:
+Below is a trivial example with a job which installs and runs a udocker container inside a Singularity container:
 ```
 name: udocker-in-singularity
 resources:
