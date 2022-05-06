@@ -47,6 +47,36 @@ curl -X POST \
      -d@metrics.json \
      $PROMINENCE_URL/ts
 ```
+Alternatively, here is a simple example of a Python script which sends random numbers every 10 seconds for 1 minute:
+```
+import random
+import requests
+import os
+import time
+
+def send_metrics():
+    metrics = {
+        "measurement": "status",
+        "fields": {
+            "value1": random.random(),
+            "value2": random.random()
+        },
+        "tags": {
+            "tag1": "tagvalue1",
+            "tag2": "tagvalue2"
+        }
+    }
+
+    response = requests.post('%s/ts' % os.environ['PROMINENCE_URL'],
+                             json=metrics,
+                             headers={'Authorization': 'Bearer %s' % os.environ['PROMINENCE_TOKEN']})
+
+start = time.time()
+while time.time() - start < 60:
+    send_metrics()
+    time.sleep(10)
+```
+
 No job id needs to be specified as this is done automatically. Data can only be added to the time-series database
 using the access token provided to jobs, but data can be read using any access token. Users can only read the 
 time-series data associated with their own jobs.
