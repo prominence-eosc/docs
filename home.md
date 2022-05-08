@@ -51,4 +51,4 @@ of similar jobs, for example for parameter scans, based on templates.
 
 <img width="60" height="60" src="prominence-storage.png" hspace="20">
 <h3>Data access</h3>
-Jobs can access data transparently from [OneData](https://onedata.org), WebDAV (including [B2DROP](https://b2drop.eudat.eu)) or object storage.
+Jobs can access data from object storage or in a POSIX-like way from [OneData](https://onedata.org) or WebDAV (including [B2DROP](https://b2drop.eudat.eu)).
