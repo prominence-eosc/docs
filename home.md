@@ -31,7 +31,7 @@ Go beyond a single cloud and leverage the resources and features available acros
 <br/>
 
 <img width="60" height="60" src="prominence-containers.png" hspace="20">
-<h3>Reliability and reproduceability</h3>
+<h3>Reliability and reproducibility</h3>
 All jobs are run in containers to ensure they will can run reliably anywhere and are reproducible.
 <br/>
 <br/>
