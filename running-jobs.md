@@ -157,12 +157,18 @@ prominence run single-job-multiple-tasks.json
 **Note:** Different tasks do not have to use the same container runtime. It is possible for some tasks to use udocker while others use Singularity.
 {: .notice--info}
 
-### Task failures and retries
+### Automatic retries for job and task failures
 If multiple tasks are defined and a task fails (i.e. the exit code is not 0), no more tasks will be executed unless `ignoreTaskFailures`
 in `policies` is specified (see [here](/docs/job-policies)).
 
 It is possible for failing tasks to be retried but by default this will not happen.
-A maximum number of retries can be specified by including `maximumRetries` in the job definition, e.g.
+A maximum number of retries can be specified by including `maximumTaskRetries` in the job definition, e.g.
+```json
+"policies": {
+  "maximumTaskRetries": 2
+}
+```
+It's also possible for failing jobs to be retried. A maximum number of retries can be specified by including `maximumRetries` in the job definition, e.g.
 ```json
 "policies": {
   "maximumRetries": 2
