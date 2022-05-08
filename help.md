@@ -16,12 +16,13 @@ prominence --help
 
 ```
 usage: prominence [-h] [--version]
-                  {register,login,run,rerun,clone,create,list,describe,delete,remove,stdout,stderr,exec,snapshot,upload,download,ls,rm,usage} ...
+                  {register,login,run,rerun,clone,create,list,describe,delete,remove,stdout,stderr,exec,snapshot,upload,download,ls,rm,usage,kv}
+                  ...
 
 PROMINENCE - run jobs in containers across clouds
 
 positional arguments:
-  {register,login,run,rerun,clone,create,list,describe,delete,remove,stdout,stderr,exec,snapshot,upload,download,ls,rm,usage}
+  {register,login,run,rerun,clone,create,list,describe,delete,remove,stdout,stderr,exec,snapshot,upload,download,ls,rm,usage,kv}
                         sub-command help
     register            Register as a client with the OIDC server
     login               Get a token from the OIDC server
@@ -42,6 +43,7 @@ positional arguments:
     ls                  List output files
     rm                  Delete a file uploaded to object storage
     usage               Return historical usage information
+    kv                  Interact with the key-value store
 
 optional arguments:
   -h, --help            show this help message and exit
