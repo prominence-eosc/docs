@@ -3,8 +3,6 @@ main:
     url: /about
   - title: "Users"
     url: /quick-start
-  - title: "Admins"
-    url: /deployment-quick-start
 
 docs:
   - title: Overview
