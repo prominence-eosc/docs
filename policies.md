@@ -8,7 +8,8 @@ sidebar:
 ---
 
 The `policies` section of a job's JSON description enables users to have more control of how jobs are managed and influence where they will be executed. The available options are:
-* `maximumRetries`: maximum number of times a task will be retried in the event of failures. By default there will be no retries.
+* `maximumRetries`: maximum number of times a job will be retried in the event of failures. By default there will be no retries.
+* `maximumTaskRetries`: maximum number of times a task will be retried in the event of failures. By default there will be no retries.
 * `maximumTimeInQueue`: maximum time in minutes the job will remain idle in the queue. If a job cannot be run immediately it will wait in the queue (up to the specified time limit) until resources become available. The value `-1` means that the job will remain in the queue until it starts running. The default value `0` means that the job will remain in the queue until it starts running or there is a failure.
 * `leaveInQueue`: by default completed, failed, deleted and killed jobs are only visible from the CLI when `--completed` is specified. When
 `leaveInQueue` is set to `True` these jobs will remain visible without needing `--completed` and need to be explicitly removed from the queue.
