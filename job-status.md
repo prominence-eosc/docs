@@ -83,12 +83,13 @@ The JSON descriptions of completed jobs contain additional information. This may
 * __endTime__: date & time when the job ended.
 * __site__: the site where the job was executed.
 * __maxMemoryUsageKB__: the maximum total memory usage of the job, summed over all processes (note this is not available for jobs running on remote HTC or HPC resources)
+* __retries__: the number of job retries attempted.
 * __provisionedResources__: the number of CPU cores, memory (in GB), disk (in GB) and number of nodes provisioned for the job.
 * __cpu__: details of the CPU used to run the job (`clock`, `model`, and `vendor`).
 * __runtimeVersion__: the versions of `singularity` and `udocker` (in the form `<version>/<tarball_release>` used.
 
 The following information is also provided for each task:
-* __retries__: the number of retries attempted.
+* __retries__: the number of task retries attempted.
 * __exitCode__: the exit code returned by the user's job. This would usually would be 0 for success.
 * __imagePullTime__: time taken to pull the container image. If a cached image from a previous task was used this will be -1.
 * __imagePullStatus__: image pull status, e.g. `completed`.
