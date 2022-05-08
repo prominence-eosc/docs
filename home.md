@@ -17,6 +17,19 @@ Submit jobs using a simple batch system style command line interface from your l
 <br/>
 <br/>
 
+<img width="60" height="60" src="prominence-invisible.png" hspace="20">
+<h3>Invisible infrastructure</h3>
+Run jobs without worrying about servers or clusters.
+All infrastructure provisioning is handled completely automatically and transparently.
+<br/>
+<br/>
+
+<img width="60" height="60" src="prominence-burst.png" hspace="20">
+<h3>Multi-cloud native</h3>
+Go beyond a single cloud and leverage the resources and features available across many clouds simultaneously.
+<br/>
+<br/>
+
 <img width="60" height="60" src="prominence-containers.png" hspace="20">
 <h3>Reliability and reproduceability</h3>
 All jobs are run in containers to ensure they will can run reliably anywhere and are reproducible.
@@ -33,18 +46,6 @@ Run multi-node Open MPI, Intel MPI or MPICH jobs in addition to single-node HTC 
 <h3>Workflows</h3>
 Construct complex workflows by specifying the dependencies between different jobs, or run large numbers
 of similar jobs, for example for parameter scans, based on templates.
-<br/>
-<br/>
-
-<img width="60" height="60" src="prominence-burst.png" hspace="20">
-<h3>Multi-cloud native</h3>
-Go beyond a single cloud and leverage the resources and features available across many clouds.
-<br/>
-<br/>
-
-<img width="60" height="60" src="prominence-invisible.png" hspace="20">
-<h3>Invisible infrastructure</h3>
-All infrastructure provisioning is handled completely automatically and is totally transparent to the user.
 <br/>
 <br/>
 
