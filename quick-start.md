@@ -14,8 +14,8 @@ Here we demonstrate a quick way to start using PROMINENCE with the command line 
 
 Install the PROMINENCE CLI in a new virtual environment:
 ```
-$ python3 -m venv ~./prominence-venv
-$ source ~./prominence-venv/bin/activate
+$ python3 -m venv venv
+$ source venv/bin/activate
 $ pip install prominence
 ```
 
