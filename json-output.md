@@ -145,6 +145,7 @@ prominence run https://raw.githubusercontent.com/prominence-eosc/examples/master
 ## Examples
 
 ### Specifying resources
+Here we give some example `resources` blocks.
 
 #### Jobs with fixed resources
 A job requiring 2 nodes, with 16 CPUs, 32 GB memory and 18 GB disk per node:
