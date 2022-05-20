@@ -99,10 +99,10 @@ When either of `--cpus-range` or `--cpus-options` are used it can be beneficial 
 total memory of the node. In this case use `--memory-per-cpu` rather than `--memory`.
 
 For multi-node MPI jobs, instead of specifying a fixed number of nodes, a range of total number of CPU cores can be specified instead using
-`--cpus-total-range`. For example:
+`--total-cpus-range`. For example:
 ```
 prominence create --openmpi \
-                  --cpus-total-range 16,32 \
+                  --total-cpus-range 16,32 \
                   --cpus-range 4,8 \
                   --memory-per-cpu 2 \
                   alahiff/geant4mpi:1.3a3
