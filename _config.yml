@@ -6,8 +6,6 @@ remote_theme: "mmistakes/minimal-mistakes@4.15.2"
 minimal_mistakes_skin: "air"
 url: "https://prominence-eosc.github.io"
 baseurl: "/docs"
-search: true
-search_full_content: true
 
 plugins:
   - jekyll-include-cache
