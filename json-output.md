@@ -148,7 +148,7 @@ prominence run https://raw.githubusercontent.com/prominence-eosc/examples/master
 
 #### Jobs with fixed resources
 A job requiring 2 nodes, with 16 CPUs, 32 GB memory and 18 GB disk per node:
-```
+```json
 "resources":{
    "nodes":2,
    "disk":18,
@@ -157,7 +157,7 @@ A job requiring 2 nodes, with 16 CPUs, 32 GB memory and 18 GB disk per node:
 }
 ```
 Alternatively, memory per CPU can be specified:
-```
+```json
 "resources":{
    "nodes":2,
    "disk":18,
@@ -168,7 +168,7 @@ Alternatively, memory per CPU can be specified:
 
 #### Jobs with moldable resources
 A job requiring anywhere between 16 and 32 CPUs, with 2 GB memory per CPU and 4 GB disk:
-```
+```json
 "resources":{
    "nodes":1,
    "disk":4,
@@ -180,7 +180,7 @@ A job requiring anywhere between 16 and 32 CPUs, with 2 GB memory per CPU and 4 
 }
 ```
 A job requiring either 14 or 28 CPUs, with 2 GB memory per CPU and 4 GB disk:
-```
+```json
 "resources":{
    "nodes":1,
    "disk":2,
@@ -192,7 +192,7 @@ A job requiring either 14 or 28 CPUs, with 2 GB memory per CPU and 4 GB disk:
 }
 ```
 A multi-node job requiring between 16 and 32 CPUs in total, with between 4 and 8 CPUs per node, 2 GB memory per CPU and 10 GB disk per node:
-```
+```json
 "resources":{
    "disk":10,
    "cpusRange":[
@@ -207,7 +207,7 @@ A multi-node job requiring between 16 and 32 CPUs in total, with between 4 and 8
 }
 ```
 A multi-node job requiring between 16 and 32 CPUs in total, with 4 or 8 CPUs per node, 2 GB memory per CPU and 10 GB disk per node:
-```
+```json
 "resources":{
    "disk":10,
    "cpusOptions":[
