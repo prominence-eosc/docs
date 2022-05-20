@@ -168,7 +168,7 @@ Alternatively, memory per CPU can be specified:
 ```
 
 #### Jobs with moldable resources
-A job requiring anywhere between 16 and 32 CPUs, with 2 GB memory per CPU and 4 GB disk:
+A single-node job requiring anywhere between 16 and 32 CPUs, with 2 GB memory per CPU and 4 GB disk:
 ```json
 "resources":{
    "nodes":1,
@@ -180,14 +180,14 @@ A job requiring anywhere between 16 and 32 CPUs, with 2 GB memory per CPU and 4 
    "memoryPerCpu":2
 }
 ```
-A job requiring either 14 or 28 CPUs, with 2 GB memory per CPU and 4 GB disk:
+A single-node job requiring either 14 or 28 CPUs, with 2 GB memory per CPU and 4 GB disk:
 ```json
 "resources":{
    "nodes":1,
-   "disk":2,
+   "disk":4,
    "cpusOptions":[
-      16,
-      32
+      14,
+      28 
    ],
    "memoryPerCpu":2
 }
