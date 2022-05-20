@@ -191,11 +191,26 @@ A job requiring either 14 or 28 CPUs, with 2 GB memory per CPU and 4 GB disk:
    "memoryPerCpu":2
 }
 ```
-A multi-node job requiring between 16 and 32 CPUs in total, with between 4 and 8 CPUs per node, 2 GB memory per CPU and 10 GB disk:
+A multi-node job requiring between 16 and 32 CPUs in total, with between 4 and 8 CPUs per node, 2 GB memory per CPU and 10 GB disk per node:
 ```
 "resources":{
    "disk":10,
    "cpusRange":[
+      4,
+      8
+   ],
+   "totalCpusRange":[
+      16,
+      32
+   ],
+   "memoryPerCpu":2
+}
+```
+A multi-node job requiring between 16 and 32 CPUs in total, with 4 or 8 CPUs per node, 2 GB memory per CPU and 10 GB disk per node:
+```
+"resources":{
+   "disk":10,
+   "cpusOptions":[
       4,
       8
    ],
