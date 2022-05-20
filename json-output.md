@@ -141,3 +141,68 @@ Instead of specifying a local file, `prominence run` also works with URLs. For e
 ```
 prominence run https://raw.githubusercontent.com/prominence-eosc/examples/master/lammps-bench-single.json
 ```
+
+## Examples
+
+### Specifying resources
+
+#### Jobs with fixed resources
+A job requiring 2 nodes, with 16 CPUs, 32 GB memory and 18 GB disk per node:
+```
+"resources":{
+   "nodes":2,
+   "disk":18,
+   "cpus":16,
+   "memory":32
+}
+```
+Alternatively, memory per CPU can be specified:
+```
+"resources":{
+   "nodes":2,
+   "disk":18,
+   "cpus":16,
+   "memoryPerCpu":2
+}
+```
+
+#### Jobs with moldable resources
+A job requiring anywhere between 16 and 32 CPUs, with 2 GB memory per CPU and 4 GB disk:
+```
+"resources":{
+   "nodes":1,
+   "disk":4,
+   "cpusRange":[
+      16,
+      32
+   ],
+   "memoryPerCpu":2
+}
+```
+A job requiring either 14 or 28 CPUs, with 2 GB memory per CPU and 4 GB disk:
+```
+"resources":{
+   "nodes":1,
+   "disk":2,
+   "cpusOptions":[
+      16,
+      32
+   ],
+   "memoryPerCpu":2
+}
+```
+A multi-node job requiring between 16 and 32 CPUs in total, with between 4 and 8 CPUs per node, 2 GB memory per CPU and 10 GB disk:
+```
+"resources":{
+   "disk":10,
+   "cpusRange":[
+      4,
+      8
+   ],
+   "totalCpusRange":[
+      16,
+      32
+   ],
+   "memoryPerCpu":2
+}
+```
