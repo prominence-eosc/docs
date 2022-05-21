@@ -5,7 +5,7 @@ permalink: /accessing-data
 parent: Command line interface
 nav_order: 6
 ---
-
+# Accessing data
 There are currently several options to access data in PROMINENCE, and more are under development.
 
 ## Cloud storage

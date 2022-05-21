@@ -5,7 +5,7 @@ permalink: /help
 parent: Command line interface
 nav_order: 3
 ---
-
+# Help
 The main help page gives a list of all the available commands:
 ```
 prominence --help

@@ -5,7 +5,7 @@ permalink: /authentication
 parent: Command line interface
 nav_order: 5
 ---
-
+# Authentication
 Before you can run any commands you need to login. This retrieves a time-limited token which is used to authenticate against the PROMINENCE RESTful API.
 ```
 prominence login
