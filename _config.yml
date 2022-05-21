@@ -5,7 +5,3 @@ repository: "prominence-eosc/docs"
 remote_theme: just-the-docs/just-the-docs
 url: "https://prominence-eosc.github.io"
 baseurl: "/docs"
-
-plugins:
-  - jekyll-include-cache
-
