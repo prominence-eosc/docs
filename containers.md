@@ -2,8 +2,8 @@
 layout: default
 title: "Containers"
 permalink: /containers
-sidebar:
-  nav: "docs"
+parent: Overview
+nav_order: 3
 ---
 
 In PROMINENCE all jobs are run in unprivileged containers using user-specified images. It is possible to use either the Singularity or udocker container runtimes.

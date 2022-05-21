@@ -2,8 +2,8 @@
 layout: default
 title: "REST API"
 permalink: /rest-api
-sidebar:
-  nav: "docs"
+parent: Overview
+nav_order: 6
 ---
 
 This is the specification of the PROMINENCE REST API.

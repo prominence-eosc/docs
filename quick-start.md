@@ -2,8 +2,8 @@
 layout: default
 title: "Quick start"
 permalink: /quick-start
-sidebar:
-  nav: "docs"
+parent: Overview
+nav_order: 2
 ---
 
 ## First steps

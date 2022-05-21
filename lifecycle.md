@@ -2,8 +2,8 @@
 layout: default
 title: "Job lifecycle"
 permalink: /job-lifecycle
-sidebar:
-  nav: "docs"
+parent: Overview
+nav_order: 5
 ---
 
 The state diagram below shows the possible job states.

@@ -2,8 +2,8 @@
 layout: default
 title: "Jobs, tasks and workflows"
 permalink: /jobs-tasks-workflows
-sidebar:
-  nav: "docs"
+parent: Overview
+nav_order: 4
 ---
 
 A job in PROMINENCE consists of the following:
