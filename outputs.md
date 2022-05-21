@@ -2,8 +2,8 @@
 layout: default
 title: "Output files"
 permalink: /output-files
-sidebar:
-  nav: "docs"
+parent: Jobs
+nav_order: 3
 ---
 
 ## Specifying output files

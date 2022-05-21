@@ -2,8 +2,8 @@
 layout: default
 title: "Input files"
 permalink: /input-files
-sidebar:
-  nav: "docs"
+parent: Jobs
+nav_order: 2
 ---
 
 ## Small input files

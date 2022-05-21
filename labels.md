@@ -2,8 +2,8 @@
 layout: default
 title: "Labels"
 permalink: /labels
-sidebar:
-  nav: "docs"
+parent: Jobs
+nav_order: 5
 ---
 
 ## Defining labels 

@@ -1,9 +1,10 @@
 ---
 layout: default
-title: "Running jobs"
+title: "Jobs"
 permalink: /running-jobs
-sidebar:
-  nav: "docs"
+nav_order: 3
+has_children: true
+has_toc: false
 ---
 
 ## A basic single-node job
