@@ -2,8 +2,8 @@
 layout: default
 title: "Sidecars"
 permalink: /sidecars
-sidebar:
-  nav: "docs"
+parent: Jobs
+nav_order: 12
 ---
 
 Sidecar tasks are tasks within a job which run in parallel to the standard tasks. A job can contain one or more

@@ -2,8 +2,8 @@
 layout: default
 title: "Using PROMINENCE from Python"
 permalink: /python
-sidebar:
-  nav: "docs"
+parent: Jobs
+nav_order: 14
 ---
 
 Here we will assume that the PROMINENCE CLI has been installed and `prominence login` has been run to obtain a token.

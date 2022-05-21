@@ -2,8 +2,8 @@
 layout: default
 title: "Job factories"
 permalink: /job-factories
-sidebar:
-  nav: "docs"
+parent: Workflows
+nav_order: 4
 ---
 
 The following types of job factories are available:

@@ -1,9 +1,10 @@
 ---
 layout: default
-title: "Introduction to workflows"
+title: "Workflows"
 permalink: /workflows
-sidebar:
-  nav: "docs"
+nav_order: 4
+has_children: true
+has_toc: false
 ---
 
 ## Types of workflows

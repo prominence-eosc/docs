@@ -2,8 +2,8 @@
 layout: default
 title: "Groups of jobs"
 permalink: /groups-of-jobs
-sidebar:
-  nav: "docs"
+parent: Workflows
+nav_order: 2
 ---
 
 In some situations it can be useful to be able to manage a group of jobs as a single entity (a workflow). 

@@ -2,8 +2,8 @@
 layout: default
 title: "Workflow notifications"
 permalink: /workflow-notifications
-sidebar:
-  nav: "docs"
+parent: Workflows
+nav_order: 7
 ---
 
 The `notifications` section of workflow's JSON description can be used to enable emails to be sent when workflows finish. Add the following lines

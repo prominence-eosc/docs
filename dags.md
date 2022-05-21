@@ -2,8 +2,8 @@
 layout: default
 title: "Directed acyclic graphs"
 permalink: /dags
-sidebar:
-  nav: "docs"
+parent: Workflows
+nav_order: 3
 ---
 
 ## Overview

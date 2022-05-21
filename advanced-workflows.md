@@ -2,8 +2,8 @@
 layout: default
 title: "Advanced workflows"
 permalink: /advanced-workflows
-sidebar:
-  nav: "docs"
+parent: Workflows
+nav_order: 8
 ---
 
 ## Multiple job factories

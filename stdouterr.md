@@ -2,8 +2,8 @@
 layout: default
 title: "Standard output and error"
 permalink: /stdout-stderr
-sidebar:
-  nav: "docs"
+parent: Jobs
+nav_order: 7
 ---
 
 The standard output and error from a job can be seen using the `stdout` and `stderr` commands. For example, to get the standard output for the job with id 299:

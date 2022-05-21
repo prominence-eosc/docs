@@ -2,8 +2,8 @@
 layout: default
 title: "Example jobs"
 permalink: /example-jobs
-sidebar:
-  nav: "docs"
+parent: Jobs
+nav_order: 13
 ---
 
 ## Single node jobs

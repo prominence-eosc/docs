@@ -2,8 +2,8 @@
 layout: default
 title: "Job notifications"
 permalink: /job-notifications
-sidebar:
-  nav: "docs"
+parent: Jobs
+nav_order: 11
 ---
 
 The `notifications` section of job's JSON description can be used to enable emails to be sent when jobs finish. Add the following lines

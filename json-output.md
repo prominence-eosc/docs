@@ -2,8 +2,8 @@
 layout: default
 title: "Job description files"
 permalink: /job-description-files
-sidebar:
-  nav: "docs"
+parent: Jobs
+nav_order: 9
 ---
 
 ## Generating JSON job descriptions

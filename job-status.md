@@ -2,8 +2,8 @@
 layout: default
 title: "Checking job status"
 permalink: /job-status
-sidebar:
-  nav: "docs"
+parent: Jobs
+nav_order: 6
 ---
 
 ## Listing jobs

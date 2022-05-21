@@ -2,8 +2,8 @@
 layout: default
 title: "Frequently asked questions (jobs)"
 permalink: /faq-jobs
-sidebar:
-  nav: "docs"
+parent: Jobs
+nav_order: 16
 ---
 
 ## Nested containers

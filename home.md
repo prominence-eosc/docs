@@ -1,11 +1,8 @@
 ---
-layout: splash
+layout: default
 permalink: /
-header:
-  overlay_color: "#5e616c"
-  overlay_image: prominence.png
-excerpt: >
-  Enabling HTC & HPC applications across private, academic and public clouds. 
+nav_order: 1
+has_children: true
 ---
 
 PROMINENCE is a platform which allows users to exploit cloud resources for running containerized workloads.

@@ -2,8 +2,8 @@
 layout: default
 title: "Job policies"
 permalink: /job-policies
-sidebar:
-  nav: "docs"
+parent: Jobs
+nav_order: 10
 ---
 
 The `policies` section of a job's JSON description enables users to have more control of how jobs are managed and influence where they will be executed. The available options are:

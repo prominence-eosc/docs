@@ -2,8 +2,8 @@
 layout: default
 title: "Output files in workflows"
 permalink: /workflow-outputs
-sidebar:
-  nav: "docs"
+parent: Workflows
+nav_order: 5
 ---
 
 When a workflow consists of jobs which have output files and/or directories defined it is possible to download the output from all jobs
