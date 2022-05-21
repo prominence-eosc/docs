@@ -5,7 +5,7 @@ permalink: /job-lifecycle
 parent: Overview
 nav_order: 6
 ---
-
+# Job lifecycle
 The state diagram below shows the possible job states.
 
 ![Job lifecycle](job-states.png)
