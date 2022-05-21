@@ -20,7 +20,7 @@ A job in PROMINENCE consists of the following:
 * Notifications (e.g. to specify email notification upon job completion)
 
 ## Tasks
-Tasks execute sequentially within a job, and consist of the following:
+Tasks execute sequentially within a job (except for sidecar tasks which run in parallel to other tasks), and consist of the following:
 * Container image
 * Container runtime (Singularity or udocker)
 * Command to run and optionally any arguments
