@@ -7,7 +7,7 @@ nav_order: 1
 # PROMINENCE
 {: .fs-9 }
 
-PROMINENCE is a platform which allows users to exploit cloud resources for running containerized workloads.
+A platform allowing users to exploit cloud resources for running containerised workloads.
 {: .fs-6 .fw-300 }
 
 <br/>
