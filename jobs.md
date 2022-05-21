@@ -36,15 +36,3 @@ An example workflow, including how it is made up of jobs and tasks, is shown bel
 
 ![Tasks and jobs within a workflow](prominence-tasks-jobs-workflows.png)
 
-## Environment variables available to jobs
-The following environment variables will be set by default:
-* PROMINENCE_CPUS: the number of CPUs available (which could be larger than what was requested)
-* PROMINENCE_MEMORY: the amount of memory in GB available (which could be larger than what was requested)
-* PROMINENCE_NODES: the number of nodes in the job
-* PROMINENCE_NODE_NUM: the id of the node in a multi-node job, starting from 0
-* PROMINENCE_CONTAINER_RUNTIME: the container runtime in use, either `singularity` or `udocker`
-* PROMINENCE_JOB_ID: the id of the job
-* PROMINENCE_WORKFLOW_ID: the id of the associated workflow, if applicable
-* PROMINENCE_URL: URL of the PROMINENCE REST API
-* PROMINENCE_TOKEN: token which can be used to authenticate against the PROMINENCE REST API (a unique token is generated per job, and is valid
-for the lifetime of the job)
