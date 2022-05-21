@@ -2,8 +2,8 @@
 layout: default
 title: "Time-series database"
 permalink: /time-series
-sidebar:
-  nav: "docs"
+parent: Data
+nav_order: 3
 ---
 # Time series database
 

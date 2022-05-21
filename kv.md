@@ -2,8 +2,8 @@
 layout: default
 title: "Key-value store"
 permalink: /kv
-sidebar:
-  nav: "docs"
+parent: Data
+nav_order: 2
 ---
 # Key-value store
 
