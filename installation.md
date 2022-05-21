@@ -3,8 +3,8 @@ layout: single
 classes: wide
 title: "Installation"
 permalink: /installation
-nav_order: 2
-has_children: true
+parent: Overview
+nav_order: 3
 ---
 
 The PROMINENCE CLI can be installed from PyPI, or if preferred, it can be run using containers. It is possible for normal users to install the PROMINENCE CLI without having to request any assistance from their system administrators.

@@ -3,7 +3,7 @@ layout: default
 title: "REST API"
 permalink: /rest-api
 parent: Overview
-nav_order: 6
+nav_order: 7
 ---
 
 This is the specification of the PROMINENCE REST API.
