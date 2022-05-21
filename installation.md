@@ -1,6 +1,5 @@
 ---
-layout: single
-classes: wide
+layout: default
 title: "Installation"
 permalink: /installation
 parent: Overview
