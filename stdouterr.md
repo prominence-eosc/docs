@@ -5,7 +5,7 @@ permalink: /stdout-stderr
 parent: Jobs
 nav_order: 7
 ---
-
+# Standard output and error
 The standard output and error from a job can be seen using the `stdout` and `stderr` commands. For example, to get the standard output for the job with id 299:
 ```
 prominence stdout 299

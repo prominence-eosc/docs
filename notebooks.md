@@ -5,7 +5,7 @@ permalink: /notebooks
 parent: Jobs
 nav_order: 15
 ---
-
+# Using PROMINENCE from notebooks
 Since all interaction with PROMINENCE is via a REST API it is straightforward to use PROMINENCE from any Jupyter notebook. See [here](/docs/python) for more information on using PROMINENCE from Python.
 
 ## Simple example
