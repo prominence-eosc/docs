@@ -5,7 +5,7 @@ permalink: /input-files
 parent: Jobs
 nav_order: 2
 ---
-
+# Input files
 ## Small input files
 Files can be uploaded from the host running the CLI and made available to jobs using the `--input` option. For example:
 ```

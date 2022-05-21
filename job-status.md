@@ -5,7 +5,7 @@ permalink: /job-status
 parent: Jobs
 nav_order: 6
 ---
-
+# Job status
 ## Listing jobs
 The `list` command by default lists any active jobs, i.e. jobs which are idle or running:
 ```

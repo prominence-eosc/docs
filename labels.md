@@ -5,7 +5,7 @@ permalink: /labels
 parent: Jobs
 nav_order: 5
 ---
-
+# Labels
 ## Defining labels 
 Arbitrary labels in the form of key-value pairs (separated by "=") can be set using the `--label` option. This option can be used multiple times to set multiple labels. For example:
 ```

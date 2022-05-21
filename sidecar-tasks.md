@@ -5,7 +5,7 @@ permalink: /sidecars
 parent: Jobs
 nav_order: 12
 ---
-
+# Sidecars
 Sidecar tasks are tasks within a job which run in parallel to the standard tasks. A job can contain one or more
 optional sidecar tasks which will run until they complete or until the standard tasks complete,
 at which point the sidecar tasks will be killed. Sidecar tasks are run in a different container to the main

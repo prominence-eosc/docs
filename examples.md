@@ -5,7 +5,7 @@ permalink: /example-jobs
 parent: Jobs
 nav_order: 13
 ---
-
+# Example jobs
 ## Single node jobs
 
 ### Blender

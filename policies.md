@@ -5,7 +5,7 @@ permalink: /job-policies
 parent: Jobs
 nav_order: 10
 ---
-
+# Job policies
 The `policies` section of a job's JSON description enables users to have more control of how jobs are managed and influence where they will be executed. The available options are:
 * `maximumRetries`: maximum number of times a job will be retried in the event of failures. By default there will be no retries.
 * `maximumTaskRetries`: maximum number of times a task will be retried in the event of failures. By default there will be no retries.
