@@ -2,8 +2,8 @@
 layout: default
 title: "Help"
 permalink: /help
-sidebar:
-  nav: "docs"
+parent: Command line interface
+nav_order: 3
 ---
 
 The main help page gives a list of all the available commands:

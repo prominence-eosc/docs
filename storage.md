@@ -2,8 +2,8 @@
 layout: default
 title: "Accessing data"
 permalink: /accessing-data
-sidebar:
-  nav: "docs"
+parent: Command line interface
+nav_order: 6
 ---
 
 There are currently several options to access data in PROMINENCE, and more are under development.

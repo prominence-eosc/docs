@@ -2,8 +2,8 @@
 layout: default
 title: "Jobs and workflows"
 permalink: /jobs-and-workflows
-sidebar:
-  nav: "docs"
+parent: Command line interface
+nav_order: 7
 ---
 
 By default all PROMINENCE CLI commands refer to jobs. However, a number of commands include the ability to specify a resource, which is either a `job` or a `workflow`.

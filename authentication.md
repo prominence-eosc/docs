@@ -2,8 +2,8 @@
 layout: default
 title: "Authentication"
 permalink: /authentication
-sidebar:
-  nav: "docs"
+parent: Command line interface
+nav_order: 5
 ---
 
 Before you can run any commands you need to login. This retrieves a time-limited token which is used to authenticate against the PROMINENCE RESTful API.
