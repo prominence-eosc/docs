@@ -1,6 +1,5 @@
 ---
-layout: single
-classes: wide
+layout: default
 title: "Running jobs"
 permalink: /running-jobs
 sidebar:
