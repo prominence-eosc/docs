@@ -5,7 +5,7 @@ permalink: /quick-start
 parent: Overview
 nav_order: 2
 ---
-
+# Quick start
 ## First steps
 
 Here we demonstrate a quick way to start using PROMINENCE with the command line interface. We assume the user wants to run PROMINENCE on a host on which they do not have root access. For more installation options, see [here](/docs/installation).
