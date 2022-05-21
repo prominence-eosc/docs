@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "About PROMINENCE"
+title: "About"
 permalink: /about
 nav_order: 2
 ---
