@@ -2,7 +2,8 @@ name: PROMINENCE
 title: PROMINENCE
 description: Enabling HTC & HPC applications opportunistically across private, academic and public clouds
 repository: "prominence-eosc/docs"
-remote_theme: just-the-docs/just-the-docs
+remote_theme: "mmistakes/minimal-mistakes@4.15.2"
+minimal_mistakes_skin: "air"
 url: "https://prominence-eosc.github.io"
 baseurl: "/docs"
 
