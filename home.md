@@ -4,7 +4,9 @@ permalink: /
 nav_order: 1
 ---
 
-<h2>PROMINENCE is a platform which allows users to exploit cloud resources for running containerized workloads.<h2>
+PROMINENCE is a platform which allows users to exploit cloud resources for running containerized workloads.
+{: .fs-6 .fw-300 }
+
 <br/>
 <br/>
 <h3>Run jobs from anywhere</h3>
