@@ -1,1 +1,1 @@
-PROMINENCE documentation. Makes use of https://mmistakes.github.io/minimal-mistakes/.
+PROMINENCE documentation. Makes use of https://just-the-docs.github.io/just-the-docs/.
