@@ -3,7 +3,7 @@ layout: default
 title: "Checking job status"
 permalink: /job-status
 parent: Jobs
-nav_order: 6
+nav_order: 7
 ---
 # Job status
 ## Listing jobs

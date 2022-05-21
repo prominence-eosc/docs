@@ -3,7 +3,7 @@ layout: default
 title: "Labels"
 permalink: /labels
 parent: Jobs
-nav_order: 5
+nav_order: 6
 ---
 # Labels
 ## Defining labels 

@@ -3,7 +3,7 @@ layout: default
 title: "Environment variables"
 permalink: /environment-variables
 parent: Jobs
-nav_order: 4
+nav_order: 5
 ---
 # Environment variables
 

@@ -1,10 +1,9 @@
 ---
 layout: default
-title: "Jobs"
+title: "Running jobs"
 permalink: /running-jobs
-nav_order: 5
-has_children: true
-has_toc: false
+parent: Jobs
+nav_order: 2
 ---
 # Running jobs
 
