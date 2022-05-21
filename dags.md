@@ -5,6 +5,7 @@ permalink: /dags
 parent: Workflows
 nav_order: 3
 ---
+# Directed acyclic graphs
 
 ## Overview
 In order to submit a workflow the first step is to write a JSON description of the workflow. This is just a list of the definitions of the individual jobs (which can be created easily using `prominence create --dry-run`, see [here](/docs/job-description-files)) along with the dependencies between them. Each dependency defines a parent and its children. The basic structure is:

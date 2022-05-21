@@ -5,6 +5,7 @@ permalink: /groups-of-jobs
 parent: Workflows
 nav_order: 2
 ---
+# Groups of jobs
 
 In some situations it can be useful to be able to manage a group of jobs as a single entity (a workflow). 
 In order to submit a group of indendepent jobs as a workflow the first step is to write a JSON description of the workflow. This is just a list of the definitions of the individual jobs (which can be created easily using `prominence create --dry-run`, see [here](/docs/job-description-files)). The basic structure is:

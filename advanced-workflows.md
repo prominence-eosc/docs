@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "Advanced workflows"
-permalink: /advanced-workflows
+title: "Complex workflows"
+permalink: /complex-workflows
 parent: Workflows
 nav_order: 8
 ---
-
+# Complex workflows
 ## Multiple job factories
 It is possible to define a single workflow including multiple job factories applied to different jobs. For example:
 ```json
