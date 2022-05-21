@@ -1,6 +1,5 @@
 ---
-layout: single
-classes: wide
+layout: default
 title: "Quick start"
 permalink: /quick-start
 sidebar:
