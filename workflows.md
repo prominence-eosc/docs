@@ -1,6 +1,5 @@
 ---
-layout: single
-classes: wide
+layout: default
 title: "Introduction to workflows"
 permalink: /workflows
 sidebar:

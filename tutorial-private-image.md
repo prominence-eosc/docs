@@ -1,6 +1,5 @@
 ---
-layout: single
-classes: wide
+layout: default
 title: "Jobs with private images"
 permalink: /tutorial-jobs-private-images
 sidebar:

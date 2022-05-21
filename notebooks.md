@@ -1,6 +1,5 @@
 ---
-layout: single
-classes: wide
+layout: default
 title: "Using PROMINENCE from notebooks"
 permalink: /notebooks
 sidebar:

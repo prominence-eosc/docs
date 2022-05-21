@@ -1,6 +1,5 @@
 ---
-layout: single
-classes: wide
+layout: default
 title: "Output files"
 permalink: /output-files
 sidebar:

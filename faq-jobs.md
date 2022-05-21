@@ -1,6 +1,5 @@
 ---
-layout: single
-classes: wide
+layout: default
 title: "Frequently asked questions (jobs)"
 permalink: /faq-jobs
 sidebar:

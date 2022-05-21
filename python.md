@@ -1,6 +1,5 @@
 ---
-layout: single
-classes: wide
+layout: default
 title: "Using PROMINENCE from Python"
 permalink: /python
 sidebar:

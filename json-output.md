@@ -1,6 +1,5 @@
 ---
-layout: single
-classes: wide
+layout: default
 title: "Job description files"
 permalink: /job-description-files
 sidebar:

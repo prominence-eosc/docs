@@ -1,6 +1,5 @@
 ---
-layout: single
-classes: wide
+layout: default
 title: "Output files in workflows"
 permalink: /workflow-outputs
 sidebar:

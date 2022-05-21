@@ -1,6 +1,5 @@
 ---
-layout: single
-classes: wide
+layout: default
 title: "Standard output and error"
 permalink: /stdout-stderr
 sidebar:

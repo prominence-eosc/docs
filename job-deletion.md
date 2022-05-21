@@ -1,6 +1,5 @@
 ---
-layout: single
-classes: wide
+layout: default
 title: "Deleting a job"
 permalink: /deleting-jobs
 sidebar:

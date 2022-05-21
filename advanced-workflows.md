@@ -1,6 +1,5 @@
 ---
-layout: single
-classes: wide
+layout: default
 title: "Advanced workflows"
 permalink: /advanced-workflows
 sidebar:

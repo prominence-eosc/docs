@@ -1,6 +1,5 @@
 ---
-layout: single
-classes: wide
+layout: default
 title: "Groups of jobs"
 permalink: /groups-of-jobs
 sidebar:

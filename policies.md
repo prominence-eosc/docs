@@ -1,6 +1,5 @@
 ---
-layout: single
-classes: wide
+layout: default
 title: "Job policies"
 permalink: /job-policies
 sidebar:

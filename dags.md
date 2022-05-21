@@ -1,6 +1,5 @@
 ---
-layout: single
-classes: wide
+layout: default
 title: "Directed acyclic graphs"
 permalink: /dags
 sidebar:

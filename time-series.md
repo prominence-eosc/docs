@@ -1,6 +1,5 @@
 ---
-layout: single
-classes: wide
+layout: default
 title: "Time-series database"
 permalink: /time-series
 sidebar:

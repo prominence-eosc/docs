@@ -1,6 +1,5 @@
 ---
-layout: single
-classes: wide
+layout: default
 title: "Checking job status"
 permalink: /job-status
 sidebar:

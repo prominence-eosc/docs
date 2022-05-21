@@ -1,6 +1,5 @@
 ---
-layout: single
-classes: wide
+layout: default
 title: "Jobs, tasks and workflows"
 permalink: /jobs-tasks-workflows
 sidebar:
