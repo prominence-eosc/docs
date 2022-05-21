@@ -5,7 +5,7 @@ permalink: /workflow-outputs
 parent: Workflows
 nav_order: 5
 ---
-
+# Output files in workflows
 When a workflow consists of jobs which have output files and/or directories defined it is possible to download the output from all jobs
 in a single command by specifying the workflow id, e.g.:
 ```
