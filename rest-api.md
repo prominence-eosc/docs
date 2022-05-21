@@ -5,6 +5,7 @@ permalink: /rest-api
 parent: Overview
 nav_order: 7
 ---
+# REST API
 
 This is the specification of the PROMINENCE REST API.
 
