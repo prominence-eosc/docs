@@ -5,6 +5,7 @@ permalink: /time-series
 sidebar:
   nav: "docs"
 ---
+# Time series database
 
 **Note:** This is an experimental feature.
 {: .notice--warning}
