@@ -2,8 +2,8 @@
 layout: default
 title: "Jobs with private images"
 permalink: /tutorial-jobs-private-images
-sidebar:
-  nav: "docs"
+parent: Tutorials
+nav_order: 2
 ---
 
 Here we give an example of running a job which requires a private container image, input files and output files. We assume that the container image needs to be kept private and therefore cannot be put on Docker Hub.
