@@ -2,7 +2,6 @@
 layout: default
 permalink: /
 nav_order: 1
-has_children: true
 ---
 
 PROMINENCE is a platform which allows users to exploit cloud resources for running containerized workloads.
