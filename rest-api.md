@@ -104,15 +104,15 @@ The following fields are used in the request body for creating a job:
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `resources` | `resources` | Yes | CPU, memory and disk resource requirements. |
+| `resources` | `resources` | Yes | Resource requirements, defined below. |
 | `inputs` | | No | List of filenames and their base64-encoded content to be made available to jobs. |
 | `outputFiles` | `array[string]` | No | List of output filenames to be uploaded to storage. |
 | `outputDirs` | `array[string]` | No | List of output directories to be uploaded to storage. |
 | `artifacts` | `array[string]` | No | List of URLs to fetch before the job starts. |
 | `labels` | `array[string]` | No | List of arbitrary labels in the form of name-value pairs, e.g. `name=value`. |
-| `tasks` | `array[task]` | Yes | List of tasks |
-| `policies` |  | No | Job policies. |
-| `notifications` | `array[notification]` | No | Job notifications. |
+| `tasks` | `array[task]` | Yes | List of tasks, defined below. |
+| `policies` |  `policies` | No | Job policies, defined below. |
+| `notifications` | `array[notification]` | No | Job notifications, defined below. |
 
 `resources`:
 
