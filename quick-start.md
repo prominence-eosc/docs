@@ -35,21 +35,22 @@ You are now ready to use PROMINENCE.
 For a very simple job you can just specify a container image and the command to execute (and any required arguments). For example, here we run a [container](https://hub.docker.com/r/docker/whalesay/) from the Docker demo tutorial:
 ```
 $ prominence create docker/whalesay "cowsay boo"
-Job created with id 22071
+Job created with id 84637
 ```
+Here the container image name is `docker/whalesay` and the command to be executed is `cowsay boo`.
 
 You can check the status of the job using the `prominence list` command (replace the job ID as appropriate):
 ```
-$ prominence list
-ID      NAME   CREATED               STATUS      ELAPSED      IMAGE             CMD       
-22071          2019-05-23T12:13:59   deploying                docker/whalesay   cowsay boo
+$ prominence list                     
+ID      NAME   CREATED               STATUS   ELAPSED      IMAGE             CMD       
+84637          2022-05-20 17:07:35   idle                  docker/whalesay   cowsay boo
 ```
-The job will initially be in the *idle* state then will progress through the *deploying* then *running* state, and finally end up in the *completed* state.
+The job will initially be in the *idle* state then will progress to the *running* state and finally end up in the *completed* state.
 If the job is no longer visible from `prominence list` it means that the job has completed. In this case the command `prominence list --completed` will enable the job status to be seen.
 
 Once the job has finished running you can look at the job's standard output:
 ```
-$ prominence stdout 22071
+$ prominence stdout 84637
  _____ 
 < boo >
  ----- 
