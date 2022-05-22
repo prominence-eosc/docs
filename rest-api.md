@@ -120,9 +120,9 @@ The following fields are used in the request body for creating a job:
 | --- | --- | --- | --- |
 | `nodes` | `integer` | No | Number of nodes required. |
 | `cpus` | `integer` | No | Number of CPU cores per node required. |
-| `cpusRange` | `integer`,`integer` | No | Minimum and maximum number of CPU cores per node required. |
-| `cpusOptions` | `integer`,`integer` | No | Minimum and maximum number of CPU cores per node required. |
-| `cpusTotalRange` | `integer`,`integer` | No | Minimum and maximum number of total CPU cores across all nodes required. |
+| `cpusRange` | `array[integer]` | No | Minimum and maximum number of CPU cores per node required. |
+| `cpusOptions` | `array[integer]` | No | Minimum and maximum number of CPU cores per node required. |
+| `totalCpusRange` | array[`integer]` | No | Minimum and maximum number of total CPU cores across all nodes required. |
 | `memory` | `integer` | No | Memory per node required in GB. |
 | `memoryPerCpu` | `integer` | No | Memory per CPU core required in GB. |
 | `disk` | `integer` | No | Disk space required in GB. |§
