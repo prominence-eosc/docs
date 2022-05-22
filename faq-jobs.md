@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "Frequently asked questions (jobs)"
+title: "Frequently asked questions"
 permalink: /faq-jobs
 parent: Jobs
 nav_order: 17
 ---
-# Frequently asked questions (jobs)
+# Frequently asked questions
 ## Nested containers
 The simplest way to have a containerised job execute containers itself is to define a PROMINENCE task using
 the Singularity runtime and
