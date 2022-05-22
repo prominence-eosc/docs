@@ -12,7 +12,7 @@ nav_order: 10
     Table of contents
   </summary>
   {: .text-delta }
-1. TOC
+- TOC
 {:toc}
 </details>
 
