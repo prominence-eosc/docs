@@ -9,6 +9,15 @@ nav_order: 7
 
 This is the specification of the PROMINENCE REST API.
 
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
+
 ## Jobs API
 
 This API exposes endpoints for managing jobs.
