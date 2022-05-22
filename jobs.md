@@ -6,6 +6,8 @@ parent: Overview
 nav_order: 5
 ---
 # Jobs, tasks and workflows
+A **task** is the smallest unit of compute in PROMINENCE. A task cannot be run on its own but is defined as part of
+a **job**. A **workflow** consists of one or more jobs with optionally dependencies between them.
 
 ## Jobs
 A job in PROMINENCE consists of the following:
