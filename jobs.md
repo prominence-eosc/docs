@@ -41,6 +41,7 @@ A workflow consists of:
 
 Jobs within a workflow can be executed sequentially, in parallel or combinations of both. Tasks within a job share the same scratch directory, whereas different jobs within a workflow do not.
 
+### Example
 An example workflow, including how it is made up of jobs and tasks, is shown below:
 
 ![Tasks and jobs within a workflow](prominence-tasks-jobs-workflows.png)
