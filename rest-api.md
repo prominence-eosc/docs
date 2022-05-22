@@ -125,7 +125,9 @@ The following fields are used in the request body for creating a job:
 | `totalCpusRange` | array[`integer]` | No | Minimum and maximum number of total CPU cores across all nodes required. |
 | `memory` | `integer` | No | Memory per node required in GB. |
 | `memoryPerCpu` | `integer` | No | Memory per CPU core required in GB. |
-| `disk` | `integer` | No | Disk space required in GB. |§
+| `disk` | `integer` | No | Disk space required in GB. |
+| `walltime` | `integer` | No | Walltime required in mins. |
+
 
 `task`:
 
