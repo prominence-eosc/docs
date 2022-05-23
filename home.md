@@ -11,10 +11,14 @@ A platform allowing users to exploit cloud resources for running containerised w
 {: .fs-6 .fw-300 }
 
 <br/>
+
+![PROMINENCE overview](what-it-does.png)
+
+<br/>
+
 <h3>Run jobs from anywhere</h3>
 Submit jobs using a simple batch system style command line interface from your laptop. And your desktop. Or from anywhere else. Alternatively, interact programmatically using a RESTful API.
 <br/>
-![PROMINENCE overview](what-it-does.png)
 <br/>
 
 <img width="60" height="60" src="prominence-job-submission.png" hspace="20">
