@@ -25,7 +25,8 @@ All infrastructure provisioning is handled completely automatically and transpar
 
 <img width="60" height="60" src="prominence-invisible.png" hspace="20">
 <h3>Multi-cloud native</h3>
-Go beyond a single cluster or cloud and leverage the resources and features available across many clouds simultaneously.
+Go beyond a single cluster or cloud and leverage the resources and features available across many clouds simultaneously. No VPNs, tunnels or any
+special networking is required.
 <br/>
 <br/>
 
