@@ -12,7 +12,9 @@ A platform allowing users to exploit cloud resources for running containerised w
 
 <br/>
 
-![PROMINENCE overview](what-it-does.png)
+<p align="center">
+  <img src="what-it-does.png" />
+</p>
 
 <br/>
 
