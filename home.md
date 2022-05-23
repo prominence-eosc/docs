@@ -7,7 +7,7 @@ nav_exclude: true
 # PROMINENCE
 {: .fs-9 }
 
-A platform allowing users to exploit cloud resources for running containerised workloads.
+A platform allowing users to exploit cloud resources for running containerised batch workloads.
 {: .fs-6 .fw-300 }
 
 <br/>
