@@ -12,9 +12,7 @@ A platform allowing users to exploit cloud resources for running containerised w
 
 <br/>
 
-<p align="center">
-  <img src="what-it-does.png" />
-</p>
+<img src="what-it-does.png" />
 
 <br/>
 
