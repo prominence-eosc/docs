@@ -14,6 +14,8 @@ task(s) but have access to the same filesystem.
 Note that if multiple sidecar tasks are defined within a single job there are all run in parallel. This behaviour
 is different to standard tasks which are run sequentially.
 
+![Sidecar task](sidecar.png)
+
 A typical use case for sidecars is to monitor the main task(s), i.e. collecting metrics and sending them to a
 time-series database (see [here](/docs/time-series)).
 
