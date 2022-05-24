@@ -11,7 +11,7 @@ nav_order: 2
   <summary>
     Table of contents
   </summary>
-  {: .no_toc .text-delta }
+  {: .text-delta }
 - TOC
 {:toc}
 </details>
