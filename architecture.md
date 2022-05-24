@@ -18,7 +18,7 @@ execute jobs on remote computing resources.
 * Negotiator: HTCondor daemon which matches jobs to workers
 * Startd: HTCondor daemon running on a worker node which launches PROMINENCE executors to run jobs
 * Scaler: Decides when to create new workers on demand
-* IMC: Provisions resources on clouds, including error handling and retries
+* IMC: Provisions resources on clouds, including failure handling and retries
 * IM: [Infrastructure Manager](https://www.grycap.upv.es/im/index.php) provides an abstraction layer across different cloud APIs
 
 In addition:
