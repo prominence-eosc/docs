@@ -46,7 +46,7 @@ See [here](https://docs.gitlab.com/ee/user/packages/container_registry/index.htm
 **Note:** Authentication is only supported for the Singularity container runtime.
 {: .notice--info}
 
-Under some conditions a container runtime will be selected automatically. This will only happen if there is only one runtime which will work for the specified image. For other cases, e.g. a Docker Hub image, Singularity is used as the default but optionally udocker can be forced by the user.
+Under some conditions a container runtime will be selected automatically by the CLI. This will only happen if there is only one runtime which will work for the specified image. For other cases, e.g. a Docker Hub image, Singularity is used as the default but optionally udocker can be forced by the user.
 
 Images which will result in Singularity being selected:
 * Singularity Hub image (begins with "shub://")
