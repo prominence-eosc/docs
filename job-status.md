@@ -85,7 +85,7 @@ The JSON descriptions of completed jobs contain additional information. This may
 * __retries__: the number of job retries attempted.
 * __provisionedResources__: the number of CPU cores, memory (in GB), disk (in GB) and number of nodes provisioned for the job.
 * __cpu__: details of the CPU used to run the job (`clock`, `model`, and `vendor`).
-* __runtimeVersion__: the versions of `singularity` and `udocker` (in the form `<version>/<tarball_release>` used.
+* __runtimeVersion__: the versions of `singularity` and `udocker` (in the form `<version>/<tarball_release>`) used.
 
 The following information is also provided for each task:
 * __retries__: the number of task retries attempted.
