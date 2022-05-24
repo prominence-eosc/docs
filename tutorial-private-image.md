@@ -1,29 +1,35 @@
 ---
 layout: default
-title: "Jobs with private images"
+title: "Jobs with data and private images"
 permalink: /tutorial-jobs-private-images
 parent: Tutorials
 nav_order: 2
 ---
-# Jobs with private images
+# Jobs with data and private images
 Here we give an example of running a job which requires a private container image, input files and output files. We assume that the container image needs to be kept private and therefore cannot be put on Docker Hub.
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
+{:toc}
+</details>
 
 ## The container image
 
 ### Saving the image into a file
-We will use the object storage integrate with PROMINENCE for storing the container image. The image will only be visible to the user who uploads it and to the user's jobs which require it. Because the image will be stored in object storage rather than a container registry the image needs to be in the form of a single file. This can either be a Docker archive (`.tar`) or Singularity Image Format (`.sif` or `.simg`). Note that images in the Singularity Image Format are typically much smaller than Docker archives.
+We will use the object storage integrate with PROMINENCE for storing the container image. The image will only be visible to the user who uploads it and to the user's jobs which require it. Because the image will be stored in object storage rather than a container registry the image needs to be in the form of a single file. This can either be a Docker archive (`.tar`) or Singularity Image Format (`.sif`). Note that images in the Singularity Image Format are typically much smaller than Docker archives.
 
 A Docker archive can be created using the Docker CLI, for example:
 ```
 docker save centos:7 > centos7.tar
 ```
-An image built using Docker can be saved in the Singularity Image Format easily, for example:
+Alternatively an image built using Docker can be saved in the Singularity Image Format easily, for example:
 ```
 singularity build centos7.sif docker-daemon://centos:7
 ```
-
-**Note:** By default a job (submitted using the PROMINENCE CLI) using an image where the filename ends in `.sif` or `.simg` will be run using the Singularity runtime, and a job using an image where the filename ends in `.tar` will be run using the udocker runtime. The runtime can also be specified using the `--runtime` option to `prominence create`.
-{: .notice--info}
 
 ### Uploading the image
 Using the PROMINENCE CLI the container image can be uploaded to object storage. For example:
@@ -74,7 +80,7 @@ prominence create --name test \
                   --output output.nc \
                   centos7.sif "touch output.nc"
 ```
-For multiple output files use the `--output` option multiple times, e.g.
+For multiple output files use the `--output` option multiple times, e.g.:
 ```
 prominence create --name test \
                   --artifact cadmesh-jet-v1.1.tgz \ 
@@ -82,13 +88,14 @@ prominence create --name test \
                   --output output2.nc \
                   centos7.sif "/bin/bash -c \"touch output1.nc ; touch output2.nc\""
 ```
-Alternatively, if the job puts all output files into a single directory
+Alternatively, if the job puts all output files into a single directory:
 ```
 prominence create --name test \
                   --artifact cadmesh-jet-v1.1.tgz \ 
                   --outputdir output \
                   centos7.sif "/bin/bash -c \"mkdir output ; touch output/file1.txt ; touch output/file2.txt\""
 ```
+In this example all output files are in the directory `output`.
 
 ## Downloading output data
 Once a job has completed the `prominence download` command can be used to download any output files or directories associated with a job, e.g.
