@@ -46,7 +46,12 @@ ID      NAME   CREATED               STATUS   ELAPSED      IMAGE             CMD
 84637          2022-05-20 17:07:35   idle                  docker/whalesay   cowsay boo
 ```
 The job will initially be in the *idle* state then will progress to the *running* state and finally end up in the *completed* state.
-If the job is no longer visible from `prominence list` it means that the job has completed. In this case the command `prominence list --completed` will enable the job status to be seen.
+If the job is no longer visible from `prominence list` it means that the job has completed. In this case the command `prominence list --completed` will enable the job status to be seen:
+```
+$ prominence list   --completed
+ID      NAME   CREATED               STATUS      ELAPSED      IMAGE             CMD
+84637          2022-05-20 17:07:35   completed   0+00:00:33   docker/whalesay   cowsay boo
+```
 
 Once the job has finished running you can look at the job's standard output:
 ```
