@@ -8,14 +8,11 @@ nav_order: 2
 # Jobs with data and private images
 Here we give an example of running a job which requires a private container image, input files and output files. We assume that the container image needs to be kept private and therefore cannot be put on Docker Hub.
 
-<details open markdown="block">
-  <summary>
-    Table of contents
-  </summary>
-  {: .text-delta }
-- TOC
-{:toc}
-</details>
+The basic workflow is:
+1. Upload the container image to object storage
+2. Upload any required input data to object storage
+3. Define and execute the job
+4. Download the output data
 
 ## The container image
 
