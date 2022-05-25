@@ -17,13 +17,14 @@ A platform allowing users to exploit cloud resources for running containerised b
 <br/>
 
 <h3>Run jobs from anywhere</h3>
-Submit jobs using a simple batch system style command line interface from your laptop. And your desktop. Or from anywhere else. Alternatively, interact programmatically using a RESTful API.
+Submit jobs using a simple batch system style command line interface from your desktop. And your latop. Or from anywhere else as there
+are no login nodes. Alternatively, interact programmatically using a RESTful API.
 <br/>
 <br/>
 
 <img width="60" height="60" src="prominence-job-submission.png" hspace="20">
 <h3>Invisible infrastructure</h3>
-Run jobs without worrying about servers or clusters.
+Run jobs without worrying about managing servers or clusters.
 All infrastructure provisioning is handled completely automatically and transparently.
 <br/>
 <br/>
@@ -43,7 +44,7 @@ All jobs are run in containers to ensure they will can run reliably anywhere and
 
 <img width="60" height="60" src="prominence-containers.png" hspace="20">
 <h3>MPI ready</h3>
-Run multi-node Open MPI, Intel MPI or MPICH jobs in addition to single-node HTC jobs.
+Run multi-node Open MPI, Intel MPI or MPICH jobs in addition to single-node high-throughput jobs.
 <br/>
 <br/>
 
