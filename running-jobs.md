@@ -179,18 +179,9 @@ If multiple tasks are defined and a task fails (i.e. the exit code is not 0), no
 in `policies` is specified (see [here](/docs/job-policies)).
 
 It is possible for failing tasks to be retried but by default this will not happen.
-A maximum number of retries can be specified by including `maximumTaskRetries` in the job definition, e.g.
-```json
-"policies": {
-  "maximumTaskRetries": 2
-}
-```
-It's also possible for failing jobs to be retried. A maximum number of retries can be specified by including `maximumRetries` in the job definition, e.g.
-```json
-"policies": {
-  "maximumRetries": 2
-}
-```
+The maximum number of retries can be specified using the `--task-retries` option to `prominence create`.
+
+It is also possible for failing jobs to be retried. A maximum number of retries can be specified using the `--retries` option.
 
 ### Cloning jobs
 If a job fails it's also possible to re-run the original job using `prominence clone`. This creates a copy of an existing job, for
