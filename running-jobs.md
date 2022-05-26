@@ -54,7 +54,7 @@ Unlike single-node jobs, a command to run (and optionally any arguments) must be
 **Note:** If the total number of CPUs required is small, e.g. 16 cores or less, for best performance use a single node rather than multiple nodes unnecessarily. This is especially important on resources which do not have low-latency network interconnects.
 {: .notice--info}
 
-MPI on hosts is not used at all for running MPI jobs as this could result in incompatibilities. Only MPI executables and libraries inside the supplied container image are used.
+MPI on hosts is not used at all for running MPI jobs as this could result in incompatibilities. Only MPI executables and libraries inside the supplied container image are used. For example, for Open MPI:
 
 ![MPI](mpi-user.png)
 
