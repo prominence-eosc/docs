@@ -75,6 +75,8 @@ prominence create --cpus 4 \
 ```
 
 ## Resources
+
+### Fixed resources
 By default a job will be run with 1 CPU and 1 GB memory but this can easily be changed.
 The following resources can be specified:
 * CPU cores
