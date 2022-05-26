@@ -28,5 +28,5 @@ On workers:
 
 ![Worker overview](worker.png)
 
-* Startd: HTCondor daemon running on a worker, which advertises resources to the HTCondor Collector and launches jobs via the Starter
-* Executor: Manages execution of a single job, including pulling container images, downloading data, making storage available, running tasks in containers and uploading any output data
+* Startd: HTCondor daemon running on a worker, which advertises resources to the HTCondor Collector and launches jobs via the Starter. Depending on the resources required by each job, there may be one or multiple starters running concurrently.
+* Executor: Manages execution of a single job, including pulling container images, downloading data, making storage available, running tasks in containers and uploading any output data.
