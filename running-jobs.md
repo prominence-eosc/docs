@@ -101,7 +101,7 @@ By default a 10 GB disk is available to jobs. The default maximum runtime is 720
 
 ### Dynamic resources
 
-This functionality is sometimes known as **moldable jobs**.
+This functionality is sometimes referred to as **moldable jobs**.
 
 In some situations it can be useful to specify a range of CPU cores rather than specifying a single number. For example, you may prefer to
 have 32 cores but if 32 cores are not currently available you would be happy to have anywhere between 16 and 32 cores. In this case instead
