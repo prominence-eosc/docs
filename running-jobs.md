@@ -56,6 +56,8 @@ Unlike single-node jobs, a command to run (and optionally any arguments) must be
 
 MPI on hosts is not used at all for running MPI jobs. Only MPI executables and libraries inside the supplied container image are used.
 
+![MPI](mpi-user.png)
+
 ## Hybrid MPI-OpenMP jobs
 In this situation the number of MPI processes to run per node must be specified using `--procs-per-node` and the environment variable OMP_NUM_THREADS should be set to the required number of OpenMP threads per MPI process.
 
