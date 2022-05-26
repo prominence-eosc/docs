@@ -181,7 +181,7 @@ in `policies` is specified (see [here](/docs/job-policies)).
 It is possible for failing tasks to be retried but by default this will not happen.
 The maximum number of retries can be specified using the `--task-retries` option to `prominence create`.
 
-It is also possible for failing jobs to be retried. A maximum number of retries can be specified using the `--retries` option.
+It is also possible for failing jobs to be retried. The maximum number of retries can be specified using the `--retries` option.
 
 ### Cloning jobs
 If a job fails it's also possible to re-run the original job using `prominence clone`. This creates a copy of an existing job, for
