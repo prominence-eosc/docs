@@ -13,6 +13,7 @@ A basic overview of the architecture is as follows:
 
 PROMINENCE makes use of [HTCondor](https://htcondor.org/) for managing jobs and workflows as well as providing the ability to
 execute jobs on remote computing resources.
+* IAM: Indigo IAM provides identity, authentication and authorisation
 * Schedd: HTCondor daemon providing the job queue
 * Collector: HTCondor daemon storing lists of workers (startds)
 * Negotiator: HTCondor daemon which matches jobs to workers
