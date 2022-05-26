@@ -7,6 +7,8 @@ nav_order: 3
 ---
 # Architecture
 
+## Overview
+
 A basic overview of the architecture is as follows:
 
 ![Architecture overview](architecture-overview.png)
@@ -31,3 +33,14 @@ On workers:
 
 * Startd: HTCondor daemon running on a worker, which advertises resources to the HTCondor Collector and launches jobs via the HTCondor Starter. Depending on the resources required by each job, there may be one or multiple starters running concurrently.
 * Executor: Manages execution of a single job, including pulling container images, downloading data, making storage available, running tasks in containers and uploading any output data.
+
+
+## Workers
+**Static pools** of workers are like a traditional batch system. This is essential for almost-full private clouds
+where it can be very difficult or even impossible to get VMs with large numbers of CPUs.
+
+In **dynamic heterogenous pools** workers are created on demand and are deleted after being idle for 10 minutes. Jobs requiring
+small numbers of CPUs (typically less than 8) are packed onto larger workers, whilst larger jobs run on dedicated VMs with
+sizes tailored for each job.
+
+![Scaling](scaling.png)
