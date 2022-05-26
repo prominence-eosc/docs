@@ -75,7 +75,7 @@ Note that jobs which are completed or have been removed for some reason may be v
 
 ## Completed jobs
 The JSON descriptions of completed jobs contain additional information. This may include:
-* __status__: current job status.
+* __status__: current job status (`idle`, `running`, `completed`, `failed`, `deleted`, or `killed`)
 * __statusReason__: for jobs in a terminal state other than the completed state this may give a reason for the current status.
 * __createTime__: date & time when the job was created by the user.
 * __startTime__: date & time when the job started running.
