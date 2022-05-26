@@ -174,7 +174,7 @@ prominence run single-job-multiple-tasks.json
 **Note:** Different tasks do not have to use the same container runtime. It is possible for some tasks to use udocker while others use Singularity.
 {: .notice--info}
 
-### Automatic retries for job and task failures
+## Automatic retries for job and task failures
 If multiple tasks are defined and a task fails (i.e. the exit code is not 0), no more tasks will be executed unless `ignoreTaskFailures`
 in `policies` is specified (see [here](/docs/job-policies)).
 
@@ -183,7 +183,7 @@ The maximum number of retries can be specified using the `--task-retries` option
 
 It is also possible for failing jobs to be retried. The maximum number of retries can be specified using the `--retries` option.
 
-### Cloning jobs
+## Cloning jobs
 If a job fails it's also possible to re-run the original job using `prominence clone`. This creates a copy of an existing job, for
 example, to clone a job with id 51239:
 ```
