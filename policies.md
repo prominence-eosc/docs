@@ -11,7 +11,7 @@ The `policies` section of a job's JSON description enables users to have more co
 * `maximumTaskRetries`: maximum number of times a task will be retried in the event of failures. By default there will be no retries.
 * `maximumTimeInQueue`: maximum time in minutes the job will remain idle in the queue. If a job cannot be run immediately it will wait in the queue (up to the specified time limit) until resources become available. The value `-1` means that the job will remain in the queue until it starts running. The default value `0` means that the job will remain in the queue until it starts running or there is a failure.
 * `leaveInQueue`: by default completed, failed, deleted and killed jobs are only visible from the CLI when `--completed` is specified. When
-`leaveInQueue` is set to `True` these jobs will remain visible without needing `--completed` and need to be explicitly removed from the queue.
+`leaveInQueue` is set to `True` these jobs will remain visible without needing `--completed` and need to be explicitly removed from the queue. If a job isn't removed from the queue manually it will be automatically removed after 2 months.
 * `placement`: allows users to specify requirements and preferences to influence where jobs will run.
 * `ignoreTaskTailures`: normally if a task fails (i.e. exit code non-zero) no further tasks will be executed in a job. If set to `True`, all tasks will be executed.
 * `reportJobSuccessOnTaskFailure`: When the job is run as part of a workflow, if the exit code of any tasks are non-zero the job will be reported as running successfully. This means
