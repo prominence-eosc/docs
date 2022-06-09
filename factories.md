@@ -14,6 +14,7 @@ The following types of job factories are available:
 In all cases a set of jobs is created by substituting a range of values into a template job. Substitutions can be made in:
 * The command to be executed
 * Environment variables
+* Artifacts
 * Output filenames or directories
 
 If you want to carry out a parameter study using parameters generated externally, **zip** is the most appropriate factory type.
