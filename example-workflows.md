@@ -71,7 +71,8 @@ A workflow can then be created in order to run the same job for each input file,
 }
 ```
 Here we just cat each file as a simple example, but the same idea can easily be applied to more complex use cases. Here we also
-specify a unique output file per job, where the filename depends on the parameter used.
+specify a unique output file per job, where the filename depends on the parameter used. However, note that it is possible to use
+the same output filename for all jobs in a workflow if wanted.
 
 ### Large files
 For the situation of large input files it would not make sense to make a tarball containing all files. Instead, only the required
