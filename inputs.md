@@ -69,10 +69,13 @@ When a file is uploaded using `prominence upload` the SHA256 checksum of the fil
 as metadata associated with the file in object storage. Alternatively users can specify a checksum using the `--checksum` option
 to `prominence upload`.
 
-The checksum is most important for container images stored in object storage as it enables images
+The checksum is most important for container images as it enables images
 to be cached on the workers and re-used as necessary. After an image is pulled by a job it is copied
 to a cache directory. If a job running on the same worker requires an image with the 
 same checksum as a file in the cache the cached image is used and no download is required.
 Caching applies to:
 * Singularity: images from container registries and object storage,
 * udocker: images from object storage only.
+
+Caching of course gives the best performance improvements for large numbers of short-running jobs, especially if the container
+image is large.
