@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "Uploading images"
-permalink: /tutorial-uploading-images
+title: "Uploading data"
+permalink: /tutorial-uploading-data
 parent: Tutorials
 nav_order: 3
 ---
-# Uploading images
+# Uploading data
 A SHA256 checksum should ideally be supplied when uploading container images to object storage as this enables
 images to be cached on workers and re-used if necessary. For large numbers of short jobs this can potentially give
 performance improvements.
