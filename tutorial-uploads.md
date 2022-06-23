@@ -7,7 +7,7 @@ nav_order: 3
 ---
 # Uploading images
 A SHA256 checksum should ideally be supplied when uploading container images to object storage as this enables
-images to be cached on workers and re-used if necessary. For large numbers of short jobs this potentially give
+images to be cached on workers and re-used if necessary. For large numbers of short jobs this can potentially give
 performance improvements.
 
 When using the CLI the checksum is automatically calculated and provided, e.g.
@@ -20,7 +20,7 @@ prominence upload --filename myimage.sif --name myimage.sif --checksum 190a348fa
 ```
 
 ## Using the REST API
-A minimal example showing how to upload file, including the checksum, using Python is shown below. Here the SHA256 checksum is
+A minimal example showing how to upload a file, including the checksum, using Python is shown below. Here the SHA256 checksum is
 calculate first, a presigned URL is requested and finally the file is uploaded to object storage using the presigned URL.
 ```
 import hashlib
@@ -65,4 +65,34 @@ if response.status_code == 204:
 ```
 This is slightly more complex than when a checksum is not specified. In that case `fields` is not returned when a presigned URL is
 requested and a simple POST can
-be used to upload the file using the provided `url`.
+be used to upload the file using the provided `url`. For example:
+```
+import os
+import sys
+import requests
+
+# Name of object (arbitrary)
+objectname = 'image.tar'
+
+# Filename (name of file on the filesystem)
+filename = 'image.tar'
+
+# Request presigned URL
+data = {'filename': objectname}
+
+url = '%s/data/upload' % os.environ['PROMINENCE_URL']
+headers = {'Authorization': 'Bearer %s' % os.environ['PROMINENCE_TOKEN']}
+response = requests.post(url, json=data, headers=headers)
+
+if response.status_code != 201:
+    sys.exit(1)
+
+url = response.json()['url']
+
+# Upload file
+with open(filename, 'rb') as fh:
+    response = requests.put(url, data=fh, headers=headers)
+
+if response.status_code == 201:
+    print('Succcess')
+```
