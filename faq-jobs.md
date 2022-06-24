@@ -30,3 +30,19 @@ tasks:
       udocker -q run eoscprominence/testpi
 ```
 Of course, for real use cases a container image can be built with udocker pre-installed.
+
+## Resources allocated to a job
+Using `prominence describe` it's possible to see the resources (CPU cores, memory, disk and number of nodes) allocated to a job. This
+can be done both while a job is running and once it has completed. This information is available in the `provisionedResources`
+section of `execution`, for example:
+```
+...
+  "execution": {
+    "provisionedResources": {
+      "cpus": 32,
+      "disk": 10,
+      "memory": 64,
+      "nodes": 2
+    },
+...
+```
