@@ -46,3 +46,4 @@ section of `execution`, for example:
     },
 ...
 ```
+This can be particularly useful for jobs where fixed sets of resources were not specified.
