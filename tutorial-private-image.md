@@ -94,6 +94,24 @@ prominence create --name test \
 ```
 In this example all output files are in the directory `output`.
 
+## Monitoring the job
+`prominence list` can be used to list the status of all active jobs (i.e. idle or running). `prominence describe` can be used to 
+get more information about a specific job.
+
+The command `prominence exec` can be used to execute a command within a running job. Usage is of the form:
+```
+prominence exec <job id> <command>
+```
+Examples include checking what processes are running, listing files or looking at the content of files.
+
+It's also possible to download files from a running job using `prominence snapshot`. Usage is of the form:
+```
+prominence shapshot <job id> <file or directory>
+```
+A tarball is created of the file or directory, uploaded to object storage and downloaded to the machine where the CLI is run.
+
+Note that for the case of multi-node jobs `prominence exec` and `prominence snapshot` use the first node.
+
 ## Downloading output data
 Once a job has completed the `prominence download` command can be used to download any output files or directories associated with a job, e.g.
 ```
