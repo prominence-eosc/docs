@@ -62,7 +62,7 @@ Returns a dictionary representing the task.
 
 ## Resources
 
-**class Resources(cpus=1, memory=1, disk=10, nodes=1, walltime=43200)**
+**class Resources(cpus=1, memory=1, disk=10, nodes=1, walltime=720)**
 
 This class represents the resources required for a job.
 
