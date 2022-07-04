@@ -160,7 +160,7 @@ Submit the job.
 Wait for job to enter a terminal state.
 
 * Parameters:
-    * **timeout** Maximum time to wait in seconds. By default there is no timeout.
+    * **timeout** (optional int): Maximum time to wait in seconds. By default there is no timeout (`timeout = 0`).
 
 ##### done()
 Check if the job has completed.
