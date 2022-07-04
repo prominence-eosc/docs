@@ -34,6 +34,20 @@ print(job.stdout())
 
 ## Resources
 
+### class Resources(cpus=1, memory=1, disk=10, nodes=1)
+
+#### *property* cpus
+The number of CPUs.
+
+#### *property* memory
+The memory in GB.
+
+#### *property* disk
+The disk in GB.
+
+#### *property* nodes
+The number of nodes.
+
 ## InputFile
 
 ## Policies
