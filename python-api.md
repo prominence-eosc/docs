@@ -93,6 +93,13 @@ Returns a dictionary representing the resources.
 
 ## InputFile
 
+**class InputFile(filename=None)**
+
+This class represents a small input file to be included in a job description.
+
+##### json()
+Returns a dictionary representing the input file.
+
 ## JobPolicies
 
 ##### *property* maximum_task_retries
@@ -116,9 +123,15 @@ Returns a dictionary representing the policies.
 
 ## Notification
 
+**class Notification(event=None, type=None)**
+
+This class represents a notification, i.e. an action triggered by a change in a job's state.
+
 ##### *property* event
+When to send the notification. Currently the only option is `jobFinished`.
 
 ##### *property* type
+Type of notification. Currently the only option is `email`.
 
 ##### json()
 Returns a dictionary representing the notification.
