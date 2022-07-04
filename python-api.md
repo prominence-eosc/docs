@@ -6,8 +6,10 @@ parent: Overview
 nav_order: 8
 ---
 # Python API
-Installing the CLI also provides Python classes which can be used for creating and managing jobs and data.
-
+The CLI also provides Python classes which can be used for creating and managing jobs and data, and can be installed easily from PyPI:
+```
+pip install prominence
+```
 Here is a very simple example where we submit a job, wait for it to complete then print the standard output:
 ```
 # Define a task
