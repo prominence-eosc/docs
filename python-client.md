@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "Python API"
-permalink: /python-api
+title: "Python client"
+permalink: /python-client
 parent: Overview
 nav_order: 8
 ---
-# Python API
+# Python client
 The CLI also provides Python classes which can be used for creating and managing jobs and data, and can be installed easily from PyPI:
 ```
 pip install prominence
