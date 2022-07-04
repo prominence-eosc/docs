@@ -150,12 +150,13 @@ This class represents a job.
 ##### *property* notifications
 
 ##### create()
-* Submit the job.
-
-* Returns: 
-* Return type:
+Submit the job.
 
 ##### wait(timeout=0)
+Wait for job to enter a terminal state.
+
+* Parameters:
+    * **timeout** Maximum time to wait in seconds. By default there is no timeout.
 
 ##### done()
 Check if the job has completed.
