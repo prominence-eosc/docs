@@ -34,7 +34,9 @@ print(job.stdout())
 
 ## Resources
 
-### class Resources(cpus=1, memory=1, disk=10, nodes=1)
+**class Resources(cpus=1, memory=1, disk=10, nodes=1, walltime=43200)**
+
+**Resources** represents the resources required for a job.
 
 #### *property* cpus
 The number of CPUs.
@@ -47,6 +49,9 @@ The disk in GB.
 
 #### *property* nodes
 The number of nodes.
+
+#### *property* walltime
+The walltime required for the job in mins.
 
 ## InputFile
 
