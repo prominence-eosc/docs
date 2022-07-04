@@ -160,12 +160,34 @@ Returns a dictionary representing the job.
 
 ##### stdout(node=0)
 Retrieves the job's standard output.
+* Parameters:
+    * **node** (optional int): for multi-node jobs this specifies the node
+* Returns: the job's standard output
+* Return type: str
 
 ##### stderr(node=0)
 Retrieves the job's standard error.
+* Parameters:
+    * **node** (optional int): for multi-node jobs this specifies the node
+* Returns: the job's standard error
+* Return type: str
 
 ##### get_input_file(name)
-
+* Parameters:
+    * **name** (str): name of input file
+* Returns: the content of the input file
+* Return type: str
+   
 ##### get_output_file(name, save_as=None)
+* Parameters:
+    * **name** (str): name of output file
+    * **save_as** (optional str): save as a file with this name
+* Returns: the content of the output file
+* Return type: str
 
 ##### get_output_directory(name, save_as=None)
+* Parameters:
+    * **name** (str): name of input file
+    * **save_as** (optional str): save as a file with this name
+* Returns: the content of the output file
+* Return type: str
