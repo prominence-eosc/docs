@@ -11,8 +11,8 @@ The CLI also provides Python classes which can be used for creating and managing
 pip install prominence
 ```
 A valid access token is of course required. A token can be obtained in the usual way for the CLI (i.e. `prominence login`), or alternatively
-the Python API will work easily from within a PROMINENCE job, as all jobs are provided with a token valid for the lifetime of the job. This
-is picked up automatically by the Python API.
+the Python client will work easily from within a PROMINENCE job, as all jobs are provided with a token valid for the lifetime of the job. This
+is picked up automatically by the Python client.
 
 Here is a very simple example where we submit a job, wait for it to complete then print the standard output:
 ```
