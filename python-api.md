@@ -38,19 +38,19 @@ print(job.stdout())
 
 **Resources** represents the resources required for a job.
 
-#### *property* cpus
+##### *property* cpus
 The number of CPUs.
 
-#### *property* memory
+##### *property* memory
 The memory in GB.
 
-#### *property* disk
+##### *property* disk
 The disk in GB.
 
-#### *property* nodes
+##### *property* nodes
 The number of nodes.
 
-#### *property* walltime
+##### *property* walltime
 The walltime required for the job in mins.
 
 ## InputFile
