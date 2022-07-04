@@ -32,7 +32,7 @@ print(job.stdout())
 
 ## Task
 
-> **class Task()**
+**class Task()**
 
 This class represents a task.
 
@@ -62,7 +62,7 @@ Returns a dictionary representing the task.
 
 ## Resources
 
-> **class Resources(cpus=1, memory=1, disk=10, nodes=1, walltime=43200)**
+**class Resources(cpus=1, memory=1, disk=10, nodes=1, walltime=43200)**
 
 This class represents the resources required for a job.
 
@@ -121,7 +121,7 @@ Returns a dictionary representing the notification.
 
 ## Job
 
-> **class Job()**
+**class Job()**
 
 This class represents a job.
 
@@ -150,10 +150,18 @@ This class represents a job.
 ##### *property* notifications
 
 ##### create()
+* Submit the job.
+
+* Returns: 
+* Return type:
 
 ##### wait(timeout=0)
 
 ##### done()
+Check if the job has completed.
+
+* Returns: `False` if the job is still running or idle, or `True` if the job is in a terminal state.
+* Return type: bool
 
 ##### json()
 Returns a dictionary representing the job.
