@@ -32,7 +32,7 @@ print(job.stdout())
 
 ## Task
 
-**class Task()**
+> **class Task()**
 
 This class represents a task.
 
@@ -58,11 +58,11 @@ Environment variables.
 The processes required per node for the case of multi-node MPI jobs.
 
 ##### json()
-Returns a dict representing the task.
+Returns a dictionary representing the task.
 
 ## Resources
 
-**class Resources(cpus=1, memory=1, disk=10, nodes=1, walltime=43200)**
+> **class Resources(cpus=1, memory=1, disk=10, nodes=1, walltime=43200)**
 
 This class represents the resources required for a job.
 
@@ -85,7 +85,7 @@ The walltime required for the job in minutes.
 Memory in GB per CPU.
 
 ##### json()
-Returns a dict representing the resources.
+Returns a dictionary representing the resources.
 
 ## InputFile
 
@@ -121,7 +121,7 @@ Returns a dictionary representing the notification.
 
 ## Job
 
-**class Job()**
+> **class Job()**
 
 This class represents a job.
 
@@ -156,7 +156,7 @@ This class represents a job.
 ##### done()
 
 ##### json()
-Returns a dict representation of the job.
+Returns a dictionary representing the job.
 
 ##### stdout(node=0)
 Retrieves the job's standard output.
@@ -166,6 +166,6 @@ Retrieves the job's standard error.
 
 ##### get_input_file(name)
 
-##### get_output_file(name)
+##### get_output_file(name, save_as=None)
 
-##### get_output_directory(name)
+##### get_output_directory(name, save_as=None)
