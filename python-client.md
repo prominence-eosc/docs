@@ -102,17 +102,24 @@ This class represents an artifact.
     * **directory_name**: (optional str) Name of directory when uncompressed.
     * **mount_point**: (optional str) Name of mount point
 
+##### upload(filename)
+Uploads the file `filename`.
+
+* Parameters
+    * **filename**: (str) Name of file to upload.
+
 ##### json()
 Returns a dictionary representing the artifact.
 
 ## InputFile
 
-**class InputFile(filename)**
+**class InputFile(filename, content=None)**
 
 This class represents a small input file to be included in a job description.
 
 * Parameters:
-    * **filename**: (str) Filename
+    * **filename**: (str) Filename.
+    * **content**: (optional str) Create the input file using this content, either ASCII or binary.
 
 ##### json()
 Returns a dictionary representing the input file.
