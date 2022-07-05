@@ -34,6 +34,7 @@ variable nsteps equal 200 # simulation steps
 ```
 and we want to adjust the value `200` for difference jobs. This can done using the `InputFile` class, e.g.
 ```
+...
 contents = 'variable nsteps equal %d # simulation steps' % nsteps
 job.input_files.append(InputFile('sample.in', contents))
 ...
@@ -44,6 +45,7 @@ job.input_files.append(InputFile('sample.in', contents))
 In this case we need to upload the input file to object storage and configure the job to automatically retrieve it.
 
 ```
+...
 artifact = Artifact('largefile.h5')       # Specify the object name
 artifact.upload('/path/to/largefile.h5')  # Specify the path to the file and upload it
 job.artifacts.append(artifact)            # Add the artifact to the job
