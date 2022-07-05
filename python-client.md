@@ -91,11 +91,28 @@ Memory in GB per CPU.
 ##### json()
 Returns a dictionary representing the resources.
 
+## Artifact
+
+**class Artifact(name, directory_name=None, mount_point=None)**
+
+This class represents an artifact.
+
+* Parameters:
+    * **name**: (str) Name of artifact.
+    * **directory_name**: (optional str) Name of directory when uncompressed.
+    * **mount_point**: (optional str) Name of mount point
+
+##### json()
+Returns a dictionary representing the artifact.
+
 ## InputFile
 
-**class InputFile(filename=None)**
+**class InputFile(filename)**
 
 This class represents a small input file to be included in a job description.
+
+* Parameters:
+    * **filename**: (str) Filename
 
 ##### json()
 Returns a dictionary representing the input file.
