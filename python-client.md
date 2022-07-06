@@ -197,7 +197,7 @@ Submit the job.
 Wait for job to enter a terminal state.
 
 * Parameters:
-    * **timeout** (optional int): Maximum time to wait in seconds. By default there is no timeout (`timeout = 0`).
+    * **timeout**: (optional int) Maximum time to wait in seconds. By default there is no timeout (`timeout = 0`).
 
 ##### done()
 Check if the job has completed.
@@ -224,21 +224,21 @@ Retrieves the job's standard error.
 
 ##### get_input_file(name)
 * Parameters:
-    * **name** (str): name of input file
+    * **name**: (str) name of input file
 * Returns: the content of the input file
 * Return type: str
    
 ##### get_output_file(name, save_as=None)
 * Parameters:
-    * **name** (str): name of output file
-    * **save_as** (optional str): save as a file with this name
+    * **name**: (str) name of output file
+    * **save_as**: (optional str) save as a file with this name
 * Returns: the content of the output file
 * Return type: str
 
 ##### get_output_directory(name, save_as=None)
 * Parameters:
-    * **name** (str): name of input file
-    * **save_as** (optional str): save as a file with this name
+    * **name**: (str) name of input file
+    * **save_as**: (optional str) save as a file with this name
 * Returns: the content of the output file
 * Return type: str
 
@@ -273,7 +273,7 @@ Submit the workflow.
 Wait for workflow to enter a terminal state.
 
 * Parameters:
-    * **timeout** (optional int): Maximum time to wait in seconds. By default there is no timeout (`timeout = 0`).
+    * **timeout**: (optional int) Maximum time to wait in seconds. By default there is no timeout (`timeout = 0`).
 
 ##### done()
 Check if the job has completed.
