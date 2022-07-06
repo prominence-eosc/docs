@@ -2,7 +2,7 @@
 layout: default
 title: "Python client"
 permalink: /python-client
-parent: Overview
+parent: Command line interface
 nav_order: 8
 ---
 # Python client
@@ -61,7 +61,7 @@ Environment variables.
 ##### *property* procs_per_node
 The processes required per node for the case of multi-node MPI jobs.
 
-##### json()
+##### to_dict()
 Returns a dictionary representing the task.
 
 ## Resources
@@ -88,7 +88,7 @@ The walltime required for the job in minutes.
 ##### *property* memory_per_cpu
 Memory in GB per CPU.
 
-##### json()
+##### to_dict()
 Returns a dictionary representing the resources.
 
 ## Artifact
@@ -108,7 +108,7 @@ Uploads the file `filename`.
 * Parameters
     * **filename**: (str) Name of file to upload.
 
-##### json()
+##### to_dict()
 Returns a dictionary representing the artifact.
 
 ## InputFile
@@ -121,7 +121,7 @@ This class represents a small input file to be included in a job description.
     * **filename**: (str) Filename.
     * **content**: (optional str) Create the input file using this content, either ASCII or binary.
 
-##### json()
+##### to_dict()
 Returns a dictionary representing the input file.
 
 ## JobPolicies
@@ -142,7 +142,7 @@ Returns a dictionary representing the input file.
 
 ##### *property* report_job_success_on_task_failure
 
-##### json()
+##### to_dict()
 Returns a dictionary representing the policies.
 
 ## Notification
@@ -157,7 +157,7 @@ When to send the notification. Currently the only option is `jobFinished`.
 ##### *property* type
 Type of notification. Currently the only option is `email`.
 
-##### json()
+##### to_dict()
 Returns a dictionary representing the notification.
 
 ## Job
@@ -205,7 +205,7 @@ Check if the job has completed.
 * Returns: `False` if the job is still running or idle, or `True` if the job is in a terminal state.
 * Return type: bool
 
-##### json()
+##### to_dict()
 Returns a dictionary representing the job.
 
 ##### stdout(node=0)
@@ -241,3 +241,45 @@ Retrieves the job's standard error.
     * **save_as** (optional str): save as a file with this name
 * Returns: the content of the output file
 * Return type: str
+
+## Workflow
+
+**class Workflow()**
+
+This class represents a workflow.
+
+##### *property* name
+
+##### *property* id
+
+##### *property* status
+
+##### *property* labels
+
+##### *property* jobs
+
+##### *property* dependencies
+
+##### *property* factories
+
+##### *property* policies
+
+##### *property* notifications
+
+##### create()
+Submit the workflow.
+
+##### wait(timeout=0)
+Wait for workflow to enter a terminal state.
+
+* Parameters:
+    * **timeout** (optional int): Maximum time to wait in seconds. By default there is no timeout (`timeout = 0`).
+
+##### done()
+Check if the job has completed.
+
+* Returns: `False` if the workflow is still running or idle, or `True` if the workflow is in a terminal state.
+* Return type: bool
+
+##### to_dict()
+Returns a dictionary representing the workflow.
