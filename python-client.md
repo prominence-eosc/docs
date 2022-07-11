@@ -7,7 +7,7 @@ nav_order: 8
 ---
 # Python client
 
-*Available in 0.18.0 onwards*
+*Under development, will be available in 0.18.0 onwards*
 
 The CLI also provides Python classes which can be used for creating and managing jobs and data, and can be installed easily from PyPI:
 ```
