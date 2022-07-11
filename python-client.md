@@ -208,6 +208,19 @@ Check if the job has completed.
 * Returns: `False` if the job is still running or idle, or `True` if the job is in a terminal state.
 * Return type: bool
 
+##### execute(command)
+Execute the specified command in a running job.
+
+* Parameters:
+    * **command**: (str) Command and arguments to execute.
+
+##### get_snapshot(path, save_as=None)
+Create and retrieve a snapshot of a file within a running job.
+
+* Parameters:
+    * **path**: (str) Name of file or directory in job.
+    * **save_as**: (optional str) Save the snapshot in a file with this name.
+
 ##### to_dict()
 Returns a dictionary representing the job.
 
