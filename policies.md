@@ -13,7 +13,7 @@ The `policies` section of a job's JSON description enables users to have more co
 * `leaveInQueue`: by default completed, failed, deleted and killed jobs are only visible from the CLI when `--completed` is specified. When
 `leaveInQueue` is set to `True` these jobs will remain visible without needing `--completed` and need to be explicitly removed from the queue. If a job isn't removed from the queue manually it will be automatically removed after 90 days.
 * `placement`: allows users to specify requirements and preferences to influence where jobs will run.
-* `ignoreTaskTailures`: normally if a task fails (i.e. exit code non-zero) no further tasks will be executed in a job. If set to `True`, all tasks will be executed.
+* `ignoreTaskFailures`: normally if a task fails (i.e. exit code non-zero) no further tasks will be executed in a job. If set to `True`, all tasks will be executed.
 * `reportJobSuccessOnTaskFailure`: When the job is run as part of a workflow, if the exit code of any tasks are non-zero the job will be reported as running successfully. This means
 that if retries are enabled within a workflow or a workflow is re-run, only jobs which failed because of infrastructure problems will be retried (e.g. problems pulling
 the container image or staging files in or out).
