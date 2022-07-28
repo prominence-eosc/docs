@@ -18,6 +18,9 @@ The image can be specified in the following ways:
 * Name of a tarball created by `docker save` uploaded to object storage using `prominence upload`
 * Name of a Singularity image uploaded to object storage using `prominence upload`
 
+It is important to be aware the Docker Hub's rate limiting may cause container image pulls to fail, so Docker Hub 
+is not recommended for large numbers of short-running jobs.
+
 If a registry requires authentication then `imagePullCredential` must be specified in the task, e.g.:
 ```
 {
