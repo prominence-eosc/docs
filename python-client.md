@@ -129,21 +129,31 @@ Returns a dictionary representing the input file.
 
 ## JobPolicies
 
+**class JobPolicies()**
+
 ##### *property* maximum_task_retries
+Maximum number of times a task will be retried in the event of failures. By default there will be no retries.
 
 ##### *property* maximum_retries
+Maximum number of times a job will be retried in the event of failures. By default there will be no retries.
 
 ##### *property* maximum_time_in_queue
+Maximum time in minutes the job will remain idle in the queue. If a job cannot be run immediately it will wait in the queue (up to the specified time limit) until resources become available. The value -1 means that the job will remain in the queue until it starts running. The default value 0 means that the job will remain in the queue until it starts running or there is a failure.
 
 ##### *property* priority
+Integer enabling users to sort their jobs to determine which will be run first. Large values denote better priority. Note that this is used for influencing the order in which jobs are run, rather than guaranteeing the order.
 
 ##### *property* leave_in_queue
+By default completed, failed, deleted and killed jobs are only visible from the CLI when `--completed` is specified. When `leaveInQueue` is set to `True` these jobs will remain visible without needing `--completed` and need to be explicitly removed from the queue. If a job isn’t removed from the queue manually it will be automatically removed after 90 days.
 
 ##### *property* ignore_task_failures
+Normally if a task fails (i.e. exit code non-zero) no further tasks will be executed in a job. If set to `True`, all tasks will be executed.
 
 ##### *property* run_serial_tasks_on_all_nodes
+By default serial tasks are only run on one node for the case of multi-node jobs. Setting this to `True` results in serial tasks being run on all nodes.
 
 ##### *property* report_job_success_on_task_failure
+When the job is run as part of a workflow, if the exit code of any tasks are non-zero the job will be reported as running successfully. This means that if retries are enabled within a workflow or a workflow is re-run, only jobs which failed because of infrastructure problems will be retried (e.g. problems pulling the container image or staging files in or out). The default value is `False`.
 
 ##### to_dict()
 Returns a dictionary representing the policies.
