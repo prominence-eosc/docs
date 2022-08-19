@@ -339,3 +339,13 @@ Reruns any failed jobs in the workflow.
 
 * Returns: id of the new workflow.
 * Return type: integer
+
+## WorkflowPolicies
+
+**class WorkflowPolicies()**
+
+##### *property* maximum_retries
+Maximum number of times a job in the workflow will be retried in the event of failures. By default there will be no retries.
+
+##### *property* leave_in_queue
+By default completed, failed, deleted and killed workflows are only visible from the CLI when `--completed` is specified. When `leaveInQueue` is set to `True` these workflows will remain visible without needing `--completed` and need to be explicitly removed from the queue. If a workflow isn’t removed from the queue manually it will be automatically removed after 90 days.
