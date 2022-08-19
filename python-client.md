@@ -265,7 +265,7 @@ Retrieves the job's standard error.
 * Parameters:
     * **name**: (str) name of input file
     * **save_as**: (optional str) save as a file with this name
-* Returns: the content of the output file
+* Returns: the content of the output directory
 * Return type: str
 
 ## Workflow
