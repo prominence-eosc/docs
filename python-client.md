@@ -162,10 +162,10 @@ Returns a dictionary representing the policies.
 
 **class Notification(event=None, type=None)**
 
-This class represents a notification, i.e. an action triggered by a change in a job's state.
+This class represents a notification, i.e. an action triggered by a change in a job or workflow's state.
 
 ##### *property* event
-When to send the notification. Currently the only option is `jobFinished`.
+When to send the notification. Currently the options are `jobFinished` or `workflowFinished`.
 
 ##### *property* type
 Type of notification. Currently the only option is `email`.
