@@ -218,6 +218,18 @@ Check if the job has completed.
 * Returns: `False` if the job is still running or idle, or `True` if the job is in a terminal state.
 * Return type: bool
 
+##### delete()
+Delete the job.
+
+* Returns: `True` if the job was successfully deleted.
+* Return type: bool
+
+##### remove()
+Removes the job from the queue.
+
+* Returns: `True` if the job was successfully removed.
+* Return type: bool
+
 ##### execute(command)
 Execute the specified command in a running job.
 
@@ -309,3 +321,21 @@ Check if the job has completed.
 
 ##### to_dict()
 Returns a dictionary representing the workflow.
+
+##### delete()
+Delete the workflow.
+
+* Returns: `True` if the workflow was successfully deleted.
+* Return type: bool
+
+##### remove()
+Removes the workflow from the queue.
+
+* Returns: `True` if the workflow was successfully removed.
+* Return type: bool
+
+##### rerun()
+Reruns any failed jobs in the workflow.
+
+* Returns: id of the new workflow.
+* Return type: integer
