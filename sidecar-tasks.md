@@ -17,7 +17,7 @@ is different to standard tasks which are run sequentially.
 ![Sidecar task](sidecar.png)
 
 A typical use case for sidecars is to monitor the main task(s), i.e. collecting metrics and sending them to a
-time-series database (see [here](/docs/time-series)).
+time-series database.
 
 In order to define a task to be run as a sidecar set the `type` as `sidecar`. For example:
 ```json
