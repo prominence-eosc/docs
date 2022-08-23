@@ -131,6 +131,8 @@ Returns a dictionary representing the input file.
 
 **class JobPolicies()**
 
+This class represents job policies.
+
 ##### *property* maximum_task_retries
 Maximum number of times a task will be retried in the event of failures. By default there will be no retries.
 
@@ -344,8 +346,63 @@ Reruns any failed jobs in the workflow.
 
 **class WorkflowPolicies()**
 
+This class represents workflow policies.
+
 ##### *property* maximum_retries
 Maximum number of times a job in the workflow will be retried in the event of failures. By default there will be no retries.
 
 ##### *property* leave_in_queue
 By default completed, failed, deleted and killed workflows are only visible from the CLI when `--completed` is specified. When `leaveInQueue` is set to `True` these workflows will remain visible without needing `--completed` and need to be explicitly removed from the queue. If a workflow isn’t removed from the queue manually it will be automatically removed after 90 days.
+
+## Dependency
+
+**class Dependency()**
+
+## ParameterSet
+
+**class ParameterSet(name, start=None, end=None, step=None, values=[])**
+
+This class represents a set of parameters for a parameter sweep or zip job factory.
+
+##### *property* name
+
+##### *property* start (for a **ParameterSweep** job factory)
+
+##### *property* end (for a **ParameterSweep** job factory)
+
+##### *property* step (for a **ParameterSweep** job factory)
+
+##### *property* values (for a **Zip** job factory)
+
+##### to_dict()
+Returns a dictionary representing the parameter set.
+
+## Factories
+
+**class ParameterSweep()**
+
+This class represents a parameter sweep factory.
+
+##### *property* parameters
+
+##### to_dict()
+Returns a dictionary representing the parameter sweep job factory.
+
+**class Zip()**
+
+This class represents a zip job factory.
+
+##### *property* parameters
+
+##### to_dict()
+Returns a dictionary representing the zip job factorty.
+
+**class Repeat(num=None)**
+
+This class represents a repeat job factory.
+
+##### *property* num
+Number of instances of the job to run.
+
+##### to_dict()
+Returns a dictionary representing the repeat job factory.
