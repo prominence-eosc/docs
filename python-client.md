@@ -19,6 +19,8 @@ is picked up automatically by the Python client.
 
 Here is a very simple example where we submit a job, wait for it to complete then print the standard output:
 ```
+from prominence import Task, Job
+
 # Define a task
 task = Task()
 task.image = 'centos:7'
