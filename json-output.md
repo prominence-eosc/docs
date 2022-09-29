@@ -231,3 +231,8 @@ A multi-node job requiring between 16 and 32 CPUs in total, with 4 or 8 CPUs per
    "memoryPerCpu":2
 }
 ```
+
+## Visualisation
+
+JSON job scriptions can be pasted [here](https://jsoncrack.com) for visualisation, which may be helpful for some users. This site displays
+standard JSON as graphs.
