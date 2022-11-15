@@ -47,3 +47,26 @@ section of `execution`, for example:
 ...
 ```
 This can be particularly useful for jobs where fixed sets of resources were not specified.
+
+## Singularity apps
+Singularity supports providing multiple *apps* within a single container, see e.g. [this](https://docs.sylabs.io/guides/3.7/user-guide/definition_files.html#apps), and
+this is supported by PROMINENCE with a task `app` attribute.
+For example, to run app `foo`:
+```
+{
+  "resources": {
+    "nodes": 1,
+    "disk": 10,
+    "cpus": 1,
+    "memory": 1
+  },
+  "name": "singularity-app-test",
+  "tasks": [
+    {
+      "image": "multiapp.sif",
+      "runtime": "singularity",
+      "app": "foo"
+    }
+  ]
+}
+```
