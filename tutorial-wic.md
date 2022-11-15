@@ -32,7 +32,7 @@ to the jobs using the Python client. As an example, suppose we need to use a sma
 ```
 variable nsteps equal 200 # simulation steps
 ```
-and we want to adjust the value `200` for difference jobs. This can done using the `InputFile` class, e.g.
+and we want to adjust the value `200` for different jobs. This can done using the `InputFile` class, e.g.
 ```
 ...
 contents = 'variable nsteps equal %d # simulation steps' % nsteps
