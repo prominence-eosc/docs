@@ -3,7 +3,7 @@ layout: default
 title: "Using PROMINENCE in Python"
 permalink: /python
 parent: Jobs
-nav_order: 15
+nav_order: 16
 ---
 # Using PROMINENCE in Python
 Here we will assume that the PROMINENCE CLI has been installed and `prominence login` has been run to obtain a token.

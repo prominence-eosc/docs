@@ -3,7 +3,7 @@ layout: default
 title: "Standard output and error"
 permalink: /stdout-stderr
 parent: Jobs
-nav_order: 8
+nav_order: 9
 ---
 # Standard output and error
 The standard output and error can be seen while jobs are running as well as once they have completed, allowing users to check the status of long-running jobs. It is recommended not to pipe standard output into a file, as this will make it more difficult to understand what the job is doing while running. Use `tee` if necessary in your job to
